@@ -2,11 +2,18 @@
 @import "../sass/vendor/reset.scss";
 
 /* Default style */
+html {
+    font-size: 14px;
+}
 
 *,
 *::after,
 *::before {
     box-sizing: border-box;
+    font-family: "Inter";
+    font-size: 1rem;
+    line-height: 1.7;
+    font-weight: normal;
 }
 
 a {
@@ -17,6 +24,12 @@ ul {
     list-style: none;
 }
 
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 /* bootstrap */
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "../../../node_modules/bootstrap/scss/variables";
@@ -24,3 +37,5 @@ ul {
 @import "../../../node_modules/bootstrap/scss/containers";
 
 /* blocks */
+@import "../sass/blocks/header.scss";
+@import "../sass/blocks/footer.scss";
