@@ -5,6 +5,9 @@
 html {
     font-size: 14px;
 }
+body {
+    background: #f7f9fb;
+}
 
 *,
 *::after,
@@ -16,6 +19,9 @@ html {
     font-weight: normal;
 }
 
+.--transition {
+    transition: 0.8s all ease-in-out;
+}
 a {
     text-decoration: none;
 }
@@ -42,6 +48,10 @@ ul {
         max-width: 1270px;
         padding-left: 15px;
         padding-right: 15px;
+    }
+    .container.header-container {
+        max-width: 1470px;
+        padding-left: 115px;
     }
 }
 /* blocks */

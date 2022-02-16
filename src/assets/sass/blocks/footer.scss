@@ -36,6 +36,10 @@
     margin-bottom: 9px;
     color: #414d55;
     opacity: 0.8;
+    transition: 0.8s all ease-in-out;
+    &:hover {
+        color: #6d7a83;
+    }
 }
 
 .footer-box-img {
