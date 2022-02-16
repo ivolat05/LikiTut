@@ -1,4 +1,63 @@
 .footer {
     margin-top: auto;
-    margin-bottom: 0;
+    background: #e8eff7;
+    padding-top: 45px;
+    padding-bottom: 30px;
+}
+
+.footer-logo {
+    font-family: "Oswald";
+    font-weight: bold;
+    font-size: 2.2857rem;
+    line-height: 0.625;
+    color: #00afaa;
+    span {
+        font-family: "Oswald";
+        font-weight: 500;
+        font-size: 2.2857rem;
+        line-height: 0.625;
+        color: #000000;
+    }
+}
+
+.footer-coll-title {
+    font-weight: 500;
+    font-size: 1.14rem;
+    line-height: 1.6875;
+    color: #414d55;
+    margin-bottom: 16px;
+}
+
+.footer-nav-list-link {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.4;
+    display: block;
+    margin-bottom: 9px;
+    color: #414d55;
+    opacity: 0.8;
+}
+
+.footer-box-img {
+    width: 390px;
+    height: 117px;
+}
+
+.footer-box {
+    margin-top: 15px;
+}
+.footer-wrapp {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+}
+
+.footer-wrapp-inner {
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-coll {
+    padding-left: 40px;
 }

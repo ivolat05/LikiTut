@@ -36,6 +36,14 @@ ul {
 @import "../../../node_modules/bootstrap/scss/mixins";
 @import "../../../node_modules/bootstrap/scss/containers";
 
+/* container */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1270px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
 /* blocks */
 @import "../sass/blocks/header.scss";
 @import "../sass/blocks/footer.scss";
