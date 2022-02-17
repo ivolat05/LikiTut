@@ -96,6 +96,8 @@ $(function () {
                     a.appendChild(b);
                 }
             }
+
+            // стилизация скрола
             $(".autocomplete-items").mCustomScrollbar({
 
             });
@@ -161,6 +163,16 @@ $(function () {
 
     autocomplete("myInput", medicines);
     autocomplete("header-place", countries);
+
+
+    // slaider
+    $(".slaid-slaider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        infinite: true,
+        arrows: false
+    });
 
 
 })

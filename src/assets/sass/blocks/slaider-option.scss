@@ -1,0 +1,29 @@
+.slaid-slaider {
+    .slick-dots {
+        margin-top: 6px;
+        margin-bottom: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button {
+            font-size: 0;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            width: 9px;
+            height: 9px;
+            border-radius: 9px;
+            background: #d0d6dd;
+            cursor: pointer;
+            margin: 4px;
+            padding: 0;
+        }
+        .slick-active {
+            button {
+                width: 21px;
+                background: #9aa9bb;
+                border-radius: 28px;
+            }
+        }
+    }
+}

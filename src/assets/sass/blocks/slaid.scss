@@ -1,0 +1,27 @@
+.slaid {
+    padding-top: 18px;
+}
+.slaid-slaider {
+    max-width: 875px;
+    margin: 0 auto;
+}
+.slaid-box {
+    max-width: 875px;
+    background: #d5f6fa;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 130px;
+    padding-right: 7px;
+}
+
+.slaid-text {
+    font-family: "Proxima Nova Rg";
+    font-weight: normal;
+    font-size: 1.3rem;
+    line-height: 1.9;
+    color: #324446;
+    position: relative;
+    top: -13px;
+}
