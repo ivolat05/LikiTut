@@ -174,5 +174,17 @@ $(function () {
         arrows: false
     });
 
-
+    // показ скрытых номеров в блоке recom
+    function recomVisible() {
+        let recomBtnVisible = document.querySelectorAll('.recom-btn-visible');
+        if (recomBtnVisible) {
+            recomBtnVisible.forEach(item => {
+                item.addEventListener('click', () => {
+                    item.parentElement.parentElement.classList.toggle('--visible');
+                    item.parentElement.parentElement.parentElement.parentElement.parentElement.classList.toggle('--visible');
+                })
+            })
+        }
+    }
+    recomVisible();
 })

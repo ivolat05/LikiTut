@@ -39,6 +39,14 @@ ul {
     min-height: 100vh;
 }
 
+.block-title {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #24282c;
+    margin-bottom: 24px;
+}
+
 /* bootstrap */
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "../../../node_modules/bootstrap/scss/variables";
@@ -65,3 +73,4 @@ ul {
 @import "../sass/blocks/slaid.scss";
 @import "../sass/blocks/slaider-option.scss";
 @import "../sass/blocks/recom.scss";
+@import "../sass/blocks/service.scss";
