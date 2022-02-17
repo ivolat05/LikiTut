@@ -1,0 +1,118 @@
+.service {
+    padding-bottom: 50px;
+}
+.service__wrapp {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.service-box {
+    padding: 26px 28px;
+    width: 33%;
+    height: 167px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url("../../assets/img/secvise-1.png") no-repeat center right,
+        linear-gradient(
+            180deg,
+            #d0d0d0 0%,
+            #d0d0d0 11.99%,
+            #cfcfcf 21.16%,
+            #d5d5d5 46.72%,
+            #d9d9d9 56.86%,
+            #e1e1e1 68.66%,
+            #e3e3e3 79.49%,
+            #e3e3e3 100%
+        );
+    border-radius: 14px;
+}
+
+.service-box-2 {
+    width: 33%;
+    padding: 26px 28px;
+    background: url("../../assets/img/secvise-2.png") no-repeat center right,
+        linear-gradient(180deg, #a0c4da 0%, #a4c7dd 38.38%, #a6c7de 73.38%, #a7c7dc 100%);
+    border-radius: 17px;
+}
+
+.service-box-3 {
+    width: 33%;
+    padding: 26px 28px;
+    background: url("../../assets/img/secvise-3.png") no-repeat center right, #f17105;
+    border-radius: 17px;
+}
+
+.service-box-title {
+    font-weight: 600;
+    font-size: 1.14rem;
+    line-height: 1.25;
+    color: #050505;
+}
+.service-box-title.--white {
+    color: #fff;
+}
+.service-box-link {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.43;
+    color: #414d55;
+    &::after {
+        content: url("../../assets/img/secvise-arrow.svg");
+    }
+}
+
+.service-box-4 {
+    width: 100%;
+    padding: 40px 86px 70px 86px;
+    background: url("../../assets/img/secvise-4.png") no-repeat center right,
+        linear-gradient(180deg, #5bb8be 0%, #58b4bb 36.97%, #4cafb4 100%);
+
+    box-shadow: 0px 1px 8px rgba(206, 218, 247, 0.1);
+    border-radius: 17px;
+
+    .service-box-logo {
+        font-family: "Oswald";
+        font-weight: bold;
+        font-size: 2.29rem;
+        line-height: 0.625;
+        color: #ffffff;
+        margin-bottom: 30px;
+        span {
+            font-family: "Oswald";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 2.29rem;
+            line-height: 0.625;
+            color: #000000;
+        }
+    }
+
+    .service-box-title {
+        width: 451px;
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 1.14;
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+    .service-box-text {
+        width: 335px;
+        font-weight: normal;
+        font-size: 1.07rem;
+        line-height: 1.33;
+        color: #ffffff;
+        margin-bottom: 25px;
+    }
+    .service-box-btn {
+        font-weight: normal;
+        font-size: 1.07rem;
+        line-height: 1.33;
+        color: #04b6b1;
+        background: #ffffff;
+        border-radius: 10px;
+        padding: 14px 25px;
+        display: inline-block;
+    }
+}
