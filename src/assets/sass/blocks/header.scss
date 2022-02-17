@@ -231,7 +231,7 @@
 }
 
 .header-place-search {
-    width: 97%;
+    width: 100%;
     background: #ffffff;
     border: 1px solid #e7e9eb;
     outline: none;
@@ -240,6 +240,7 @@
     font-weight: normal;
     font-size: 1rem;
     line-height: 1.2;
+    text-align: left;
     color: #4c6fff;
     margin-bottom: 21px;
     &::placeholder {
@@ -267,4 +268,8 @@
 .sity-name.active {
     color: #4c6fff;
     background: #f7f9fb;
+}
+.header-place-search-box {
+    margin-right: 42px;
+    position: relative;
 }

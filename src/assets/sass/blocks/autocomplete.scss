@@ -1,0 +1,64 @@
+.autocomplete-items {
+    position: absolute;
+    z-index: 99;
+    max-height: 295px;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    box-shadow: 0px 1px 8px rgba(20, 46, 110, 0.1);
+    border-radius: 12px;
+    padding: 15px 0 20px 11px;
+}
+
+.autocomplete-items-row {
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.33;
+    color: #414d55;
+    padding: 10px 20px 10px 58px;
+    transition: 0.8s all ease-in-out;
+    position: relative;
+    cursor: pointer;
+    &::before {
+        content: url("../../assets/img/autocomplite-arrow.svg");
+        position: absolute;
+        right: 17px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &:hover {
+        background: #f7f9fb;
+        border-radius: 6px;
+    }
+}
+.header-place-search-box {
+    .autocomplete-items-row {
+        padding-left: 15px;
+    }
+}
+.autocompliter-literal {
+    font-weight: bold;
+    color: #ff671f;
+}
+
+.autocomplete-items {
+    .mCSB_2_scrollbar_vertical {
+        width: 3px;
+        background: gold;
+    }
+    .mCSB_draggerContainer,
+    .mCSB_draggerRail {
+        width: 3px;
+        background: #eff0f1;
+        border-radius: 17px;
+    }
+
+    .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+        background: #d2dce8;
+        border-radius: 17px;
+    }
+    .mCSB_inside > .mCSB_container {
+        margin-right: 25px;
+    }
+}

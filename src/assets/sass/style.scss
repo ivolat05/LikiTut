@@ -1,5 +1,8 @@
 @import "../sass/vendor/font.scss";
 @import "../sass/vendor/reset.scss";
+@import "../sass/vendor/jquery.mCustomScrollbar.scss";
+@import "../sass/vendor/magnific-popup.scss";
+@import "../sass/vendor/slick.scss";
 
 /* Default style */
 html {
@@ -58,3 +61,4 @@ ul {
 @import "../sass/blocks/header.scss";
 @import "../sass/blocks/footer.scss";
 @import "../sass/blocks/main.scss";
+@import "../sass/blocks/autocomplete.scss";
