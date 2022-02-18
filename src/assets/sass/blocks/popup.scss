@@ -1,21 +1,19 @@
 .mfp-fade.mfp-bg {
     opacity: 0;
-
+    background: rgb(17, 17, 17);
     -webkit-transition: all 0.35s ease-out;
     -moz-transition: all 0.35s ease-out;
     transition: all 0.35s ease-out;
 }
 /* overlay animate in */
 .mfp-fade.mfp-bg.mfp-ready {
-    opacity: 0.8;
+    opacity: 0.25;
 }
 /* overlay animate out */
 .mfp-fade.mfp-bg.mfp-removing {
     opacity: 0;
 }
-.mfp-bg {
-    background: rgba(17, 17, 17, 0.25);
-}
+
 /* content at start */
 .mfp-fade.mfp-wrap .mfp-content {
     opacity: 0;
