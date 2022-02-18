@@ -101,3 +101,15 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: "fontello";
+    src: url("../../assets/font/fontello.eot?67344425");
+    src: url("../../assets/font/fontello.eot?67344425#iefix") format("embedded-opentype"),
+        url("../../assets/font/fontello.woff2?67344425") format("woff2"),
+        url("../../assets/font/fontello.woff?67344425") format("woff"),
+        url("../../assets/font/fontello.ttf?67344425") format("truetype"),
+        url("../../assets/font/fontello.svg?67344425#fontello") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}

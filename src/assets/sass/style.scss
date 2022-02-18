@@ -22,6 +22,55 @@ body {
     font-weight: normal;
 }
 
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+    outline: 1px solid #4b5d74;
+}
+input {
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    outline: none;
+}
+/* убираем тени safari */
+/* убираем тени safari */
+input:not([type="checkbox"]):not([type="radio"]),
+textarea,
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type="password"] {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9px;
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+    color: #192025;
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+
+    /* add spacing to better separate each image */
+    letter-spacing: 3px;
+    &::placeholder {
+        font-family: "Inter";
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.57;
+        color: rgba(65, 77, 85, 0.6);
+
+        letter-spacing: 0;
+    }
+}
+
 .--transition {
     transition: 0.8s all ease-in-out;
 }
@@ -45,6 +94,19 @@ ul {
     line-height: 1;
     color: #24282c;
     margin-bottom: 24px;
+}
+
+.btn {
+    background: #ff671f;
+    border-radius: 8px;
+    transition: 0.4s all ease-in-out;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        background: #fe6116;
+    }
 }
 
 /* bootstrap */
@@ -74,3 +136,4 @@ ul {
 @import "../sass/blocks/slaider-option.scss";
 @import "../sass/blocks/recom.scss";
 @import "../sass/blocks/service.scss";
+@import "../sass/blocks/popup.scss";

@@ -114,5 +114,9 @@
         border-radius: 10px;
         padding: 14px 25px;
         display: inline-block;
+        transition: 0.8s all ease-in-out;
+        &:hover {
+            background: #f0f0f0;
+        }
     }
 }

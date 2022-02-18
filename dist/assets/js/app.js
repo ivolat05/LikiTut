@@ -2654,4 +2654,97 @@ $(function () {
         }
     }
     recomVisible();
+    // popup 
+    $('.popup-content').magnificPopup({
+        type: 'inline',
+        mainClass: 'mfp-fade'
+    });
+
+    //popup close 
+    function closePopup() {
+        let popupClose = document.querySelectorAll('.popup-close');
+        if (popupClose) {
+            popupClose.forEach((item) => {
+                item.addEventListener('click', () => {
+                    $.magnificPopup.close();
+                })
+            })
+        }
+
+    }
+    closePopup();
+    // показывать скрывать пароль
+
+    function showPassword() {
+        let btn = document.querySelectorAll('.password-btn');
+        if (btn) {
+            btn.forEach((item) => {
+                item.addEventListener('click', function () {
+                    let passwordId = item.getAttribute('data-password');
+                    let showPassword = document.querySelector(passwordId);
+                    item.classList.toggle('--active')
+                    if (showPassword.getAttribute('type') === 'password') {
+                        showPassword.type = 'text';
+                    } else {
+                        showPassword.type = 'password';
+                    }
+                })
+            })
+        }
+    };
+    showPassword();
+
+    // tabs
+    function tabs(btnOpenTab, bookBark, tabAttr) {
+        const tabBtn = document.querySelectorAll(`.${btnOpenTab}`);
+        const tabItem = document.querySelectorAll(`.${bookBark}`);
+
+        if (tabItem) {
+            tabBtn.forEach((item) => {
+                item.addEventListener('click', function () {
+                    let tabId = item.getAttribute(tabAttr);
+                    let currentTab = document.querySelector(tabId);
+
+                    tabBtn.forEach(function (item) {
+                        item.classList.remove('active')
+                    })
+
+                    tabItem.forEach(function (item) {
+                        item.classList.remove('active')
+                    })
+                    item.classList.add('active');
+                    currentTab.classList.add('active');
+
+                });
+            });
+
+        }
+
+
+    }
+    tabs("popup-box-btn", "popup-wrapper", "data-tab");
+
+    // открытие окна регистрации
+    function openReg() {
+        let btnOpen = document.querySelectorAll('.popup-btn-regist');
+        let tabItem = document.querySelectorAll('.popup-tab');
+        if (btnOpen && tabItem) {
+            btnOpen.forEach((item) => {
+                item.addEventListener('click', () => {
+                    let tabId = item.getAttribute('data-popupTab');
+                    let currentTab = document.querySelector(tabId);
+
+                    tabItem.forEach(function (item) {
+                        item.classList.remove('active')
+                    })
+
+                    currentTab.classList.add('active');
+                })
+            })
+
+        }
+    }
+    openReg();
+    // mask
+    $(".phone").mask("+38-999-999-99-99");
 })
