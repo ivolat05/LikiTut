@@ -71,8 +71,18 @@ input[type="password"] {
     }
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 .--transition {
-    transition: 0.8s all ease-in-out;
+    transition: 0.4s all ease-in-out;
 }
 a {
     text-decoration: none;
@@ -86,6 +96,28 @@ ul {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.background-fon {
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(17, 17, 17, 0.25);
+    transition: 0.8s all ease-in-out;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -3;
+    opacity: 0;
+}
+
+.background-fon.active {
+    z-index: 3;
+    opacity: 1;
+}
+
+.stop {
+    overflow: hidden;
 }
 
 .block-title {
@@ -137,3 +169,4 @@ ul {
 @import "../sass/blocks/recom.scss";
 @import "../sass/blocks/service.scss";
 @import "../sass/blocks/popup.scss";
+@import "../sass/blocks/basket.scss";

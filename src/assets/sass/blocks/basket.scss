@@ -1,0 +1,229 @@
+.basket {
+    background: #ffffff;
+    height: 100vh;
+    width: 416px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 4;
+
+    display: flex;
+    flex-direction: column;
+    transition: 0.8s all ease-in-out;
+    transform: translateX(300%);
+}
+
+.basket.active {
+    transform: translateX(0);
+}
+.basket-header {
+    padding: 23px 28px 19px 28px;
+    border-bottom: 1px solid rgba(191, 203, 231, 0.22);
+}
+.basket-product {
+    padding: 23px 43px 11px 20px;
+    border-bottom: 1px solid rgba(191, 203, 231, 0.22);
+    margin-bottom: 8px;
+}
+
+.basket-close {
+    border: none;
+    outline: none;
+    background: none;
+    position: absolute;
+    top: 21px;
+    right: 24px;
+    cursor: pointer;
+}
+.basket-title {
+    font-weight: 600;
+    font-size: 1.71rem;
+    line-height: 1.083;
+    color: #192025;
+}
+.basket-footer {
+    margin-top: auto;
+}
+
+.basket-footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 26px;
+}
+
+.basket-footer-title {
+    font-weight: normal;
+    font-size: 1.14rem;
+    line-height: 1.1875;
+    color: #000000;
+}
+
+.basket-footer-summ {
+    font-weight: 600;
+    font-size: 1.29rem;
+    line-height: 1.22;
+    color: #192025;
+}
+
+.basket-btn-reserve,
+.basket-btn-proceed {
+    width: 100%;
+    min-height: 50px;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    font-weight: 500;
+    font-size: 1.07rem;
+    line-height: 1.33;
+    color: #ffffff;
+    border-radius: 8px;
+}
+.basket-btn-reserve {
+    margin-bottom: 5px;
+}
+.basket-btn-proceed {
+    background: rgba(154, 169, 187, 0.16);
+    color: #414d55;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    &:hover {
+        background: rgba(178, 181, 185, 0.17);
+    }
+}
+
+.basket-product-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 2;
+    color: #414d55;
+    position: relative;
+    padding-left: 37px;
+    margin-right: 9px;
+    &::before {
+        content: url("../../assets/img/icon-basket.svg");
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-40%);
+    }
+}
+
+.basket-product-desc {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.2;
+    color: #192025;
+    margin-bottom: 22px;
+}
+.basket-coll-prev,
+.basket-coll-next {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #a9c6f7;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    transition: 0.4s all ease-in-out;
+    position: relative;
+    flex-shrink: 0;
+    &:hover {
+        background: #8db6fc;
+    }
+    svg {
+        padding: 0;
+    }
+}
+
+.basket-coll-prev.--disabled {
+    background: #d6dde9;
+    z-index: -1;
+}
+
+.basket-coll-title {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: center;
+    color: #9aa9bb;
+    margin-bottom: 14px;
+}
+
+.basket-coll-row {
+    display: flex;
+}
+.basket-num {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: #f7f9fb;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.43rem;
+    line-height: 1.2;
+    color: #414d55;
+    border-radius: 0 0 0 0;
+    margin-right: -6px;
+    margin-left: -6px;
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}
+
+.basket-product-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    margin-bottom: 40px;
+}
+
+.basket-product-coll {
+    width: 45%;
+}
+
+.basket-product-summ {
+    font-weight: 600;
+    font-size: 1.14rem;
+    line-height: 1.1875;
+    color: #192025;
+    text-align: right;
+}
+
+.basket-body {
+    overflow-y: auto;
+    padding-bottom: 20px;
+}
+
+.basket-footer {
+    padding: 23px 28px 19px 28px;
+
+    background: #fff;
+}
+
+.basket-body {
+    .mCSB_draggerContainer,
+    .mCSB_draggerRail {
+        width: 3px;
+        background: #eff0f1;
+        border-radius: 17px;
+    }
+
+    .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+        background: #d2dce8;
+        border-radius: 17px;
+    }
+    .mCSB_inside > .mCSB_container {
+        margin-right: 25px;
+    }
+}

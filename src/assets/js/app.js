@@ -280,4 +280,92 @@ $(function () {
     openReg();
     // mask
     $(".phone").mask("+38-999-999-99-99");
+    // стилизация скролла
+    $(".basket-body").mCustomScrollbar({
+
+    });
+
+    // открытие боковое панели
+    function openPanel(openBtn, openBox, closeBtn) {
+        let btnOpen = document.querySelector(`.${openBtn}`);
+        let boxOpen = document.querySelector(`.${openBox}`);
+        let btnClose = document.querySelector(`.${closeBtn}`);
+        let body = document.querySelector('body');
+        let backgroundFon = document.querySelector('.background-fon');
+        if (btnOpen && boxOpen) {
+            btnOpen.addEventListener('click', () => {
+
+                if (!boxOpen.classList.contains('active')) {
+                    boxOpen.classList.add('active');
+                    backgroundFon.classList.add('active');
+                    body.classList.add('stop');
+                }
+            })
+            backgroundFon.addEventListener("click", () => {
+                boxOpen.classList.remove('active');
+                backgroundFon.classList.remove('active');
+                body.classList.remove('stop');
+            })
+            btnClose.addEventListener('click', () => {
+                boxOpen.classList.remove('active');
+                backgroundFon.classList.remove('active');
+                body.classList.remove('stop');
+            })
+        }
+    }
+    openPanel('header-btn-basket', 'basket', 'basket-close')
+
+    // коризина колличество товара 
+    function basketProduct() {
+        let btnPrev = document.querySelectorAll('.basket-coll-prev');
+        let btnNext = document.querySelectorAll('.basket-coll-next');
+        let basketNum = document.querySelectorAll('.basket-num');
+        if (btnPrev && btnNext && basketNum) {
+            btnPrev.forEach((item) => {
+                item.addEventListener('click', () => {
+                    let tabId = item.getAttribute('data-basket');
+                    let idInput = document.querySelector(tabId);
+                    idInput.value -= 1;
+                    if (idInput.value > 0) {
+                        if (item.classList.contains('--disabled')) {
+                            item.classList.remove('--disabled')
+                        }
+                    } else if (idInput.value <= 1) {
+                        item.classList.add('--disabled')
+                        idInput.value = 1;
+                    }
+                })
+            })
+            btnNext.forEach((item) => {
+                item.addEventListener('click', () => {
+                    let tabId = item.getAttribute('data-basket');
+                    let idInput = document.querySelector(tabId);
+                    let num = +idInput.value;
+
+                    idInput.value = num + 1;
+                    if (idInput.value > 1) {
+                        btnPrev.forEach(item => {
+                            if (item.getAttribute('data-basket') == tabId) {
+
+                                if (item.classList.contains('--disabled')) {
+                                    item.classList.remove('--disabled')
+                                }
+                            }
+                        })
+                    }
+
+                })
+            })
+            basketNum.forEach((item) => {
+                item.addEventListener('keyup', () => {
+                    console.log(item.value)
+                    if (item.value < 0) {
+                        item.value = 1;
+                    }
+                })
+            })
+
+        }
+    }
+    basketProduct();
 })
