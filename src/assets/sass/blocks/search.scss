@@ -43,11 +43,8 @@
             fill: #fff;
         }
         &:hover {
-            color: #4c6fff;
-            background: #fff;
-            path {
-                fill: #2662f0;
-            }
+            background: #2662f0;
+            border: 1px solid #2662f0;
         }
     }
 
@@ -64,12 +61,8 @@
         }
 
         &:hover {
-            color: #4c6fff;
-
-            path {
-                fill: #2662f0;
-            }
-            border: 1px solid #649eff;
+            background: #2662f0;
+            border: 1px solid #2662f0;
         }
     }
 
@@ -90,6 +83,10 @@
             color: rgba(255, 255, 255, 0.6);
             right: 5px;
             top: 12px;
+        }
+        &:hover {
+            background: #2662f0;
+            border: 1px solid #2662f0;
         }
     }
 
