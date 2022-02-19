@@ -1,0 +1,44 @@
+.search {
+    background: #00bebe;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .main-search {
+        min-height: 54px;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: none;
+    }
+
+    .main-btn {
+        min-height: 44px;
+        padding: 12px;
+    }
+
+    .main-searc-box {
+        width: 80%;
+    }
+    .header-link {
+        margin-left: 0;
+    }
+}
+
+.search-wrapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-wrapp-coll-1,
+.search-wrapp-coll-2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.search-wrapp-coll-1 {
+    width: 80%;
+}
+.search-wrapp-coll-2 {
+    width: 165px;
+}
