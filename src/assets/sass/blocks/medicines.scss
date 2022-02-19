@@ -1,0 +1,41 @@
+.medic {
+    padding-top: 7px;
+    .breadcrumb {
+        margin-bottom: 22px;
+    }
+}
+
+.medic__wrapp {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 26px;
+}
+
+.medic-title {
+    font-weight: 600;
+    font-size: 1.7rem;
+    line-height: 1.42;
+    color: #192025;
+}
+
+.medic-btn {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.1;
+    cursor: pointer;
+    transition: 0.4s all ease-in-out;
+    color: #649eff;
+    background: #ffffff;
+    border: 1px solid #649eff;
+    border-radius: 32px;
+    padding: 6px 14px;
+    &:hover {
+        background: #649eff;
+        color: #fff;
+    }
+}
+
+.medic-btn.active {
+    background: #649eff;
+    color: #fff;
+}
