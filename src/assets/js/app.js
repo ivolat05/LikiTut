@@ -398,4 +398,31 @@ $(function () {
 
     }
     select();
+
+    // result filter open
+    function accordionOpen(accordionHead) {
+        let btnOpen = document.querySelectorAll(`.${accordionHead}`)
+        if (btnOpen) {
+            btnOpen.forEach(item => {
+                item.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                })
+            })
+        }
+    }
+
+    accordionOpen('result__filter-head');
+
+    // открытие всех номеров блок resutl__box
+    function visibleBlock(btnVisible) {
+        let btnOpen = document.querySelectorAll(`.${btnVisible}`);
+        if (btnOpen) {
+            btnOpen.forEach(item => {
+                item.addEventListener('click', () => {
+                    item.parentElement.classList.toggle('active');
+                })
+            })
+        }
+    }
+    visibleBlock('result-tell-visible');
 })
