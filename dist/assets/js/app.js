@@ -2569,7 +2569,9 @@ $(function () {
                 $(".autocomplete-items").mCustomScrollbar({
 
                 });
+
             });
+
             /* выполнение функции нажимает клавишу на клавиатуре: */
             inp.addEventListener("keydown", function (e) {
                 let x = document.getElementById(this.id + "autocomplete-list");
@@ -2629,8 +2631,10 @@ $(function () {
     }
 
 
+
     autocomplete("myInput", medicines);
     autocomplete("header-place", countries);
+    autocomplete("resultPopup-search", countries);
 
 
     // slaider
@@ -2892,4 +2896,67 @@ $(function () {
         }
     }
     visibleBlock('result-tell-visible');
+    // remove resultPopup-adress
+    // nameBtn кнопка удаления улицы
+    // blockDel блок который необходимо удалить
+    // containerBlock контейнер содеражаций название улиц
+    // btnHidd очистка котейнера
+    function removeBlock(nameBtn, blockDel, containerBlock, btnHidd) {
+        let btnRemove = document.querySelectorAll(`.${nameBtn}`);
+        let containerHidden = document.querySelector(`.${containerBlock}`);
+        let btnHidden = document.querySelector(`.${btnHidd}`)
+        if (btnRemove) {
+            btnRemove.forEach(item => {
+                item.addEventListener('click', () => {
+                    let dellBlock = item.parentElement;
+                    dellBlock.parentNode.removeChild(dellBlock);
+                    let blockDell = document.querySelectorAll(`.${blockDel}`)
+                    console.log('sdf')
+                    if (blockDell.length == 0) {
+                        containerHidden.style.display = 'none';
+                    }
+                })
+            })
+            btnHidden.addEventListener('click', () => {
+                let btnRemove = document.querySelectorAll(`.${nameBtn}`);
+                btnRemove.forEach(item => {
+                    item.parentElement.parentNode.removeChild(item.parentElement);
+                })
+                containerHidden.style.display = 'none';
+            })
+        }
+    }
+
+    removeBlock("resultPopup-adress-dell", 'resultPopup-adress', 'resultPopup__block-adress', 'resultPopup-remove');
+
+    // выбор места
+    function choisePlace(nameBtn, hideBlock, blockVisible, btnPlace, placeName) {
+        let btnName = document.querySelectorAll(`.${nameBtn}`);
+        let blockHide = document.querySelector(`.${hideBlock}`);
+        let visibleBlock = document.querySelector(`.${blockVisible}`);
+        let placeBtn = document.querySelectorAll(`.${btnPlace}`);
+        let namePlace = document.querySelector(`.${placeName}`);
+        if (btnName) {
+            btnName.forEach(item => {
+                item.addEventListener('click', () => {
+                    blockHide.style.display = 'none';
+                    visibleBlock.style.display = 'block';
+                })
+
+            })
+
+            if (placeBtn && namePlace) {
+                placeBtn.forEach(item => {
+                    item.addEventListener('click', () => {
+                        blockHide.style.display = 'block';
+                        visibleBlock.style.display = 'none';
+                        namePlace.textContent = item.value;
+                    })
+                })
+            }
+        }
+    }
+
+    choisePlace('resultPopup-btn', 'resultPopup__wrapp-adress', 'resultPopup__wrapp-place', 'resultPopup__place-radio', 'resultPopup-place-name');
+
 })
