@@ -93,6 +93,7 @@ $(function () {
                             /* закройте список значений автозаполнения,
                             (или любые другие открытые списки значений автозаполнения : */
                             closeAllLists();
+
                         });
                         a.appendChild(b);
                     }
@@ -102,6 +103,37 @@ $(function () {
                 $(".autocomplete-items").mCustomScrollbar({
 
                 });
+
+                addFilter("resultPopup-input", 'resultPopup__block-adress', 'resultPopup-adress', 'resultPopup-remove');
+                // добовление выброного элемента в поиске на страницу 
+                function addFilter(nameSerch, filterBlock, className, btnRemove) {
+                    let btnAutocomp = document.querySelectorAll('.autocomplete-items-row');
+                    let blockFilter = document.querySelector(`.${filterBlock}`)
+                    btnAutocomp.forEach(item => {
+                        item.addEventListener('click', () => {
+                            if (nameSerch == inp.classList) {
+                                let removeBtn = document.querySelector(`.${btnRemove}`);
+                                b = document.createElement("DIV");
+                                b.classList.add(`${className}`);
+                                b.innerHTML = `<span class="resultPopup-adress-name">${inp.value}` +
+                                    '</span>' +
+                                    '<button class="resultPopup-adress-dell" > ' +
+                                    ' <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+                                    ' <path' +
+                                    ' d="M5.99943 6.94273L10.1947 11.138L11.1375 10.1952L6.94224 5.99992L11.1375 1.80469L10.1947 0.861878L5.99943 5.05711L1.80414 0.861816L0.861328 1.80463L5.05662 5.99992L0.861328 10.1952L1.80414 11.138L5.99943 6.94273Z"' +
+                                    ' fill="white" />' +
+                                    ' </svg>' +
+                                    '</button>';
+                                blockFilter.style.display = 'block'
+                                blockFilter.insertBefore(b, removeBtn);
+                                // удаление добавленого элемента при нажатии на кнопку
+                                removeBlock("resultPopup-adress-dell", 'resultPopup-adress', 'resultPopup__block-adress', 'resultPopup-remove');
+                            }
+                        })
+                    })
+                }
+
+
 
             });
 
@@ -169,7 +201,6 @@ $(function () {
     autocomplete("header-place", countries);
     autocomplete("resultPopup-search", countries);
 
-
     // slaider
     $(".slaid-slaider").slick({
         slidesToShow: 1,
@@ -199,8 +230,8 @@ $(function () {
     });
 
     //popup close 
-    function closePopup() {
-        let popupClose = document.querySelectorAll('.popup-close');
+    function closePopup(closeBtn) {
+        let popupClose = document.querySelectorAll(`.${closeBtn}`);
         if (popupClose) {
             popupClose.forEach((item) => {
                 item.addEventListener('click', () => {
@@ -210,7 +241,8 @@ $(function () {
         }
 
     }
-    closePopup();
+    closePopup('popup-close');
+    closePopup('resultPopup-btn-result');
     // показывать скрывать пароль
 
     function showPassword() {
@@ -444,7 +476,7 @@ $(function () {
                     let dellBlock = item.parentElement;
                     dellBlock.parentNode.removeChild(dellBlock);
                     let blockDell = document.querySelectorAll(`.${blockDel}`)
-                    console.log('sdf')
+
                     if (blockDell.length == 0) {
                         containerHidden.style.display = 'none';
                     }
