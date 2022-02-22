@@ -1,0 +1,83 @@
+<!--yander map-->
+<!--необходимо ввести ваш API-ключ -->
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU">
+</script>
+<script>
+
+    function mapActive() {
+        let resultPopupContainer = document.querySelector('.resultPopupMap-container');
+        if (resultPopupContainer) {
+            ymaps.ready(init);
+            // Инициализация и уничтожение карты при нажатии на кнопку.
+            function init() {
+                var myMap;
+                var i;
+                var place;
+                // массив координат 
+
+                var pointer = [[49.95578399999999, 36.345252], [49.95078399999999, 36.355242], [49.95976399999999, 36.335250]]
+                var resultBox = document.querySelectorAll('.resultPopupMap-row');// карточки 
+
+                myMap = new ymaps.Map('map', {
+                    center: [49.95578399999999, 36.345252],
+                    zoom: 15,
+                    controls: []
+                }, {
+                    searchControlProvider: 'yandex#search'
+                });
+
+                for (i = 0; i < pointer.length; ++i) {
+                    place = new ymaps.Placemark(pointer[i]); // координаты места
+                    resultBox[i].setAttribute('number', i) // назначение атрибута на карточку указывающцй порядковый номер координаты
+
+                    place = new ymaps.Placemark(pointer[i], { // Создаем метку с  координатами
+                        balloonContent: `<div class="resultPopupMap-balloon">${resultBox[i].getAttribute('data-pay')}</div>`,// сдесь содержимое балуна в формате html, все стили в css
+                        iconContent: `<div class="resultPopupMap-icon">${resultBox[i].getAttribute('data-pay')}</div>`
+                    }, {
+                        iconImageHref: './assets/img/icon-map-2.svg',
+                        iconImageSize: [22, 29],
+                        iconImageOffset: [-32, -64],
+                        iconLayout: 'default#imageWithContent',
+                        balloonContentSize: [-32, -64],
+                        balloonLayout: "default#imageWithContent",
+                        balloonImageHref: './assets/img/icon-map-2.svg',
+                        balloonImageOffset: [-32, -64],
+                        balloonImageSize: [22, 29],
+                        balloonShadow: false
+                    });
+                    myMap.geoObjects.add(place);
+                    myMap.behaviors.disable('scrollZoom');
+                }
+                myMap.events.add('click', function (e) {
+                    var coords = e.get('coords');
+
+                    myMap.setCenter([coords[0].toPrecision(6), coords[1].toPrecision(6)]);
+                    if (myMap.balloon.isOpen()) {
+
+                        myMap.balloon.close();
+                    } else {
+                        myMap.geoObjects.get(1).balloon.open();
+                        myMap.setCenter([49.95578399999999, 36.345252]);
+                    }
+                });
+
+                // отоброжение на карте карточки места
+                resultBox.forEach((item) => {
+                    item.addEventListener('mousemove', () => {
+                        let atributeBox = item.getAttribute('number');
+                        myMap.geoObjects.get(atributeBox).balloon.open();
+                        myMap.setCenter(pointer[atributeBox]);
+
+                    })
+                })
+
+                // отброжение на карте места первой карточки 
+
+                myMap.geoObjects.get(0).balloon.open();
+                myMap.setCenter(pointer[0]);
+
+            }
+        }
+    }
+    mapActive()
+</script>

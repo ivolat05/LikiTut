@@ -1,0 +1,37 @@
+.resultPopupMap-balloon {
+    position: relative;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.2;
+    color: #414d55;
+    background: #ffffff;
+    border: 1px solid #00afaa;
+    padding: 3px 11px;
+    box-shadow: 0px 3px 7px rgba(89, 106, 128, 0.28);
+    border-radius: 3px;
+    position: relative;
+    top: -30px;
+    white-space: nowrap;
+    transform: translateX(-35%);
+}
+
+.resultPopupMap-icon {
+    position: relative;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.2;
+    color: #414d55;
+    background: #ffffff;
+    border: 1px solid #00afaa;
+    padding: 3px 11px;
+    box-shadow: 0px 3px 7px rgba(89, 106, 128, 0.28);
+    border-radius: 3px;
+    position: relative;
+    top: -30px;
+
+    transform: translateX(-35%);
+    display: inline-block;
+    white-space: nowrap;
+}
