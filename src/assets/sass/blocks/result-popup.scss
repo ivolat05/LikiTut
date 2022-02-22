@@ -117,7 +117,8 @@
     flex-wrap: wrap;
 }
 
-.resultPopup-btn-result {
+.resultPopup-btn-result,
+.resultPopup-btn-result-two {
     margin: auto auto 0 auto;
     padding: 12px;
     width: 260px;
@@ -125,6 +126,9 @@
     font-size: 1.07rem;
     line-height: 1.33;
     color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .resultPopup-blok-search {
@@ -133,7 +137,8 @@
     margin-bottom: 20px;
     left: -11px;
 }
-.resultPopup-input {
+.resultPopup-input,
+.resultPopup-input-two {
     width: 100%;
     background: url("../../assets/img/search-3.svg") no-repeat center left 15px, #f7f9fb;
     border-radius: 8px;

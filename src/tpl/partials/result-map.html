@@ -5,7 +5,7 @@
 <script>
 
     function mapActive() {
-        let resultPopupContainer = document.querySelector('.resultPopupMap-container');
+        let resultPopupContainer = document.querySelector('.resultMap-container');
         if (resultPopupContainer) {
             ymaps.ready(init);
             // Инициализация и уничтожение карты при нажатии на кнопку.
@@ -16,7 +16,7 @@
                 // массив координат 
 
                 var pointer = [[49.95578399999999, 36.345252], [49.95078399999999, 36.355242], [49.95976399999999, 36.335250]]
-                var resultBox = document.querySelectorAll('.resultPopupMap-row');// карточки 
+                var resultBox = document.querySelectorAll('.resultMap-row');// карточки 
 
                 myMap = new ymaps.Map('map', {
                     center: [49.95578399999999, 36.345252],
@@ -31,8 +31,8 @@
                     resultBox[i].setAttribute('number', i) // назначение атрибута на карточку указывающцй порядковый номер координаты
 
                     place = new ymaps.Placemark(pointer[i], { // Создаем метку с  координатами
-                        balloonContent: `<div class="resultPopupMap-balloon">${resultBox[i].getAttribute('data-pay')}</div>`,// сдесь содержимое балуна в формате html, все стили в css
-                        iconContent: `<div class="resultPopupMap-icon">${resultBox[i].getAttribute('data-pay')}</div>`
+                        balloonContent: `<div class="resultMap-balloon">${resultBox[i].getAttribute('data-price')}</div>`,// сдесь содержимое балуна в формате html, все стили в css
+                        iconContent: `<div class="resultMap-icon">${resultBox[i].getAttribute('data-price')}</div>`
                     }, {
                         iconImageHref: './assets/img/icon-map-2.svg',
                         iconImageSize: [22, 29],

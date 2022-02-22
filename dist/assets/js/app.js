@@ -2572,6 +2572,7 @@ $(function () {
                 });
 
                 addFilter("resultPopup-input", 'resultPopup__block-adress', 'resultPopup-adress', 'resultPopup-remove');
+
                 // добовление выброного элемента в поиске на страницу 
                 // nameSerch класс формы поиска
                 // filterBlock - блок куда добовляются новые эелементы
@@ -2674,6 +2675,7 @@ $(function () {
     autocomplete("myInput", medicines);
     autocomplete("header-place", countries);
     autocomplete("resultPopup-search", countries);
+    autocomplete("resultPopup-search-two", countries);
 
     // slaider
     $(".slaid-slaider").slick({
@@ -2698,10 +2700,13 @@ $(function () {
     }
     recomVisible();
     // popup 
-    $('.popup-content').magnificPopup({
+    $('.popup-content , .popup-content-2').magnificPopup({
         type: 'inline',
-        mainClass: 'mfp-fade'
+        mainClass: 'mfp-fade',
+        closeBtnInside: true
     });
+
+
 
     //popup close 
     function closePopup(closeBtn) {
@@ -2717,7 +2722,7 @@ $(function () {
     }
     closePopup('popup-close');
     closePopup('resultPopup-btn-result');
-    closePopup('resultPopupMap-close');
+    closePopup('resultMap-close');
     // показывать скрывать пароль
 
     function showPassword() {
@@ -2793,9 +2798,8 @@ $(function () {
     // mask
     $(".phone").mask("+38-999-999-99-99");
     // стилизация скролла
-    $(".basket-body").mCustomScrollbar({
-
-    });
+    $(".basket-body").mCustomScrollbar({});
+    $(".resultMap-body").mCustomScrollbar({});
 
     // открытие боковое панели
     function openPanel(openBtn, openBox, closeBtn) {
@@ -2923,6 +2927,7 @@ $(function () {
     }
 
     accordionOpen('result__filter-head');
+    accordionOpen('resultMap__row-head');
 
     // открытие всех номеров блок resutl__box
     function visibleBlock(btnVisible) {
@@ -2972,7 +2977,7 @@ $(function () {
     function choisePlace(nameBtn, hideBlock, blockVisible, btnPlace, placeName) {
         let btnName = document.querySelectorAll(`.${nameBtn}`);
         let blockHide = document.querySelector(`.${hideBlock}`);
-        let visibleBlock = document.querySelector(`.${blockVisible}`);
+        let visibleBlock = document.querySelectorAll(`.${blockVisible}`);
         let placeBtn = document.querySelectorAll(`.${btnPlace}`);
         let namePlace = document.querySelector(`.${placeName}`);
         if (btnName) {
@@ -2998,4 +3003,16 @@ $(function () {
 
     choisePlace('resultPopup-btn', 'resultPopup__wrapp-adress', 'resultPopup__wrapp-place', 'resultPopup__place-radio', 'resultPopup-place-name');
 
+    // удаление кнопки растояния на карте resultMap-box-inner
+    function resultMapBoxRemve() {
+        let removeBtn = document.querySelectorAll('.resultMap-inner-close');
+        if (removeBtn) {
+            removeBtn.forEach(item => {
+                item.addEventListener('click', () => {
+                    item.parentElement.remove();
+                })
+            })
+        }
+    }
+    resultMapBoxRemve();
 })
