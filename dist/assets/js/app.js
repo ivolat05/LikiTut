@@ -3003,7 +3003,7 @@ $(function () {
     function choisePlace(nameBtn, hideBlock, blockVisible, btnPlace, placeName) {
         let btnName = document.querySelectorAll(`.${nameBtn}`);
         let blockHide = document.querySelector(`.${hideBlock}`);
-        let visibleBlock = document.querySelectorAll(`.${blockVisible}`);
+        let visibleBlock = document.querySelector(`.${blockVisible}`);
         let placeBtn = document.querySelectorAll(`.${btnPlace}`);
         let namePlace = document.querySelector(`.${placeName}`);
         if (btnName) {
