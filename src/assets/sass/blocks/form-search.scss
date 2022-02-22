@@ -1,0 +1,138 @@
+.form-search {
+    width: 100%;
+    height: 543px;
+
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 3;
+    background: #ffffff;
+    box-shadow: 0px 1px 8px rgba(20, 46, 110, 0.1);
+    border-radius: 12px;
+    display: none;
+    justify-content: space-between;
+}
+
+.form-search-coll {
+    width: 50%;
+    padding-top: 12px;
+    padding-left: 9px;
+}
+.form-search-coll:nth-child(1) {
+    border-right: 1px solid #dfe6ee;
+    height: 100%;
+    padding-top: 12px;
+    padding-left: 16px;
+}
+
+.form-search-scroll .mCSB_inside > .mCSB_container {
+    margin-right: 7px;
+}
+.form__search-title {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.43;
+
+    color: #acb0b5;
+    padding-left: 11px;
+}
+
+.form__search-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3px;
+
+    border-radius: 2px;
+    padding-left: 14px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 14px;
+    transition: 0.4s all ease-in-out;
+    &:hover {
+        background: rgba(235, 238, 241, 0.44);
+    }
+}
+.form-search-product {
+    .form__search-row {
+        margin-right: 11px;
+        margin-bottom: 20px;
+    }
+}
+.form-search-category {
+    margin-bottom: 36px;
+}
+.search-row-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+}
+
+.search-row-coll {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.form__search-name {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.43;
+    color: #414d55;
+}
+
+.form__search-text {
+    font-weight: normal;
+    font-size: 0.86rem;
+    line-height: 1.67;
+    color: #9aa9bb;
+}
+
+.form__search-btn {
+    transition: 0.4s all ease-in-out;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.43;
+    color: #04b6b1;
+    padding: 9px 15px;
+    background: rgba(0, 175, 170, 0.08);
+    border-radius: 6px;
+    &:hover {
+        background: #04b6b1;
+        color: #fff;
+    }
+}
+
+.form-search-trade,
+.form-search-category {
+    .form__search-row {
+        position: relative;
+        &::before {
+            content: url("../../assets/img/autocomplite-arrow.svg");
+            position: absolute;
+
+            right: 15px;
+        }
+    }
+}
+
+.form-search-category {
+    height: 270px;
+}
+.form-search-trade {
+    height: 175px;
+    .form__search-row {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+.form-search-product {
+    height: 495px;
+}

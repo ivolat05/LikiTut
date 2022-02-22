@@ -1,0 +1,107 @@
+.recom-two {
+    padding-bottom: 55px;
+}
+.recom__product-box {
+    width: 300px;
+    min-height: 360px;
+    padding: 26px 14px;
+    background: #ffffff;
+    box-shadow: 0px 4px 6px rgba(152, 176, 235, 0.1);
+    border-radius: 10px;
+    transition: 0.4s all ease-in-out;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 12px;
+    &:hover {
+        background: #ffffff;
+        box-shadow: 10px 12px 26px rgba(196, 204, 215, 0.37);
+    }
+}
+
+.recom_product-box-img {
+    width: 154px;
+    height: 154px;
+    margin: 37px auto 38px;
+    img {
+        width: 154px;
+        height: 154px;
+        object-fit: contain;
+    }
+}
+.recom_product-name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.07rem;
+    line-height: 1.4;
+    color: #414d55;
+}
+
+.recom_product-text {
+    font-weight: normal;
+    font-size: 0.86rem;
+    line-height: 1.25;
+
+    color: #4c6fff;
+}
+
+.recom_product-price {
+    font-weight: 600;
+    font-size: 1.14rem;
+    line-height: 1.25;
+    color: #161616;
+
+    margin-top: auto;
+}
+
+.recom__product-label {
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    top: 18px;
+    right: 18px;
+}
+.recom__product-checbox {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -3;
+    opacity: 0;
+}
+.heart--active {
+    display: none;
+}
+.heart-no--active {
+    display: block;
+}
+.recom__product-checbox:checked + .recom__product-span {
+    .heart--active {
+        display: block;
+    }
+    .heart-no--active {
+        display: none;
+    }
+}
+
+.recom__product-status {
+    position: absolute;
+    top: 17px;
+    left: 17px;
+    font-weight: normal;
+    font-size: 0.86rem;
+    padding: 2px 12px;
+    line-height: 1.7;
+    color: #414d55;
+    text-transform: capitalize;
+    background: #f1f5f8;
+    border-radius: 6px;
+}
+
+.recom__product-status.--FF715B {
+    background: #ff715b;
+    color: #fff;
+}
+.recom__product-status.--x6665DD {
+    background: #6665dd;
+    color: #fff;
+}

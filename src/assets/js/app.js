@@ -5,6 +5,31 @@
 //= components/jquery.maskedinput.min.js
 $(function () {
 
+    // активация формы результатат поиска
+    function formSearchActive() {
+        let formSearch = document.querySelector('.form-search');
+        let formInputSearch = document.querySelectorAll('.form-input-search');
+        let body = document.querySelector('.page');
+        if (formSearch && formInputSearch) {
+            formInputSearch.forEach(item => {
+                item.addEventListener('keyup', () => {
+                    if (item.value != '') {
+                        formSearch.style.display = 'flex';
+                    } else if (item.value == '') {
+                        formSearch.style.display = 'none';
+                    }
+                })
+                item.addEventListener('click', () => {
+                    formSearch.style.display = 'flex';
+                })
+                body.addEventListener('click', () => {
+                    formSearch.style.display = 'none';
+                })
+            })
+
+        }
+    }
+    formSearchActive();
     // header place open
     function openPlace() {
         let headerPlaceHead = document.querySelector('.header-place-head');
@@ -333,6 +358,7 @@ $(function () {
     // стилизация скролла
     $(".basket-body").mCustomScrollbar({});
     $(".resultMap-body").mCustomScrollbar({});
+    $(".form-search-scroll").mCustomScrollbar({});
 
     // открытие боковое панели
     function openPanel(openBtn, openBox, closeBtn) {
