@@ -281,6 +281,7 @@ $(function () {
     closePopup('popup-close');
     closePopup('resultPopup-btn-result');
     closePopup('resultMap-close');
+    closePopup('orderPopup-link-2');
     // показывать скрывать пароль
 
     function showPassword() {
@@ -359,7 +360,7 @@ $(function () {
     $(".basket-body").mCustomScrollbar({});
     $(".resultMap-body").mCustomScrollbar({});
     $(".form-search-scroll").mCustomScrollbar({});
-
+    $(".orderPopup-accordion-body").mCustomScrollbar({});
     // открытие боковое панели
     function openPanel(openBtn, openBox, closeBtn) {
         let btnOpen = document.querySelector(`.${openBtn}`);
@@ -487,7 +488,7 @@ $(function () {
 
     accordionOpen('result__filter-head');
     accordionOpen('resultMap__row-head');
-
+    accordionOpen('orderPopup-accordion-btn');
     // открытие всех номеров блок resutl__box
     function visibleBlock(btnVisible) {
         let btnOpen = document.querySelectorAll(`.${btnVisible}`);
