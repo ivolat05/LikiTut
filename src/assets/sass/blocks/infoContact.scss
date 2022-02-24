@@ -1,0 +1,123 @@
+.infoContact {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.infoContact-coll-1 {
+    width: 50%;
+}
+.infoContact-coll-2 {
+    width: 44%;
+    .infoContact-title {
+        margin-bottom: 5px;
+    }
+}
+.infoContact-box {
+    border: 1px solid #dee9f5;
+    border-radius: 16px;
+    padding-top: 16px;
+    padding-left: 24px;
+    padding: 16px 24px 37px 24px;
+    margin-bottom: 11px;
+}
+
+.infoContact-title {
+    font-weight: 600;
+    font-size: 1.07rem;
+    line-height: 2.27;
+    color: #192025;
+    margin-bottom: 15px;
+}
+
+.infoContact-link {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: #414d55;
+    svg {
+        margin-right: 19px;
+    }
+}
+
+.infoContact-btn {
+    max-width: 378px;
+    height: 47px;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #192025;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../../assets/img/telegramm.svg") no-repeat center left 15px, #f7f9fb;
+    border-radius: 8px;
+    transition: 0.4s all ease-in-out;
+    margin-bottom: 8px;
+    &:hover {
+        background: url("../../assets/img/telegramm.svg") no-repeat center left 15px, #e7e6e6;
+    }
+}
+
+.infoContact-btn.--viber {
+    background: url("../../assets/img/viber.svg") no-repeat center left 15px, #f7f9fb;
+    &:hover {
+        background: url("../../assets/img/viber.svg") no-repeat center left 15px, #e7e6e6;
+    }
+}
+.infoContact-btn.--face {
+    background: url("../../assets/img/watsapp.svg") no-repeat center left 15px, #f7f9fb;
+    margin-bottom: 25px;
+    &:hover {
+        background: url("../../assets/img/watsapp.svg") no-repeat center left 15px, #e7e6e6;
+    }
+}
+
+.infoContact-manager {
+    display: flex;
+    margin-bottom: 20px;
+    svg {
+        margin-left: 3px;
+        margin-top: 5px;
+        margin-right: 20px;
+    }
+}
+
+.infoContact-manager-name {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.43;
+    color: #414d55;
+}
+.infoContact-manager-position {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.43;
+    color: #9aa9bb;
+}
+
+.infoContact-face {
+    margin-left: 4px;
+    margin-right: 8px;
+    path {
+        transition: 0.4s all ease-in-out;
+    }
+    &:hover {
+        path {
+            fill: #2f89ce;
+        }
+    }
+}
+
+.infoContact-inst {
+    margin-right: 8px;
+    path {
+        transition: 0.4s all ease-in-out;
+    }
+    &:hover {
+        path {
+            fill: rgb(193, 53, 132);
+        }
+    }
+}
