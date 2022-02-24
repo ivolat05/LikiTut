@@ -1,3 +1,7 @@
+.info {
+    padding-top: 9px;
+    padding-bottom: 55px;
+}
 .info-block-close {
     display: none;
     background: #ffffff;
@@ -40,11 +44,22 @@
 .info-sidebar {
     background: #ffffff;
     border-radius: 8px;
-    width: 337px;
+    width: 347px;
     flex-shrink: 0;
+    padding-bottom: 280px;
+}
+
+.info__sidebar-head {
+    display: none;
+}
+
+.info__sidebar-body {
+    padding: 9px 16px 27px 28px;
 }
 
 .info__sidebar-btn {
+    padding-top: 18px;
+    padding-bottom: 24px;
     display: block;
     width: 100%;
     font-weight: normal;
@@ -56,7 +71,17 @@
     outline: none;
     cursor: pointer;
     background: #fff;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #eaeaea;
+    transition: 0.4s all ease-in-out;
+    &:hover {
+        font-weight: 600;
+        color: #ff671f;
+    }
+}
+
+.info__sidebar-btn.active {
+    font-weight: 600;
+    color: #ff671f;
 }
 
 .info-block {
@@ -64,4 +89,13 @@
 
     background: #ffffff;
     border-radius: 8px;
+    padding: 22px 85px 22px 43px;
+}
+
+.info-tab {
+    display: none;
+}
+
+.info-tab.active {
+    display: block;
 }

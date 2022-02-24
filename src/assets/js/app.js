@@ -332,6 +332,7 @@ $(function () {
 
     }
     tabs("popup-box-btn", "popup-wrapper", "data-tab");
+    tabs("info__sidebar-btn", "info-tab", "data-info");
 
     // открытие окна регистрации
     function openReg() {

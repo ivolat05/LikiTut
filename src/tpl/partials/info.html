@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <div class="info__sidebar-body">
-                    <button class="info__sidebar-btn" data-info="#info-1">
+                    <button class="info__sidebar-btn active" data-info="#info-1">
                         O компании
                     </button>
                     <button class="info__sidebar-btn" data-info="#info-2">
@@ -49,21 +49,23 @@
                 </div>
             </div>
             <div class="info-block">
-                <div id="info-1" class="">
+                <div id="info-1" class="info-tab active">
                     <button class="info-block-close">
                         O компании
                     </button>
                     {{>company}}
                 </div>
-                <div id="info-2" class="">
+                <div id="info-2" class="info-tab">
                     <button class="info-block-close">
                         Про сервис
                     </button>
+                    {{>company-service}}
                 </div>
-                <div id="info-3" class="">
+                <div id="info-3" class="info-tab">
                     <button class="info-block-close">
                         Контакты
                     </button>
+                    {{infoContact}}
                 </div>
             </div>
         </div>
