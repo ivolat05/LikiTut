@@ -2978,7 +2978,7 @@ $(function () {
         let btnRemove = document.querySelectorAll(`.${nameBtn}`);
         let containerHidden = document.querySelector(`.${containerBlock}`);
         let btnHidden = document.querySelector(`.${btnHidd}`)
-        if (btnRemove) {
+        if (btnRemove && containerHidden) {
             btnRemove.forEach(item => {
                 item.addEventListener('click', () => {
                     let dellBlock = item.parentElement;
@@ -3000,7 +3000,6 @@ $(function () {
     }
 
     removeBlock("resultPopup-adress-dell", 'resultPopup-adress', 'resultPopup__block-adress', 'resultPopup-remove');
-
     // выбор места
     function choisePlace(nameBtn, hideBlock, blockVisible, btnPlace, placeName) {
         let btnName = document.querySelectorAll(`.${nameBtn}`);
@@ -3043,4 +3042,22 @@ $(function () {
         }
     }
     resultMapBoxRemve();
+
+    // добовление формы добовления телефона
+    function registAddTell() {
+        let registAddBtn = document.querySelectorAll('.regist-add-btn');
+        let registAddRow = document.querySelector('.regist-add-row');
+        if (registAddBtn && registAddRow) {
+            registAddBtn.forEach(item => {
+                item.addEventListener('click', () => {
+                    inputReg = document.createElement("input");
+                    inputReg.classList.add('regist-input');
+                    inputReg.classList.add('regist-input-phone');
+                    registAddRow.appendChild(inputReg);
+                    $(".regist-input-phone").mask("+38-999-999-99-99");
+                })
+            })
+        }
+    }
+    registAddTell();
 })
