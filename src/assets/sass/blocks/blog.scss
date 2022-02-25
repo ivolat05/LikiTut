@@ -1,0 +1,123 @@
+.blog {
+    padding-top: 8px;
+    .breadcrumb {
+        margin-bottom: 19px;
+    }
+}
+.blog__wrapp {
+    display: flex;
+    justify-content: space-between;
+    gap: 54px;
+    .navigation {
+        margin-top: 0;
+        margin-bottom: 6px;
+    }
+}
+
+.blog-title {
+    font-weight: 600;
+    font-size: 1.43rem;
+    line-height: 1.7;
+    color: #192025;
+    padding-left: 5px;
+    margin-bottom: 12px;
+}
+
+.blog__coll-2 {
+    .medic-col-link {
+        display: block;
+    }
+}
+
+.blog-label {
+    position: relative;
+}
+
+.blog-label-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -3;
+    opacity: 0;
+}
+
+.blog-label-span {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.43;
+    color: #4c6fff;
+    width: 160px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f5f8;
+    border-radius: 8px 0px 0px 8px;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+    &:hover {
+        background: #ffffff;
+        box-shadow: 0px 1px 8px rgba(20, 46, 110, 0.1);
+    }
+}
+
+.blog-label-input:checked + .blog-label-span {
+    background: #ffffff;
+    box-shadow: 0px 1px 8px rgba(20, 46, 110, 0.1);
+}
+.blog-label-span.--two {
+    border-radius: 0px 8px 8px 0px;
+}
+.blog-box-btn {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+.blog-row {
+    background: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+
+    padding: 17px 52px 18px 14px;
+    margin-bottom: 19px;
+}
+
+.blog__row-head {
+    width: 273px;
+    height: 212px;
+    margin-right: 38px;
+    img {
+        width: 273px;
+        height: 212px;
+        object-fit: cover;
+        border-radius: 9px;
+        overflow: hidden;
+    }
+}
+.blog__row-body {
+    padding-top: 5px;
+}
+.blog__row-time {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #9aa9bb;
+    margin-bottom: 11px;
+}
+
+.blog__row-title {
+    font-weight: 600;
+    font-size: 1.14rem;
+    line-height: 1.5625;
+    color: #192025;
+    margin-bottom: 15px;
+}
+
+.blog__row-text {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.64;
+    color: #505a66;
+}
