@@ -1,0 +1,111 @@
+.completion {
+    padding-top: 32px;
+    padding-bottom: 67px;
+}
+.completion-wrapp {
+    max-width: 720px;
+    margin: 0 auto 10px;
+    background: #ffffff;
+    border-radius: 17px;
+    padding: 36px 35px 90px 35px;
+}
+
+.completion__wrapp-img {
+    padding-bottom: 35px;
+    img {
+        width: 82px;
+        height: 82px;
+        object-fit: contain;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+.completion-title {
+    font-weight: 600;
+    font-size: 1.71rem;
+    line-height: 1.42;
+    color: #192025;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-right: 32px;
+    margin-bottom: 37px;
+}
+
+.completion-text {
+    font-weight: normal;
+    font-size: 1.14rem;
+    line-height: 1.6875;
+    text-align: center;
+    color: #414d55;
+    padding-left: 30px;
+}
+
+.completion-link {
+    max-width: 720px;
+    font-weight: 500;
+    font-size: 1.14rem;
+    line-height: 1.6875;
+    text-align: center;
+    color: #ff671f;
+    display: block;
+    margin: 0 auto 10px;
+    background: #ffffff;
+    border-radius: 17px;
+    padding: 20px;
+
+    svg {
+        margin-right: -32px;
+        margin-left: 15px;
+    }
+}
+
+.completion-box {
+    background: #ffffff;
+    border-radius: 17px;
+    max-width: 720px;
+    margin: 0 auto 30px;
+    padding: 30px 35px 25px 42px;
+}
+
+.completion-box-title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 34px;
+    color: #192025;
+    margin-bottom: 40px;
+}
+
+.completion-box-wrapp {
+    display: flex;
+    justify-content: space-between;
+}
+.completion-box-coll {
+    width: 48%;
+}
+
+.completion-btn {
+    width: 195px;
+    height: 43px;
+    margin: 0 auto;
+    font-weight: normal;
+    font-size: 1.14rem;
+    line-height: 1.1875;
+    color: #4c6fff;
+    background: #ecf3ff;
+    border: 1px solid #4c6fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s all ease-in-out;
+    &:hover {
+        background: #4c6fff;
+        border: 1px solid #4c6fff;
+        color: #fff;
+    }
+}
