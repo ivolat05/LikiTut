@@ -70,7 +70,7 @@
             </div>
 
             <div class="cabinet__sidebar-right">
-                <div id="cabinet-1" class="cabinet__tab active ">
+                <div id="cabinet-1" class="cabinet__tab">
                     <button class="cabinet__tab-btn">
                         Данные аптеки
                     </button>
@@ -80,10 +80,11 @@
                     {{>cabinetInfo}}
                     {{>editInfo}}
                 </div>
-                <div id="cabinet-2" class="cabinet__tab">
+                <div id="cabinet-2" class="cabinet__tab active ">
                     <button class="cabinet__tab-btn">
-                        2
+                        Управление товарами
                     </button>
+                    {{>control}}
                 </div>
                 <div id="cabinet-3" class="cabinet__tab">
                     <button class="cabinet__tab-btn">
