@@ -359,6 +359,7 @@ $(function () {
     openReg();
     // mask
     $(".phone").mask("+38-999-999-99-99");
+    $(".editInfo--input-phone").mask("+38-999-999-99-99");
     // стилизация скролла
     $(".basket-body").mCustomScrollbar({});
     $(".resultMap-body").mCustomScrollbar({});
@@ -579,22 +580,87 @@ $(function () {
     resultMapBoxRemve();
 
     // добовление формы добовления телефона
-    function registAddTell() {
-        let registAddBtn = document.querySelectorAll('.regist-add-btn');
-        let registAddRow = document.querySelector('.regist-add-row');
+    //regBtn-кнопка добовелния формы
+    // regRow - блок куда добовляется форма
+    // regInp-класс добавленого элемента
+    //regInpPhone класс маски телефона
+    function registAddTell(regBtn, regRow, regInp, regInpPhone) {
+        let registAddBtn = document.querySelectorAll(`.${regBtn}`);
+        let registAddRow = document.querySelector(`.${regRow}`);
         if (registAddBtn && registAddRow) {
             registAddBtn.forEach(item => {
                 item.addEventListener('click', () => {
                     inputReg = document.createElement("input");
-                    inputReg.classList.add('regist-input');
-                    inputReg.classList.add('regist-input-phone');
+                    inputReg.classList.add(`${regInp}`);
+                    inputReg.classList.add(`${regInpPhone}`);
                     registAddRow.appendChild(inputReg);
-                    $(".regist-input-phone").mask("+38-999-999-99-99");
+                    $(`.${regInpPhone}`).mask("+38-999-999-99-99");
                 })
             })
         }
     }
-    registAddTell();
+    registAddTell('regist-add-btn', 'regist-add-row', 'regist-input', 'regist-input-phone');
+    registAddTell('editInfo-row-btn', 'editInfo-row-add-tell', 'editInfo-input', 'editInfo--input-phone');
+
+
+    // добовление формы 
+    //inputBtn-кнопка добовелния формы
+    //inputRow - блок куда добовляется форма
+    //inputInp-класс добавленого элемента
+
+    function inputAdd(inputBtn, inputRow, inputInp) {
+        let registAddBtn = document.querySelectorAll(`.${inputBtn}`);
+        let registAddRow = document.querySelector(`.${inputRow}`);
+        if (registAddBtn && registAddRow) {
+            registAddBtn.forEach(item => {
+                item.addEventListener('click', () => {
+                    inputReg = document.createElement("input");
+                    inputReg.classList.add(`${inputInp}`);
+                    registAddRow.appendChild(inputReg);
+
+                })
+            })
+        }
+    }
+    inputAdd('editInfo-row-btn-one', 'editInfo-row-add', 'editInfo-input');
+    // кабинет открытие дополнительных вкладок
+
+    function openTabCabinet(nameBtn) {
+        let btnOpen = document.querySelectorAll(`.${nameBtn}`);
+        if (btnOpen) {
+            btnOpen.forEach(item => {
+                item.addEventListener('click', () => {
+                    item.parentElement.parentElement.parentElement.classList.add('tabHidden');
+                })
+            })
+        }
+    }
+    openTabCabinet('cabinetInfo-btn')
+    // закрытие дополнительной вкладки мобильная версия
+    function mobCloseTabCabiner(nameBtn) {
+        let btnOpen = document.querySelectorAll(`.${nameBtn}`);
+        if (btnOpen) {
+            btnOpen.forEach(item => {
+                item.addEventListener('click', () => {
+                    item.parentElement.classList.remove('tabHidden');
+                })
+            })
+        }
+    }
+    mobCloseTabCabiner('cabinet-btn--hidden');
+    // закрыттие дополнительной вкладки
+    function closeTabCabinet(nameBtn) {
+        let btnOpen = document.querySelectorAll(`.${nameBtn}`);
+        if (btnOpen) {
+            btnOpen.forEach(item => {
+                item.addEventListener('click', () => {
+                    item.parentElement.parentElement.parentElement.classList.remove('tabHidden');
+                })
+            })
+        }
+    }
+    closeTabCabinet('editInfo-btn-one');
+    closeTabCabinet('editInfo-btn');
 })
 
 

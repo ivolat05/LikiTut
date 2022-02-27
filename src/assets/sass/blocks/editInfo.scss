@@ -1,0 +1,198 @@
+.editInfo {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 8px;
+    display: none;
+    padding: 28px 40px;
+}
+.tabHidden .editInfo {
+    display: block;
+}
+
+.editInfo-title {
+    font-weight: 600;
+    font-size: 1.43rem;
+    line-height: 1.7;
+    color: #192025;
+    margin-bottom: 30px;
+}
+
+.editInfo__head {
+    max-width: 450px;
+    border: 1px dashed #efefef;
+    border-radius: 10px;
+    padding: 12px 17px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+.editInfo__head-img {
+    width: 72px;
+    height: 72px;
+    border-radius: 72px;
+    border: 1px solid #eef0f3;
+    margin-right: 30px;
+    img {
+        width: 72px;
+        height: 72px;
+        border-radius: 72px;
+        object-fit: cover;
+    }
+}
+
+.editInfo-label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.editInfo-label-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -3;
+    opacity: 0;
+}
+
+.editInfo-label-span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    svg {
+        margin-right: 11px;
+    }
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.57;
+    color: #a5a5a5;
+}
+
+.editInfo-row {
+    width: 53%;
+    margin-bottom: 15px;
+    margin-right: 17px;
+    .popup-pwd {
+        margin-bottom: 0;
+        input {
+            margin-bottom: 0;
+        }
+        .popup-pwd-btn {
+            top: 50%;
+            transform: translateY(-40%);
+        }
+    }
+}
+
+.editInfo-input {
+    width: 100%;
+    height: 44px;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.43;
+    color: #192025;
+    padding: 12px 17px;
+}
+
+.editInfo-subtitle {
+    font-weight: normal;
+    font-size: 1.07rem;
+    line-height: 1.47;
+    color: #999999;
+    margin-bottom: 5px;
+}
+
+.editInfo-row-box {
+    display: flex;
+    align-items: flex-start;
+}
+
+.editInfo-pwd-link {
+    font-weight: normal;
+    font-size: 0.86rem;
+    line-height: 0.8;
+    color: #ff671f;
+}
+.editInfo-row-add,
+.editInfo-row-add-tell {
+    margin-bottom: 22px;
+    .editInfo-input {
+        margin-top: 20px;
+    }
+}
+
+.editInfo-row.--email {
+    margin-top: 27px;
+}
+
+.editInfo-row.--pwd {
+    margin-top: 20px;
+}
+
+.editInfo-row-add-tell {
+    margin-bottom: 15px;
+}
+
+.editInfo-row-btn,
+.editInfo-row-btn-one {
+    margin-top: 40px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.86rem;
+    line-height: 0.8;
+    color: #ff671f;
+}
+
+.editInfo-btn-one {
+    border: 1px solid #ff671f;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.07rem;
+    line-height: 1.33;
+    color: #ff671f;
+    width: 215px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    cursor: pointer;
+    transition: 0.4s all ease-in-out;
+
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        background: #fe6116;
+        border: 1px solid #fe6116;
+        color: #fff;
+    }
+}
+
+.editInfo-btn {
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.07rem;
+    line-height: 1.33;
+    color: #fff;
+    width: 215px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.editInfo-btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 25px;
+}

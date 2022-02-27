@@ -245,63 +245,68 @@
                     </ul>
                 </div>
                 <div class="cabinet__wrapp">
-                    <div class="cabinet__sidebar-left">
-                        <div class="cabiner__head">
-                            <div class="cabiner__head-img">
-                                <img src="./assets/img/cabinet.png" alt="">
+                    <div>
+                        <div class="cabinet__sidebar-left">
+                            <div class="cabiner__head">
+                                <div class="cabiner__head-img">
+                                    <img src="./assets/img/cabinet.png" alt="">
+                                </div>
+                                <div class="cabinet__head-title">
+                                    Аптека Хелп (Киев)
+                                </div>
                             </div>
-                            <div class="cabinet__head-title">
-                                Аптека Хелп (Киев)
+                            <button class="cabiner-btn active" data-cabinet="#cabinet-1">
+                                Данные аптеки
+                            </button>
+                            <div class="cabiner-left-wrapp">
+                                <button class="cabiner-btn" data-cabinet="#cabinet-2">
+                                    Управление товарами
+                                </button>
+                                <button class="cabiner-left-active">
+                                    активные
+                                </button>
+                                <button class="cabiner-left-noactive">
+                                    неактивные
+                                </button>
+                                <button class="cabiner-btn cabiner-btn-add" data-cabinet="#cabinet-3">
+                                    Создать объявление
+                                </button>
                             </div>
-                        </div>
-                        <button class="cabiner-btn active" data-cabinet="#cabinet-1">
-                            Данные аптеки
-                        </button>
-                        <div class="cabiner-left-wrapp">
-                            <button class="cabiner-btn" data-cabinet="#cabinet-2">
-                                Управление товарами
+                            <button class="cabiner-btn" data-cabinet="#cabinet-4">
+                                Заказы
                             </button>
-                            <button class="cabiner-left-active">
-                                активные
+                            <button class="cabiner-btn" data-cabinet="#cabinet-5">
+                                Товары
                             </button>
-                            <button class="cabiner-left-noactive">
-                                неактивные
+                            <button class="cabiner-btn" data-cabinet="#cabinet-6">
+                                Cправочный центр
                             </button>
-                            <button class="cabiner-btn cabiner-btn-add" data-cabinet="#cabinet-3">
-                                Создать объявление
+                            <button class="cabiner-btn" data-cabinet="#cabinet-7">
+                                Реклама
                             </button>
-                        </div>
-                        <button class="cabiner-btn" data-cabinet="#cabinet-4">
-                            Заказы
-                        </button>
-                        <button class="cabiner-btn" data-cabinet="#cabinet-5">
-                            Товары
-                        </button>
-                        <button class="cabiner-btn" data-cabinet="#cabinet-6">
-                            Cправочный центр
-                        </button>
-                        <button class="cabiner-btn" data-cabinet="#cabinet-7">
-                            Реклама
-                        </button>
-                        <button class="cabinet-exet">
-                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9 13L4 9L9 5V8H18V10H9V13Z" fill="#9AA9BB" />
-                                <path
-                                    d="M2 0H11C12.103 0 13 0.897 13 2V6H11V2H2V16H11V12H13V16C13 17.103 12.103 18 11 18H2C0.896999 18 0 17.103 0 16V2C0 0.897 0.896999 0 2 0Z"
-                                    fill="#9AA9BB" />
-                            </svg>
+                            <button class="cabinet-exet">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 13L4 9L9 5V8H18V10H9V13Z" fill="#9AA9BB" />
+                                    <path
+                                        d="M2 0H11C12.103 0 13 0.897 13 2V6H11V2H2V16H11V12H13V16C13 17.103 12.103 18 11 18H2C0.896999 18 0 17.103 0 16V2C0 0.897 0.896999 0 2 0Z"
+                                        fill="#9AA9BB" />
+                                </svg>
         
-                            Вихід
-                        </button>
-        
+                                Вихід
+                            </button>
+                        </div>
                     </div>
         
                     <div class="cabinet__sidebar-right">
-                        <div id="cabinet-1" class="cabinet__tab active">
+                        <div id="cabinet-1" class="cabinet__tab active ">
                             <button class="cabinet__tab-btn">
                                 Данные аптеки
                             </button>
+                            <button class="cabinet__tab-btn cabinet-btn--hidden">
+                                Редактирование данных
+                            </button>
                             <div class="cabinetInfo">
+                            
                                 <div class="cabinetInfo-title">
                                     Данные аптеки
                                     <button class="cabinetInfo-btn">
@@ -386,6 +391,138 @@
                             
                             
                                     </div>
+                                </div>
+                            
+                            
+                            
+                            </div>                    <div class="editInfo">
+                                <div class="editInfo-title">
+                                    Данные аптеки
+                                </div>
+                                <div class="editInfo__head">
+                                    <div class="editInfo__head-img">
+                                        <img src="./assets/img/cabinet.png" alt="">
+                                    </div>
+                                    <label class="editInfo-label">
+                                        <input type="file" class="editInfo-label-input">
+                                        <span class="editInfo-label-span">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.5 14.4444C12.2397 14.4444 13.65 12.9521 13.65 11.1111C13.65 9.27016 12.2397 7.77778 10.5 7.77778C8.7603 7.77778 7.35 9.27016 7.35 11.1111C7.35 12.9521 8.7603 14.4444 10.5 14.4444Z"
+                                                    fill="#DDDEDE" />
+                                                <path
+                                                    d="M18.9 2.22222H15.5715L14.2695 0.722222C14.0738 0.494882 13.8355 0.31323 13.5697 0.188874C13.304 0.064517 13.0166 0.000189188 12.726 0H8.274C7.686 0 7.119 0.266667 6.72 0.722222L5.4285 2.22222H2.1C0.945 2.22222 0 3.22222 0 4.44444V17.7778C0 19 0.945 20 2.1 20H18.9C20.055 20 21 19 21 17.7778V4.44444C21 3.22222 20.055 2.22222 18.9 2.22222ZM10.5 16.6667C7.602 16.6667 5.25 14.1778 5.25 11.1111C5.25 8.04445 7.602 5.55556 10.5 5.55556C13.398 5.55556 15.75 8.04445 15.75 11.1111C15.75 14.1778 13.398 16.6667 10.5 16.6667Z"
+                                                    fill="#DDDEDE" />
+                                            </svg>
+                                            Изменить логотип аптеки
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="editInfo-row">
+                                    <div class="editInfo-subtitle">
+                                        Название аптеки
+                                    </div>
+                                    <input type="text" class="editInfo-input">
+                                </div>
+                                <div class="editInfo-row-box">
+                                    <div class="editInfo-row">
+                                        <div class="editInfo-subtitle">
+                                            Адрес
+                                        </div>
+                                        <input type="text" class="editInfo-input">
+                                        <div class="editInfo-row-add">
+                                        </div>
+                                    </div>
+                                    <button class="editInfo-row-btn-one">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 3.75V14.25" stroke="#FF671F" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M3.75 9H14.25" stroke="#FF671F" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                            
+                                        Добавить адрес
+                                    </button>
+                                </div>
+                                <div class="editInfo-row-box">
+                                    <div class="editInfo-row">
+                                        <div class="editInfo-subtitle">
+                                            Телефон
+                                        </div>
+                                        <input type="text" class="editInfo-input editInfo--input-phone">
+                                        <div class="editInfo-row-add-tell">
+                                        </div>
+                                    </div>
+                                    <button class="editInfo-row-btn">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 3.75V14.25" stroke="#FF671F" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M3.75 9H14.25" stroke="#FF671F" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                            
+                                        Добавить телефон
+                                    </button>
+                                </div>
+                                <div class="editInfo-row">
+                                    <div class="editInfo-subtitle">
+                                        Время работы аптеки
+                                    </div>
+                                    <input type="text" class="editInfo-input">
+                                </div>
+                                <div class="editInfo-row --email">
+                                    <div class="editInfo-subtitle">
+                                        Email
+                                    </div>
+                                    <input type="text" class="editInfo-input">
+                                </div>
+                                <div class="editInfo-row --pwd">
+                                    <div class="editInfo-subtitle">
+                                        Пароль
+                                    </div>
+                                    <div class="popup-pwd">
+                                        <input id="editInfo-pwd" class="popup-input popup-input-pwd" type="password" placeholder="Пароль">
+                                        <button class="popup-pwd-btn password-btn" data-password="#editInfo-pwd">
+                                            <svg class="pwd-visible" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M14.5299 9.46992L9.46992 14.5299C8.81992 13.8799 8.41992 12.9899 8.41992 11.9999C8.41992 10.0199 10.0199 8.41992 11.9999 8.41992C12.9899 8.41992 13.8799 8.81992 14.5299 9.46992Z"
+                                                    stroke="#A4ABB0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M17.8198 5.76998C16.0698 4.44998 14.0698 3.72998 11.9998 3.72998C8.46984 3.72998 5.17984 5.80998 2.88984 9.40998C1.98984 10.82 1.98984 13.19 2.88984 14.6C3.67984 15.84 4.59984 16.91 5.59984 17.77"
+                                                    stroke="#A4ABB0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M8.41992 19.5299C9.55992 20.0099 10.7699 20.2699 11.9999 20.2699C15.5299 20.2699 18.8199 18.1899 21.1099 14.5899C22.0099 13.1799 22.0099 10.8099 21.1099 9.39993C20.7799 8.87993 20.4199 8.38993 20.0499 7.92993"
+                                                    stroke="#A4ABB0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M15.5095 12.7C15.2495 14.11 14.0995 15.26 12.6895 15.52" stroke="#A4ABB0"
+                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M9.47 14.53L2 22" stroke="#A4ABB0" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M21.9993 2L14.5293 9.47" stroke="#A4ABB0" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg>
+                                            <svg class="pwd-hidden" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.5799 11.9999C15.5799 13.9799 13.9799 15.5799 11.9999 15.5799C10.0199 15.5799 8.41992 13.9799 8.41992 11.9999C8.41992 10.0199 10.0199 8.41992 11.9999 8.41992C13.9799 8.41992 15.5799 10.0199 15.5799 11.9999Z"
+                                                    stroke="#A4ABB0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M11.9998 20.27C15.5298 20.27 18.8198 18.19 21.1098 14.59C22.0098 13.18 22.0098 10.81 21.1098 9.39997C18.8198 5.79997 15.5298 3.71997 11.9998 3.71997C8.46984 3.71997 5.17984 5.79997 2.88984 9.39997C1.98984 10.81 1.98984 13.18 2.88984 14.59C5.17984 18.19 8.46984 20.27 11.9998 20.27Z"
+                                                    stroke="#A4ABB0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a href="#" class="editInfo-pwd-link">
+                                        Изменить пароль
+                                    </a>
+                                </div>
+                                <div class="editInfo-btn-box">
+                                    <button class="editInfo-btn-one">
+                                        Отмена
+                                    </button>
+                                    <button class="btn editInfo-btn">
+                                        Сохранить
+                                    </button>
                                 </div>
                             </div>                </div>
                         <div id="cabinet-2" class="cabinet__tab">

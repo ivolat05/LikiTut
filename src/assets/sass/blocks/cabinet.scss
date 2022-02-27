@@ -199,3 +199,17 @@
         transform: translateY(-50%);
     }
 }
+
+.cabinet-btn--hidden {
+    display: none;
+}
+.tabHidden .cabinetInfo,
+.tabHidden .cabinet__tab-btn {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .tabHidden .cabinet-btn--hidden {
+        display: block;
+    }
+}
