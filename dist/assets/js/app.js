@@ -2749,6 +2749,7 @@ $(function () {
     closePopup('resultPopup-btn-result');
     closePopup('resultMap-close');
     closePopup('orderPopup-link-2');
+    closePopup('popupPwd-btn');
     // показывать скрывать пароль
 
     function showPassword() {

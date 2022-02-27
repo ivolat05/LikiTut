@@ -1,0 +1,35 @@
+.popupPwd {
+    width: 477px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 8px;
+    position: relative;
+    padding-top: 27px;
+    padding-right: 67px;
+    padding-left: 42px;
+    padding: 27px 42px 60px 42px;
+    .popup-pwd {
+        margin-bottom: 0;
+    }
+}
+
+.popupPwd-title {
+    font-weight: 600;
+    font-size: 1.57rem;
+    line-height: 1.55;
+    color: #192025;
+    margin-bottom: 50px;
+}
+
+.popupPwd-btn {
+    width: 205px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 1.07rem;
+    line-height: 1.33;
+    color: #ffffff;
+    margin: 55px auto 0;
+}
