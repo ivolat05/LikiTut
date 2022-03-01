@@ -2750,6 +2750,9 @@ $(function () {
     closePopup('resultMap-close');
     closePopup('orderPopup-link-2');
     closePopup('popupPwd-btn');
+    closePopup('popupDel-btn');
+    closePopup('popupDel-btn-dell');
+
     // показывать скрывать пароль
 
     function showPassword() {
@@ -3129,4 +3132,54 @@ $(function () {
     }
     closeTabCabinet('editInfo-btn-one');
     closeTabCabinet('editInfo-btn');
+
+    // control table выбор товаров
+    function controlTableProduct() {
+        let controlLabel = document.querySelectorAll('.control__label-checkbox');
+        let popupDelSpan = document.querySelector('.popupDel-span');
+        if (controlLabel) {
+            controlLabel.forEach(item => {
+                item.addEventListener('click', () => {
+                    let x = 0;
+                    if (item.checked) {
+                        item.parentElement.parentElement.parentElement.parentElement.classList.add('--active')
+                    }
+                    else {
+                        item.parentElement.parentElement.parentElement.parentElement.classList.remove('--active')
+                    }
+                    controlLabel.forEach(item => {
+                        if (item.checked) {
+                            x += 1;
+                        }
+                    })
+                    if (x === 1) {
+                        popupDelSpan.textContent = `${x} товар`;
+                    } else if (x > 1 && x <= 4) {
+                        popupDelSpan.textContent = `${x} товара`;
+                    } else if (x >= 5) {
+                        popupDelSpan.textContent = `${x} товарoв`;
+                    }
+                })
+
+            })
+        }
+    }
+    controlTableProduct();
+    // удаление продукта  control table
+    function controlTableDell() {
+        let controlTableRow = document.querySelectorAll('.control__table-row');
+        let popupDelBtnDell = document.querySelectorAll('.popupDel-btn-dell');
+        if (controlTableRow) {
+            popupDelBtnDell.forEach(item => {
+                item.addEventListener('click', () => {
+                    controlTableRow.forEach(item => {
+                        if (item.classList.contains('--active')) {
+                            item.remove()
+                        }
+                    })
+                })
+            })
+        }
+    }
+    controlTableDell();
 })

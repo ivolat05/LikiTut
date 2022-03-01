@@ -1,0 +1,61 @@
+.popupDel {
+    position: relative;
+    width: 505px;
+    margin: 0 auto;
+
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 87px 15px 70px 15px;
+}
+.popupDel-title {
+    margin-bottom: 55px;
+}
+.popupDel-title,
+.popupDel-span {
+    font-weight: 600;
+    font-size: 1.57rem;
+    line-height: 1.55;
+    color: #192025;
+    text-align: center;
+}
+
+.popupDel-btn {
+    width: 205px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f1f1;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.4s all ease-in-out;
+    font-weight: 500;
+    font-size: 1.07rem;
+    line-height: 1.33;
+    color: #414d55;
+    &:hover {
+        background: #ff671f;
+        color: #fff;
+    }
+}
+
+.popupDel-btn-dell {
+    width: 205px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 1.07rem;
+    line-height: 1.33;
+    color: #fff;
+}
+
+.popupDel-box-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
