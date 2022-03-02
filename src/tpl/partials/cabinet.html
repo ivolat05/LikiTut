@@ -80,11 +80,15 @@
                     {{>cabinetInfo}}
                     {{>editInfo}}
                 </div>
-                <div id="cabinet-2" class="cabinet__tab active ">
+                <div id="cabinet-2" class="cabinet__tab active tabHidden">
                     <button class="cabinet__tab-btn">
                         Управление товарами
                     </button>
+                    <button class="cabinet__tab-btn cabinet-btn--hidden">
+                        Изменить товар
+                    </button>
                     {{>control}}
+                    {{>changeCabinet}}
                 </div>
                 <div id="cabinet-3" class="cabinet__tab">
                     <button class="cabinet__tab-btn">

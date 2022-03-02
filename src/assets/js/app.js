@@ -639,7 +639,8 @@ $(function () {
             })
         }
     }
-    openTabCabinet('cabinetInfo-btn')
+    openTabCabinet('cabinetInfo-btn');
+
     // закрытие дополнительной вкладки мобильная версия
     function mobCloseTabCabiner(nameBtn) {
         let btnOpen = document.querySelectorAll(`.${nameBtn}`);
@@ -665,7 +666,8 @@ $(function () {
     }
     closeTabCabinet('editInfo-btn-one');
     closeTabCabinet('editInfo-btn');
-
+    closeTabCabinet('changeCabinet-btn');
+    closeTabCabinet('changeCabinet-btn-save');
     // control table выбор товаров
     function controlTableProduct() {
         let controlLabel = document.querySelectorAll('.control__label-checkbox');
@@ -715,6 +717,28 @@ $(function () {
         }
     }
     controlTableDell();
+
+    // активация дополнительной вкладки
+    function controlTabs(btnOpenTab, bookBark, tabAttr) {
+        const tabBtn = document.querySelectorAll(`.${btnOpenTab}`);
+        const tabItem = document.querySelectorAll(`.${bookBark}`);
+
+        if (tabItem) {
+            tabBtn.forEach((item) => {
+                item.addEventListener('click', function () {
+                    let tabId = item.getAttribute(tabAttr);
+                    let currentTab = document.querySelector(tabId);
+                    currentTab.classList.add('tabHidden');
+
+                });
+            });
+
+        }
+
+
+    }
+
+    controlTabs('conrtol__change', 'cabinet__tab', 'data-controlTab');
 })
 
 
