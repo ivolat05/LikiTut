@@ -1260,7 +1260,7 @@
                                     </button>
                                 </div>
                             </div>                </div>
-                        <div id="cabinet-3" class="cabinet__tab active">
+                        <div id="cabinet-3" class="cabinet__tab">
                             <button class="cabinet__tab-btn">
                                 Создать объявление
                             </button>
@@ -1397,14 +1397,143 @@
                             </div>                </div>
                         <div id="cabinet-4" class="cabinet__tab">
                             <button class="cabinet__tab-btn">
-        
-                                4 </button>
-                        </div>
-                        <div id="cabinet-5" class="cabinet__tab">
-                            <button class="cabinet__tab-btn">
-                                5
+                                Заказы
                             </button>
                         </div>
+                        <div id="cabinet-5" class="cabinet__tab  active">
+                            <button class="cabinet__tab-btn">
+                                Товары
+                            </button>
+                            <div class="price">
+                                <div class="price-title">
+                                    Товары
+                                </div>
+                                <div class="price-page">
+                                    <div class="price__wrapp">
+                                        <div class="price__wrapp-coll">
+                                            <div class="price__wrapp-box">
+                                                <div class="price__wrapp-title">
+                                                    Всего товаров
+                                                </div>
+                                                <div class="price__wrapp-text">
+                                                    520
+                                                </div>
+                                            </div>
+                                            <div class="price__wrapp-img">
+                                                <img src="./assets/img/price-1.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="price__wrapp-coll --two">
+                                            <div class="price__wrapp-box">
+                                                <div class="price__wrapp-title">
+                                                    Дата последнего обновления
+                                                </div>
+                                                <div class="price__wrapp-text">
+                                                    22.11.2022
+                                                </div>
+                                            </div>
+                                            <div class="price__wrapp-img">
+                                                <img src="./assets/img/price-2.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="price-line">
+                                        <div class="price-subtitle">
+                                            Импорт товаров
+                                        </div>
+                                        <div class="price-inner">
+                                            <input type="text" class="price-inner-inner" placeholder="Введите прямой url к xml или xlsx файлу">
+                                            <div class="price-inner-text">
+                                                или
+                                            </div>
+                                            <label class="price-inner-label">
+                                                <input type="file" class="price-inner-file">
+                                                <span class="price-inner-span">
+                                                    <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M15.9276 6.65196C15.9307 6.66123 15.9338 6.67057 15.937 6.68C15.965 6.764 15.982 6.85 15.987 6.938C15.9879 6.94813 15.9907 6.95762 15.9935 6.96697C15.9968 6.97792 16 6.98867 16 7V18C16 19.103 15.103 20 14 20H2C0.897 20 0 19.103 0 18V2C0 0.897 0.897 0 2 0H9C9.01133 0 9.02208 0.00320283 9.03303 0.00646624C9.04238 0.00925067 9.05187 0.0120792 9.062 0.013C9.151 0.018 9.237 0.0359999 9.321 0.0639999C9.33097 0.0674272 9.34094 0.0705632 9.35085 0.0736802C9.37275 0.0805675 9.39435 0.0873619 9.415 0.0969999C9.521 0.146 9.622 0.207 9.708 0.293L15.708 6.293C15.794 6.379 15.855 6.48 15.904 6.586C15.9132 6.60787 15.9204 6.62974 15.9276 6.65196ZM10 6H12.586L10 3.414V6ZM2 2V18H14.002L14 8H9C8.447 8 8 7.553 8 7V2H2Z"
+                                                            fill="white" />
+                                                        <path d="M9 10H7V12H5V14H7V16H9V14H11V12H9V10Z" fill="white" />
+                                                    </svg>
+                                                    Выбрать файл
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="price-line --two">
+                                        <label class="price-label">
+                                            <input type="radio" name="price" class="price-label-radio">
+                                            <span class="price-label-span">
+                                                Импорт с удалением старого товара и заменой его на новый
+                                            </span>
+                                        </label>
+                                        <label class="price-label">
+                                            <input type="radio" name="price" class="price-label-radio" checked>
+                                            <span class="price-label-span">
+                                                Обновить имеющийся товар + добавление нового
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="price-line --three">
+                                        <label class="price-label">
+                                            <input type="checkbox" class="price-label-input" checked>
+                                            <span class="price-label-span-two">
+                                                <span class="price-label-span-title">
+                                                    Опция автообновление
+                            
+                                                </span><br>
+                                                <span class="price-label-span-text">
+                                                    Регулярно сканировать указанный файл, чтобы контролировать его остатки, описания и прочие
+                                                    параметры,
+                                                    то
+                                                    есть информация будет актуальна на платформе
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="price-box">
+                                        <div class="price-box-coll --one">
+                                            Файлы XML и XLSX должны иметь определенную структуру. Посмотреть структуру вы можете, скачав один из
+                                            наших файлов шаблонов
+                                        </div>
+                                        <div class="price-box-coll">
+                                            <label class="price-box-label">
+                                                <input type="file" class="price-box-file">
+                                                <span class="price-box-span">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M22 16C22 15.7348 21.8946 15.4804 21.7071 15.2929C21.5196 15.1054 21.2652 15 21 15C20.7348 15 20.4804 15.1054 20.2929 15.2929C20.1054 15.4804 20 15.7348 20 16V19C20 19.2652 19.8946 19.5196 19.7071 19.7071C19.5196 19.8946 19.2652 20 19 20H5C4.73478 20 4.48043 19.8946 4.29289 19.7071C4.10536 19.5196 4 19.2652 4 19V16C4 15.7348 3.89464 15.4804 3.70711 15.2929C3.51957 15.1054 3.26522 15 3 15C2.73478 15 2.48043 15.1054 2.29289 15.2929C2.10536 15.4804 2 15.7348 2 16V19C2 19.7956 2.31607 20.5587 2.87868 21.1213C3.44129 21.6839 4.20435 22 5 22H19C19.7956 22 20.5587 21.6839 21.1213 21.1213C21.6839 20.5587 22 19.7956 22 19V16Z"
+                                                            fill="#4C6FFF" />
+                                                        <path
+                                                            d="M10.9999 3V14.6L9.71092 13.3C9.52129 13.1316 9.27473 13.0415 9.02119 13.048C8.76764 13.0545 8.52604 13.1572 8.3453 13.3351C8.16457 13.513 8.0582 13.753 8.04773 14.0064C8.03726 14.2598 8.12348 14.5078 8.28892 14.7L11.2889 17.73C11.3819 17.824 11.4926 17.8987 11.6147 17.9496C11.7367 18.0006 11.8677 18.0268 11.9999 18.0268C12.1322 18.0268 12.2631 18.0006 12.3852 17.9496C12.5072 17.8987 12.6179 17.824 12.7109 17.73L15.7109 14.7C15.8764 14.5078 15.9626 14.2598 15.9521 14.0064C15.9417 13.753 15.8353 13.513 15.6545 13.3351C15.4738 13.1572 15.2322 13.0545 14.9787 13.048C14.7251 13.0415 14.4786 13.1316 14.2889 13.3L12.9999 14.6V3C12.9999 2.73478 12.8946 2.48043 12.707 2.29289C12.5195 2.10536 12.2651 2 11.9999 2C11.7347 2 11.4804 2.10536 11.2928 2.29289C11.1053 2.48043 10.9999 2.73478 10.9999 3Z"
+                                                            fill="#4C6FFF" />
+                                                    </svg>
+                            
+                                                    Скачать шаблон XML файла
+                                                </span>
+                                            </label>
+                                            <label class="price-box-label">
+                                                <input type="file" class="price-box-file">
+                                                <span class="price-box-span">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M22 16C22 15.7348 21.8946 15.4804 21.7071 15.2929C21.5196 15.1054 21.2652 15 21 15C20.7348 15 20.4804 15.1054 20.2929 15.2929C20.1054 15.4804 20 15.7348 20 16V19C20 19.2652 19.8946 19.5196 19.7071 19.7071C19.5196 19.8946 19.2652 20 19 20H5C4.73478 20 4.48043 19.8946 4.29289 19.7071C4.10536 19.5196 4 19.2652 4 19V16C4 15.7348 3.89464 15.4804 3.70711 15.2929C3.51957 15.1054 3.26522 15 3 15C2.73478 15 2.48043 15.1054 2.29289 15.2929C2.10536 15.4804 2 15.7348 2 16V19C2 19.7956 2.31607 20.5587 2.87868 21.1213C3.44129 21.6839 4.20435 22 5 22H19C19.7956 22 20.5587 21.6839 21.1213 21.1213C21.6839 20.5587 22 19.7956 22 19V16Z"
+                                                            fill="#4C6FFF" />
+                                                        <path
+                                                            d="M10.9999 3V14.6L9.71092 13.3C9.52129 13.1316 9.27473 13.0415 9.02119 13.048C8.76764 13.0545 8.52604 13.1572 8.3453 13.3351C8.16457 13.513 8.0582 13.753 8.04773 14.0064C8.03726 14.2598 8.12348 14.5078 8.28892 14.7L11.2889 17.73C11.3819 17.824 11.4926 17.8987 11.6147 17.9496C11.7367 18.0006 11.8677 18.0268 11.9999 18.0268C12.1322 18.0268 12.2631 18.0006 12.3852 17.9496C12.5072 17.8987 12.6179 17.824 12.7109 17.73L15.7109 14.7C15.8764 14.5078 15.9626 14.2598 15.9521 14.0064C15.9417 13.753 15.8353 13.513 15.6545 13.3351C15.4738 13.1572 15.2322 13.0545 14.9787 13.048C14.7251 13.0415 14.4786 13.1316 14.2889 13.3L12.9999 14.6V3C12.9999 2.73478 12.8946 2.48043 12.707 2.29289C12.5195 2.10536 12.2651 2 11.9999 2C11.7347 2 11.4804 2.10536 11.2928 2.29289C11.1053 2.48043 10.9999 2.73478 10.9999 3Z"
+                                                            fill="#4C6FFF" />
+                                                    </svg>
+                            
+                                                    Скачать шаблон XLSX файла
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button class="btn price-btn">
+                                        Импорт
+                                    </button>
+                                </div>
+                            </div>                </div>
                         <div id="cabinet-6" class="cabinet__tab">
                             <button class="cabinet__tab-btn">
                                 6
