@@ -1,0 +1,118 @@
+.popupOrder {
+    width: 740px;
+    margin: 0 auto;
+    position: relative;
+
+    background: #ffffff;
+    border-radius: 8px;
+    .popup-close {
+        right: 34px;
+        top: 28px;
+    }
+    padding: 30px 80px 60px 50px;
+}
+
+.popupOrder-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.popupOrder-row-name {
+    width: 180px;
+    font-weight: normal;
+    font-size: 1.14rem;
+    line-height: 1.1875;
+    color: #414d55;
+}
+
+.popupOrder-row-coll {
+    width: 54%;
+    .cabinetOrder__body-coll {
+        display: flex;
+    }
+}
+
+.popupOrder-summ {
+    font-weight: 600;
+    font-size: 1.14rem;
+    line-height: 1.1875;
+    color: #192025;
+}
+
+.popupOrder-title {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #192025;
+    margin-bottom: 35px;
+}
+
+.popupOrder-title-span {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #ff671f;
+}
+
+.popupOrder-time {
+    font-weight: normal;
+    font-size: 1.14rem;
+    line-height: 1.1875;
+    color: #414d55;
+}
+
+.popupOrder-status {
+    font-weight: normal;
+    font-size: 1.14rem;
+    line-height: 2;
+    color: #27ae60;
+}
+.popupOrder-status.--F2C94C {
+    color: #f2c94c;
+}
+
+.popupOrder__coll-company {
+    font-weight: normal;
+    font-size: 1.07rem;
+    line-height: 1.2;
+    color: #9aa9bb;
+    margin-bottom: 11px;
+}
+.popupOrder-row-coll {
+    .cabinetOrder__coll-name {
+        font-weight: normal;
+        font-size: 1.07rem;
+        line-height: 1.2;
+        color: #192025;
+    }
+    .cabinetOrder__coll-row {
+        width: 100%;
+    }
+
+    .cabinetOrder-coll-number {
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.2;
+        color: #192025;
+    }
+    .cabinetOrder-coll-pay {
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.2;
+        color: #192025;
+    }
+    .cabinetOrder__coll-box {
+        padding-bottom: 22px;
+        margin-bottom: 12px;
+        border-bottom: 1px solid #eaeaea;
+    }
+    .cabinetOrder__coll-box:nth-last-child(1) {
+        border: none;
+        margin-bottom: 0;
+    }
+}
+
+.popupOrder-row.--three {
+    margin-bottom: 55px;
+}

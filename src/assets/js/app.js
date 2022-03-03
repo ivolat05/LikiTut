@@ -235,6 +235,7 @@ $(function () {
     autocomplete("resultPopup-search", countries);
     autocomplete("resultPopup-search-two", countries);
     autocomplete("control__search-id", countries);
+    autocomplete("cabinetOrder__search-id", countries);
     // slaider
     $(".slaid-slaider").slick({
         slidesToShow: 1,

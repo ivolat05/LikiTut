@@ -1395,12 +1395,406 @@
                             
                                 </div>
                             </div>                </div>
-                        <div id="cabinet-4" class="cabinet__tab">
+                        <div id="cabinet-4" class="cabinet__tab  active">
                             <button class="cabinet__tab-btn">
                                 Заказы
                             </button>
-                        </div>
-                        <div id="cabinet-5" class="cabinet__tab  active">
+                            <div class="cabinetOrder">
+                                <div class="cabinetOrder-title">
+                                    Заказы
+                            
+                                </div>
+                                <div class="cabinetOrder-wrapp">
+                                    <div class="control__search">
+                                        <input id="cabinetOrder__search-id" type="text" class="control__search-input" placeholder="Пошук">
+                                        <button class="control__search-btn">
+                                            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.0183 13.2303C14.4733 11.8843 16.0837 8.22581 14.6154 5.05877C13.1471 1.89173 9.15601 0.415453 5.70105 1.76141C2.2461 3.10737 0.635621 6.76588 2.10394 9.93292C3.57226 13.1 7.56336 14.5762 11.0183 13.2303Z"
+                                                    stroke="#FF671F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M13.1641 11.9014L18.4358 16.7345" stroke="#FF671F" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="select cabinetOrder-select">
+                                        <div class="select__header">
+                                            <span class="select__current">
+                                                По статусу
+                                            </span>
+                                        </div>
+                                        <div class="select__body">
+                                            <div class="select__item">
+                                                по статусу
+                                            </div>
+                                            <div class="select__item">
+                                                по статусу
+                                            </div>
+                                            <div class="select__item">
+                                                по статусу
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="cabinetOrder-head">
+                                    <div class="cabinetOrder__head-coll">
+                                        № Заказа
+                                    </div>
+                                    <div class="cabinetOrder__head-coll">
+                                        Статус
+                                    </div>
+                                    <div class="cabinetOrder__head-coll">
+                                        Дата и время заказа/<br> завершения заказа
+                                    </div>
+                                    <div class="cabinetOrder__head-coll">
+                                        Товар
+                                    </div>
+                                    <div class="cabinetOrder__head-coll">
+                                        Покупатель
+                                    </div>
+                                </div>
+                                <div class="cabinetOrder-body">
+                            
+                            
+                                    <a href="#popupOrder-id" class="cabinetOrder-row popup-content">
+                                        <div class="cabinetOrder__body-coll">
+                                            1
+                                        </div>
+                                        <div class="cabinetOrder__body-coll">
+                                            #34568432
+                                        </div>
+                                        <div class="cabinetOrder__body-coll">
+                                            Новый
+                                        </div>
+                                        <div class="cabinetOrder__body-coll">
+                                            20.01.2021 <span class="cabinetOrder__body-time">14:36</span>
+                                        </div>
+                                        <div class="cabinetOrder__body-coll">
+                                            <div class="cabinetOrder__coll-box">
+                                                <div class="cabinetOrder__coll-name">
+                                                    НОВ Витамин А 10000 МО капс. №30, NOW FOODS....
+                                                </div>
+                                                <div class="cabinetOrder__coll-row">
+                                                    <div class="cabinetOrder-coll-number">
+                                                        1 упаковка
+                                                    </div>
+                                                    <div class="cabinetOrder-coll-pay">
+                                                        10.27 грн
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <div class="cabinetOrder__coll-box">
+                                                <div class="cabinetOrder__coll-name">
+                                                    НОВ Витамин А 10000 МО капс. №30, NOW FOODS....
+                                                </div>
+                                                <div class="cabinetOrder__coll-row">
+                                                    <div class="cabinetOrder-coll-number">
+                                                        1 упаковка
+                                                    </div>
+                                                    <div class="cabinetOrder-coll-pay">
+                                                        10.27 грн
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cabinetOrder__body-coll">
+                                            <div class="cabinetOrder-coll-mess">
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9 8.50008C11.0711 8.50008 12.75 6.91442 12.75 4.95841C12.75 3.00241 11.0711 1.41675 9 1.41675C6.92893 1.41675 5.25 3.00241 5.25 4.95841C5.25 6.91442 6.92893 8.50008 9 8.50008Z"
+                                                        fill="#9AA9BB" />
+                                                    <path
+                                                        d="M9.00109 10.2708C5.24359 10.2708 2.18359 12.6508 2.18359 15.5833C2.18359 15.7816 2.34859 15.9374 2.55859 15.9374H15.4436C15.6536 15.9374 15.8186 15.7816 15.8186 15.5833C15.8186 12.6508 12.7586 10.2708 9.00109 10.2708Z"
+                                                        fill="#9AA9BB" />
+                                                </svg>
+                            
+                                                Иванов Иван Иванович
+                                            </div>
+                                            <div class="cabinetOrder-coll-tell">
+                                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M16.25 1.75C16.4375 1.8125 16.625 1.90625 16.7812 2.09375C16.9062 2.28125 17 2.5 17 2.6875C17 5.3125 16.3438 7.71875 15.0312 9.9375C13.7812 12.0938 12.0625 13.8125 9.90625 15.0625C7.6875 16.375 5.28125 17 2.6875 17C2.46875 17 2.28125 16.9375 2.09375 16.7812C1.90625 16.6562 1.78125 16.4688 1.75 16.25L1.03125 13.0938C0.96875 12.875 0.96875 12.6562 1.09375 12.4375C1.1875 12.25 1.34375 12.0938 1.59375 11.9688L4.96875 10.5312C5.15625 10.4688 5.375 10.4375 5.59375 10.5C5.78125 10.5625 5.96875 10.6562 6.125 10.8125L7.5 12.5C8.5625 11.9688 9.53125 11.2812 10.4062 10.4062C11.25 9.5625 11.9375 8.59375 12.5 7.5L10.8125 6.125C10.625 6 10.5312 5.8125 10.4688 5.59375C10.4062 5.40625 10.4375 5.1875 10.5312 4.96875L11.9688 1.59375C12.0625 1.375 12.2188 1.21875 12.4375 1.09375C12.625 1 12.8438 0.96875 13.0938 1.03125L16.25 1.75ZM2.71875 16C5.09375 16 7.34375 15.4062 9.40625 14.1875C11.4062 13.0312 13 11.4375 14.1875 9.40625C15.375 7.375 16 5.15625 16 2.71875L12.875 2L11.4375 5.375L13.7188 7.21875C12.9688 8.84375 12.0938 10.1562 11.125 11.125C10.125 12.125 8.84375 12.9688 7.21875 13.7188L5.375 11.4375L2 12.875L2.71875 16Z"
+                                                        fill="#636D73" />
+                                                </svg>
+                                                +38 (063) 733-49-35
+                                            </div>
+                                        </div>
+                                    </a>
+                            
+                                    <a href="#popupOrder-id" class="cabinetOrder-row popup-content">
+                                        <div class="cabinetOrder__body-coll">
+                                            2
+                                        </div>
+                                        <div class="cabinetOrder__body-coll">
+                                            #34568432
+                                        </div>
+                                        <div class="cabinetOrder__body-coll --F2C94C">
+                                            В работе
+                                        </div>
+                                        <div class="cabinetOrder__body-coll">
+                                            20.01.2021 <span class="cabinetOrder__body-time">14:36</span>
+                                        </div>
+                                        <div class="cabinetOrder__body-coll">
+                                            <div class="cabinetOrder__coll-box">
+                                                <div class="cabinetOrder__coll-name">
+                                                    НОВ Витамин А 10000 МО капс. №30, NOW FOODS....
+                                                </div>
+                                                <div class="cabinetOrder__coll-row">
+                                                    <div class="cabinetOrder-coll-number">
+                                                        1 упаковка
+                                                    </div>
+                                                    <div class="cabinetOrder-coll-pay">
+                                                        10.27 грн
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                        </div>
+                                        <div class="cabinetOrder__body-coll">
+                                            <div class="cabinetOrder-coll-mess">
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9 8.50008C11.0711 8.50008 12.75 6.91442 12.75 4.95841C12.75 3.00241 11.0711 1.41675 9 1.41675C6.92893 1.41675 5.25 3.00241 5.25 4.95841C5.25 6.91442 6.92893 8.50008 9 8.50008Z"
+                                                        fill="#9AA9BB" />
+                                                    <path
+                                                        d="M9.00109 10.2708C5.24359 10.2708 2.18359 12.6508 2.18359 15.5833C2.18359 15.7816 2.34859 15.9374 2.55859 15.9374H15.4436C15.6536 15.9374 15.8186 15.7816 15.8186 15.5833C15.8186 12.6508 12.7586 10.2708 9.00109 10.2708Z"
+                                                        fill="#9AA9BB" />
+                                                </svg>
+                            
+                                                Иванов Иван Иванович
+                                            </div>
+                                            <div class="cabinetOrder-coll-tell">
+                                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M16.25 1.75C16.4375 1.8125 16.625 1.90625 16.7812 2.09375C16.9062 2.28125 17 2.5 17 2.6875C17 5.3125 16.3438 7.71875 15.0312 9.9375C13.7812 12.0938 12.0625 13.8125 9.90625 15.0625C7.6875 16.375 5.28125 17 2.6875 17C2.46875 17 2.28125 16.9375 2.09375 16.7812C1.90625 16.6562 1.78125 16.4688 1.75 16.25L1.03125 13.0938C0.96875 12.875 0.96875 12.6562 1.09375 12.4375C1.1875 12.25 1.34375 12.0938 1.59375 11.9688L4.96875 10.5312C5.15625 10.4688 5.375 10.4375 5.59375 10.5C5.78125 10.5625 5.96875 10.6562 6.125 10.8125L7.5 12.5C8.5625 11.9688 9.53125 11.2812 10.4062 10.4062C11.25 9.5625 11.9375 8.59375 12.5 7.5L10.8125 6.125C10.625 6 10.5312 5.8125 10.4688 5.59375C10.4062 5.40625 10.4375 5.1875 10.5312 4.96875L11.9688 1.59375C12.0625 1.375 12.2188 1.21875 12.4375 1.09375C12.625 1 12.8438 0.96875 13.0938 1.03125L16.25 1.75ZM2.71875 16C5.09375 16 7.34375 15.4062 9.40625 14.1875C11.4062 13.0312 13 11.4375 14.1875 9.40625C15.375 7.375 16 5.15625 16 2.71875L12.875 2L11.4375 5.375L13.7188 7.21875C12.9688 8.84375 12.0938 10.1562 11.125 11.125C10.125 12.125 8.84375 12.9688 7.21875 13.7188L5.375 11.4375L2 12.875L2.71875 16Z"
+                                                        fill="#636D73" />
+                                                </svg>
+                                                +38 (063) 733-49-35
+                                            </div>
+                                        </div>
+                                    </a>
+                            
+                                    <a href="#popupOrder-id" class="cabinetOrder-row popup-content">
+                                        <div class="cabinetOrder__body-coll">
+                                            3
+                                        </div>
+                                        <div class="cabinetOrder__body-coll">
+                                            #34568432
+                                        </div>
+                                        <div class="cabinetOrder__body-coll">
+                                            Новый
+                                        </div>
+                                        <div class="cabinetOrder__body-coll">
+                                            20.01.2021 <span class="cabinetOrder__body-time">14:36</span>
+                                        </div>
+                                        <div class="cabinetOrder__body-coll">
+                                            <div class="cabinetOrder__coll-box">
+                                                <div class="cabinetOrder__coll-name">
+                                                    НОВ Витамин А 10000 МО капс. №30, NOW FOODS....
+                                                </div>
+                                                <div class="cabinetOrder__coll-row">
+                                                    <div class="cabinetOrder-coll-number">
+                                                        1 упаковка
+                                                    </div>
+                                                    <div class="cabinetOrder-coll-pay">
+                                                        10.27 грн
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                        </div>
+                                        <div class="cabinetOrder__body-coll">
+                                            <div class="cabinetOrder-coll-mess">
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9 8.50008C11.0711 8.50008 12.75 6.91442 12.75 4.95841C12.75 3.00241 11.0711 1.41675 9 1.41675C6.92893 1.41675 5.25 3.00241 5.25 4.95841C5.25 6.91442 6.92893 8.50008 9 8.50008Z"
+                                                        fill="#9AA9BB" />
+                                                    <path
+                                                        d="M9.00109 10.2708C5.24359 10.2708 2.18359 12.6508 2.18359 15.5833C2.18359 15.7816 2.34859 15.9374 2.55859 15.9374H15.4436C15.6536 15.9374 15.8186 15.7816 15.8186 15.5833C15.8186 12.6508 12.7586 10.2708 9.00109 10.2708Z"
+                                                        fill="#9AA9BB" />
+                                                </svg>
+                            
+                                                Иванов Иван Иванович
+                                            </div>
+                                            <div class="cabinetOrder-coll-tell">
+                                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M16.25 1.75C16.4375 1.8125 16.625 1.90625 16.7812 2.09375C16.9062 2.28125 17 2.5 17 2.6875C17 5.3125 16.3438 7.71875 15.0312 9.9375C13.7812 12.0938 12.0625 13.8125 9.90625 15.0625C7.6875 16.375 5.28125 17 2.6875 17C2.46875 17 2.28125 16.9375 2.09375 16.7812C1.90625 16.6562 1.78125 16.4688 1.75 16.25L1.03125 13.0938C0.96875 12.875 0.96875 12.6562 1.09375 12.4375C1.1875 12.25 1.34375 12.0938 1.59375 11.9688L4.96875 10.5312C5.15625 10.4688 5.375 10.4375 5.59375 10.5C5.78125 10.5625 5.96875 10.6562 6.125 10.8125L7.5 12.5C8.5625 11.9688 9.53125 11.2812 10.4062 10.4062C11.25 9.5625 11.9375 8.59375 12.5 7.5L10.8125 6.125C10.625 6 10.5312 5.8125 10.4688 5.59375C10.4062 5.40625 10.4375 5.1875 10.5312 4.96875L11.9688 1.59375C12.0625 1.375 12.2188 1.21875 12.4375 1.09375C12.625 1 12.8438 0.96875 13.0938 1.03125L16.25 1.75ZM2.71875 16C5.09375 16 7.34375 15.4062 9.40625 14.1875C11.4062 13.0312 13 11.4375 14.1875 9.40625C15.375 7.375 16 5.15625 16 2.71875L12.875 2L11.4375 5.375L13.7188 7.21875C12.9688 8.84375 12.0938 10.1562 11.125 11.125C10.125 12.125 8.84375 12.9688 7.21875 13.7188L5.375 11.4375L2 12.875L2.71875 16Z"
+                                                        fill="#636D73" />
+                                                </svg>
+                                                +38 (063) 733-49-35
+                                            </div>
+                                        </div>
+                                    </a>
+                            
+                                    <a href="#popupOrder-id" class="cabinetOrder-row popup-content">
+                                        <div class="cabinetOrder__body-coll">
+                                            4
+                                        </div>
+                                        <div class="cabinetOrder__body-coll">
+                                            #34568432
+                                        </div>
+                                        <div class="cabinetOrder__body-coll">
+                                            Новый
+                                        </div>
+                                        <div class="cabinetOrder__body-coll">
+                                            20.01.2021 <span class="cabinetOrder__body-time">14:36</span>
+                                        </div>
+                                        <div class="cabinetOrder__body-coll">
+                                            <div class="cabinetOrder__coll-box">
+                                                <div class="cabinetOrder__coll-name">
+                                                    НОВ Витамин А 10000 МО капс. №30, NOW FOODS....
+                                                </div>
+                                                <div class="cabinetOrder__coll-row">
+                                                    <div class="cabinetOrder-coll-number">
+                                                        1 упаковка
+                                                    </div>
+                                                    <div class="cabinetOrder-coll-pay">
+                                                        10.27 грн
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                        </div>
+                                        <div class="cabinetOrder__body-coll">
+                                            <div class="cabinetOrder-coll-mess">
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9 8.50008C11.0711 8.50008 12.75 6.91442 12.75 4.95841C12.75 3.00241 11.0711 1.41675 9 1.41675C6.92893 1.41675 5.25 3.00241 5.25 4.95841C5.25 6.91442 6.92893 8.50008 9 8.50008Z"
+                                                        fill="#9AA9BB" />
+                                                    <path
+                                                        d="M9.00109 10.2708C5.24359 10.2708 2.18359 12.6508 2.18359 15.5833C2.18359 15.7816 2.34859 15.9374 2.55859 15.9374H15.4436C15.6536 15.9374 15.8186 15.7816 15.8186 15.5833C15.8186 12.6508 12.7586 10.2708 9.00109 10.2708Z"
+                                                        fill="#9AA9BB" />
+                                                </svg>
+                            
+                                                Иванов Иван Иванович
+                                            </div>
+                                            <div class="cabinetOrder-coll-tell">
+                                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M16.25 1.75C16.4375 1.8125 16.625 1.90625 16.7812 2.09375C16.9062 2.28125 17 2.5 17 2.6875C17 5.3125 16.3438 7.71875 15.0312 9.9375C13.7812 12.0938 12.0625 13.8125 9.90625 15.0625C7.6875 16.375 5.28125 17 2.6875 17C2.46875 17 2.28125 16.9375 2.09375 16.7812C1.90625 16.6562 1.78125 16.4688 1.75 16.25L1.03125 13.0938C0.96875 12.875 0.96875 12.6562 1.09375 12.4375C1.1875 12.25 1.34375 12.0938 1.59375 11.9688L4.96875 10.5312C5.15625 10.4688 5.375 10.4375 5.59375 10.5C5.78125 10.5625 5.96875 10.6562 6.125 10.8125L7.5 12.5C8.5625 11.9688 9.53125 11.2812 10.4062 10.4062C11.25 9.5625 11.9375 8.59375 12.5 7.5L10.8125 6.125C10.625 6 10.5312 5.8125 10.4688 5.59375C10.4062 5.40625 10.4375 5.1875 10.5312 4.96875L11.9688 1.59375C12.0625 1.375 12.2188 1.21875 12.4375 1.09375C12.625 1 12.8438 0.96875 13.0938 1.03125L16.25 1.75ZM2.71875 16C5.09375 16 7.34375 15.4062 9.40625 14.1875C11.4062 13.0312 13 11.4375 14.1875 9.40625C15.375 7.375 16 5.15625 16 2.71875L12.875 2L11.4375 5.375L13.7188 7.21875C12.9688 8.84375 12.0938 10.1562 11.125 11.125C10.125 12.125 8.84375 12.9688 7.21875 13.7188L5.375 11.4375L2 12.875L2.71875 16Z"
+                                                        fill="#636D73" />
+                                                </svg>
+                                                +38 (063) 733-49-35
+                                            </div>
+                                        </div>
+                                    </a>
+                            
+                                    <a href="#popupOrder-id" class="cabinetOrder-row popup-content">
+                                        <div class="cabinetOrder__body-coll">
+                                            5
+                                        </div>
+                                        <div class="cabinetOrder__body-coll">
+                                            #34568432
+                                        </div>
+                                        <div class="cabinetOrder__body-coll">
+                                            Новый
+                                        </div>
+                                        <div class="cabinetOrder__body-coll">
+                                            20.01.2021 <span class="cabinetOrder__body-time">14:36</span>
+                                        </div>
+                                        <div class="cabinetOrder__body-coll">
+                                            <div class="cabinetOrder__coll-box">
+                                                <div class="cabinetOrder__coll-name">
+                                                    НОВ Витамин А 10000 МО капс. №30, NOW FOODS....
+                                                </div>
+                                                <div class="cabinetOrder__coll-row">
+                                                    <div class="cabinetOrder-coll-number">
+                                                        1 упаковка
+                                                    </div>
+                                                    <div class="cabinetOrder-coll-pay">
+                                                        10.27 грн
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                        </div>
+                                        <div class="cabinetOrder__body-coll">
+                                            <div class="cabinetOrder-coll-mess">
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9 8.50008C11.0711 8.50008 12.75 6.91442 12.75 4.95841C12.75 3.00241 11.0711 1.41675 9 1.41675C6.92893 1.41675 5.25 3.00241 5.25 4.95841C5.25 6.91442 6.92893 8.50008 9 8.50008Z"
+                                                        fill="#9AA9BB" />
+                                                    <path
+                                                        d="M9.00109 10.2708C5.24359 10.2708 2.18359 12.6508 2.18359 15.5833C2.18359 15.7816 2.34859 15.9374 2.55859 15.9374H15.4436C15.6536 15.9374 15.8186 15.7816 15.8186 15.5833C15.8186 12.6508 12.7586 10.2708 9.00109 10.2708Z"
+                                                        fill="#9AA9BB" />
+                                                </svg>
+                            
+                                                Иванов Иван Иванович
+                                            </div>
+                                            <div class="cabinetOrder-coll-tell">
+                                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M16.25 1.75C16.4375 1.8125 16.625 1.90625 16.7812 2.09375C16.9062 2.28125 17 2.5 17 2.6875C17 5.3125 16.3438 7.71875 15.0312 9.9375C13.7812 12.0938 12.0625 13.8125 9.90625 15.0625C7.6875 16.375 5.28125 17 2.6875 17C2.46875 17 2.28125 16.9375 2.09375 16.7812C1.90625 16.6562 1.78125 16.4688 1.75 16.25L1.03125 13.0938C0.96875 12.875 0.96875 12.6562 1.09375 12.4375C1.1875 12.25 1.34375 12.0938 1.59375 11.9688L4.96875 10.5312C5.15625 10.4688 5.375 10.4375 5.59375 10.5C5.78125 10.5625 5.96875 10.6562 6.125 10.8125L7.5 12.5C8.5625 11.9688 9.53125 11.2812 10.4062 10.4062C11.25 9.5625 11.9375 8.59375 12.5 7.5L10.8125 6.125C10.625 6 10.5312 5.8125 10.4688 5.59375C10.4062 5.40625 10.4375 5.1875 10.5312 4.96875L11.9688 1.59375C12.0625 1.375 12.2188 1.21875 12.4375 1.09375C12.625 1 12.8438 0.96875 13.0938 1.03125L16.25 1.75ZM2.71875 16C5.09375 16 7.34375 15.4062 9.40625 14.1875C11.4062 13.0312 13 11.4375 14.1875 9.40625C15.375 7.375 16 5.15625 16 2.71875L12.875 2L11.4375 5.375L13.7188 7.21875C12.9688 8.84375 12.0938 10.1562 11.125 11.125C10.125 12.125 8.84375 12.9688 7.21875 13.7188L5.375 11.4375L2 12.875L2.71875 16Z"
+                                                        fill="#636D73" />
+                                                </svg>
+                                                +38 (063) 733-49-35
+                                            </div>
+                                        </div>
+                                    </a>
+                            
+                            
+                                </div>
+                                <div class="navigation">
+                                    <button class="navigation-btn">
+                                        Еще 32
+                                    </button>
+                                    <ul class="navigation-list">
+                                        <li class="navigation-list-inner">
+                                            <a href="#" class="navigation-list-link navigation-list-prev">
+                                                <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10.0937 13.5521L4.36975 7.82808L10.0937 2.10408L8.20842 0.21875L0.599084 7.82808L8.20842 15.4374L10.0937 13.5521Z"
+                                                        fill="#9AA9BB" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="navigation-list-inner">
+                                            <a href="#" class="navigation-list-link">
+                                                1
+                                            </a>
+                                        </li>
+                                        <li class="navigation-list-inner">
+                                            <a href="#" class="navigation-list-link">
+                                                2
+                                            </a>
+                                        </li>
+                                        <li class="navigation-list-inner">
+                                            <a href="#" class="navigation-list-link">
+                                                3
+                                            </a>
+                                        </li>
+                                        <li class="navigation-list-inner">
+                                            <a href="#" class="navigation-list-link">
+                                                4
+                                            </a>
+                                        </li>
+                                        <li class="navigation-list-inner">
+                                            <a href="#" class="navigation-list-link navigation-list-dot">
+                                                ...
+                                            </a>
+                                        </li>
+                                        <li class="navigation-list-inner">
+                                            <a href="#" class="navigation-list-link">
+                                                11
+                                            </a>
+                                        </li>
+                                        <li class="navigation-list-inner">
+                                            <a href="#" class="navigation-list-link navigation-list-next">
+                                                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M0.101563 13.5521L5.82556 7.82808L0.101563 2.10408L1.9869 0.21875L9.59623 7.82808L1.9869 15.4374L0.101563 13.5521Z"
+                                                        fill="#4C6FFF" />
+                                                </svg>
+                                
+                                            </a>
+                                        </li>
+                                
+                                    </ul>
+                                </div></div>                </div>
+                        <div id="cabinet-5" class="cabinet__tab">
                             <button class="cabinet__tab-btn">
                                 Товары
                             </button>
@@ -2057,6 +2451,112 @@
                 <button class="btn popupDel-btn-dell">
                     Удалить
                 </button>
+            </div>
+        </div>    <div id="popupOrder-id" class="popupOrder mfp-hide">
+            <button class="popup-close">
+                <span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.00075 8.17853L12.2448 13.4226L13.4233 12.2441L8.17926 7.00002L13.4233 1.75598L12.2448 0.57747L7.00075 5.82151L1.75664 0.577393L0.578125 1.7559L5.82224 7.00002L0.578125 12.2441L1.75664 13.4226L7.00075 8.17853Z"
+                            fill="#192025"></path>
+                    </svg>
+                </span>
+            </button>
+            <div class="popupOrder-title">
+                Заказ
+                <span class="popupOrder-title-span">
+                    #34568432
+                </span>
+            </div>
+            <div class="popupOrder-row">
+                <div class="popupOrder-row-name">
+                    Дата и время заказа/завершения заказа
+                </div>
+                <div class="popupOrder-row-coll popupOrder-time">
+                    20.01.2021 <span class="cabinetOrder__body-time">14:36</span>
+                </div>
+            </div>
+            <div class="popupOrder-row">
+                <div class="popupOrder-row-name">
+                    Статус
+                </div>
+                <div class="popupOrder-row-coll   popupOrder-status">
+                    Новый
+                </div>
+            </div>
+            <div class="popupOrder-row">
+                <div class="popupOrder-row-name">
+                    Товары в заказе
+                </div>
+                <div class="popupOrder-row-coll">
+                    <div class="cabinetOrder__coll-box">
+                        <div class="cabinetOrder__coll-name">
+                            Витамин с+ табл.жев.апельсин. 500 мг №30
+                        </div>
+                        <div class="popupOrder__coll-company">
+                            Teva
+                        </div>
+                        <div class="cabinetOrder__coll-row">
+                            <div class="cabinetOrder-coll-number">
+                                1 упаковка
+                            </div>
+                            <div class="cabinetOrder-coll-pay">
+                                10.27 грн
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cabinetOrder__coll-box">
+                        <div class="cabinetOrder__coll-name">
+                            Витамин с+ табл.жев.апельсин. 500 мг №30
+                        </div>
+                        <div class="popupOrder__coll-company">
+                            Teva
+                        </div>
+                        <div class="cabinetOrder__coll-row">
+                            <div class="cabinetOrder-coll-number">
+                                1 упаковка
+                            </div>
+                            <div class="cabinetOrder-coll-pay">
+                                10.27 грн
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popupOrder-row --three">
+                <div class="popupOrder-row-name">
+                    Покупатель
+                </div>
+                <div class="popupOrder-row-coll">
+                    <div class="cabinetOrder-coll-mess">
+                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 8.50008C11.0711 8.50008 12.75 6.91442 12.75 4.95841C12.75 3.00241 11.0711 1.41675 9 1.41675C6.92893 1.41675 5.25 3.00241 5.25 4.95841C5.25 6.91442 6.92893 8.50008 9 8.50008Z"
+                                fill="#9AA9BB" />
+                            <path
+                                d="M9.00109 10.2708C5.24359 10.2708 2.18359 12.6508 2.18359 15.5833C2.18359 15.7816 2.34859 15.9374 2.55859 15.9374H15.4436C15.6536 15.9374 15.8186 15.7816 15.8186 15.5833C15.8186 12.6508 12.7586 10.2708 9.00109 10.2708Z"
+                                fill="#9AA9BB" />
+                        </svg>
+        
+                        Иванов Иван Иванович
+                    </div>
+                    <div class="cabinetOrder-coll-tell">
+                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.25 1.75C16.4375 1.8125 16.625 1.90625 16.7812 2.09375C16.9062 2.28125 17 2.5 17 2.6875C17 5.3125 16.3438 7.71875 15.0312 9.9375C13.7812 12.0938 12.0625 13.8125 9.90625 15.0625C7.6875 16.375 5.28125 17 2.6875 17C2.46875 17 2.28125 16.9375 2.09375 16.7812C1.90625 16.6562 1.78125 16.4688 1.75 16.25L1.03125 13.0938C0.96875 12.875 0.96875 12.6562 1.09375 12.4375C1.1875 12.25 1.34375 12.0938 1.59375 11.9688L4.96875 10.5312C5.15625 10.4688 5.375 10.4375 5.59375 10.5C5.78125 10.5625 5.96875 10.6562 6.125 10.8125L7.5 12.5C8.5625 11.9688 9.53125 11.2812 10.4062 10.4062C11.25 9.5625 11.9375 8.59375 12.5 7.5L10.8125 6.125C10.625 6 10.5312 5.8125 10.4688 5.59375C10.4062 5.40625 10.4375 5.1875 10.5312 4.96875L11.9688 1.59375C12.0625 1.375 12.2188 1.21875 12.4375 1.09375C12.625 1 12.8438 0.96875 13.0938 1.03125L16.25 1.75ZM2.71875 16C5.09375 16 7.34375 15.4062 9.40625 14.1875C11.4062 13.0312 13 11.4375 14.1875 9.40625C15.375 7.375 16 5.15625 16 2.71875L12.875 2L11.4375 5.375L13.7188 7.21875C12.9688 8.84375 12.0938 10.1562 11.125 11.125C10.125 12.125 8.84375 12.9688 7.21875 13.7188L5.375 11.4375L2 12.875L2.71875 16Z"
+                                fill="#636D73" />
+                        </svg>
+                        +38 (063) 733-49-35
+                    </div>
+                </div>
+            </div>
+            <div class="popupOrder-row">
+                <div class="popupOrder-row-name">
+                    Сумма заказа
+                </div>
+                <div class="popupOrder-row-coll popupOrder-summ">
+                    106.27 грн
+                </div>
             </div>
         </div></div>
     <script src="assets/js/app.min.js"></script>
