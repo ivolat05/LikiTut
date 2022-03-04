@@ -1,0 +1,222 @@
+.menuBurger {
+    background: #fff;
+
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 334px;
+    height: 100vh;
+    overflow: auto;
+    transform: translateX(-300%);
+    transition: 0.4s all ease-in-out;
+    z-index: 3;
+    .logo {
+        padding-top: 10px;
+        padding-left: 5px;
+        display: block;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 20px;
+        span {
+            font-weight: bold;
+            font-size: 26px;
+            line-height: 20px;
+        }
+    }
+    .mCSB_scrollTools .mCSB_draggerContainer {
+        right: -11px;
+    }
+    .mCSB_inside > .mCSB_container {
+        margin-right: 3px;
+    }
+}
+.menuBurger.active {
+    transform: translateX(0);
+}
+.menu-close {
+    position: absolute;
+    right: 12px;
+    top: 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+}
+.menuBurger-wrapp {
+    height: 100%;
+    padding-left: 2px;
+    padding-top: 35px;
+    .result__header-title {
+        display: inline-block;
+        margin-bottom: 70px;
+        .result__header-title:before {
+            left: 5px;
+            transform: translateY(-48%);
+        }
+    }
+}
+
+.menuBurger-wrapp-link,
+.menuBurger-wrapp-title {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #192025;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    svg {
+        width: 25px;
+        margin-right: 11px;
+    }
+}
+.menuBurger-wrapp-link {
+    margin-bottom: 20px;
+}
+
+.menuBurger-inner-link {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #414d55;
+    opacity: 0.8;
+    display: block;
+}
+
+.menuBurger-label {
+    position: relative;
+}
+.menuBurger-radio {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -3;
+    opacity: 0;
+}
+
+.menuBurger-span {
+    width: 47px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    color: #9aa9bb;
+    cursor: pointer;
+    transition: 0.4s all ease-in-out;
+    &:hover {
+        background: #649eff;
+        color: #fff;
+    }
+}
+.menuBurger-radio:checked + .menuBurger-span {
+    background: #649eff;
+    color: #fff;
+}
+.menuBurger-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f7f9fb;
+    border-radius: 6px;
+    width: 105px;
+    padding: 2px 3px;
+    margin-left: 5px;
+    margin-bottom: 22px;
+}
+
+.menuBurger-subtitle {
+    font-size: 12px;
+    line-height: 26px;
+
+    text-transform: uppercase;
+    color: #9aa9bb;
+    margin-bottom: 4px;
+    padding-left: 7px;
+}
+
+.menuBurger__basket-wrapp {
+    position: relative;
+    width: 35px;
+    padding: 0;
+    margin-right: 7px;
+    .header-basket-summ {
+        right: 4px;
+        top: -5px;
+    }
+}
+
+.menuBurger__basket-text {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.9;
+    color: #192025;
+}
+
+.menuBurger-btn-basket {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: rgba(241, 245, 248, 0.7);
+    border-radius: 8px;
+    width: 100%;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: 0.4s all ease-in-out;
+    margin-bottom: 10px;
+    path {
+        transition: 0.4s all ease-in-out;
+    }
+    &:hover {
+        background: #4c6fff;
+        path {
+            fill: #fff;
+        }
+        .menuBurger__basket-text {
+            color: #ffff;
+        }
+    }
+}
+
+.menuBurger-btn {
+    background: rgba(241, 245, 248, 0.7);
+    border-radius: 8px;
+    width: 100%;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.9;
+    color: #192025;
+    margin-bottom: 50px;
+    svg {
+        margin-right: 15px;
+    }
+    path {
+        transition: 0.4s all ease-in-out;
+    }
+    &:hover {
+        background: #4c6fff;
+        path {
+            fill: #fff;
+        }
+        color: #ffff;
+    }
+}
+
+.menuBurger-inner {
+    padding-left: 7px;
+    padding-top: 17px;
+}
+
+.menuBurger-inner-link {
+    margin-bottom: 10px;
+}

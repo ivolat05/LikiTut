@@ -21,9 +21,25 @@
             <div class="container header-container">
                 <div class="header-wrapp">
                     <div class="header-col">
-                        <a href="#" class="logo">
-                            Liki<span>tut</span>
-                        </a>
+                        <div>
+                            <button class="header-burger">
+                                <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.25 2.5C0.559644 2.5 0 1.94036 0 1.25C0 0.559644 0.559644 0 1.25 0H14.75C15.4404 0 16 0.559644 16 1.25C16 1.94036 15.4404 2.5 14.75 2.5H1.25Z"
+                                        fill="#414D55" />
+                                    <path
+                                        d="M0 7.5C0 8.19036 0.559644 8.75 1.25 8.75H22.75C23.4404 8.75 24 8.19036 24 7.5C24 6.80964 23.4404 6.25 22.75 6.25H1.25C0.559644 6.25 0 6.80964 0 7.5Z"
+                                        fill="#414D55" />
+                                    <path
+                                        d="M0 13.75C0 14.4404 0.559644 15 1.25 15H14.75C15.4404 15 16 14.4404 16 13.75C16 13.0596 15.4404 12.5 14.75 12.5H1.25C0.559644 12.5 0 13.0596 0 13.75Z"
+                                        fill="#414D55" />
+                                </svg>
+        
+                            </button>
+                            <a href="#" class="logo">
+                                Liki<span>tut</span>
+                            </a>
+                        </div>
                         <div class="header-place">
                             <div class="header-place-head">
                                 <span class="header-place-img">
@@ -44,7 +60,7 @@
                                     Виберіть місто:
                                 </div>
                                 <button class="header-place-close">
-                                    <span>
+                                    <span class="header-place-desctop">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -52,8 +68,20 @@
                                                 fill="#192025" />
                                         </svg>
                                     </span>
+                                    <svg class="header-place-mob" width="16" height="12" viewBox="0 0 16 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 5L3.83 5L7.41 1.41L6 0L0 6L6 12L7.41 10.59L3.83 7L16 7V5Z" fill="white" />
+                                    </svg>
                                 </button>
                                 <div class="header-place-search-box">
+                                    <button class="header-place-search-btn">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.99978 8.17829L12.2438 13.4223L13.4223 12.2438L8.17829 6.99978L13.4223 1.75574L12.2438 0.577226L6.99978 5.82127L1.75566 0.577148L0.577148 1.75566L5.82126 6.99978L0.577148 12.2439L1.75566 13.4224L6.99978 8.17829Z"
+                                                fill="#9AA9BB" />
+                                        </svg>
+                                    </button>
                                     <input id="header-place" type="text" class="header-place-search" value="">
                                 </div>
                                 <div class="header-place-box">
@@ -139,7 +167,7 @@
                             Каталог
                         </a>
                     </div>
-                    <div class="header-col">
+                    <div class="header-col --two">
                         <nav class="header-nav">
                             <ul class="header-nav-list">
                                 <li class="header-nav-list-inner">
@@ -572,6 +600,16 @@
             </div>
         </main>    <div class="slaid">
             <div class="container">
+                <a href="#" class="slaid-btn">
+                    <span>
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 2C0 0.895431 0.895431 0 2 0C3.10457 0 4 0.895431 4 2C4 3.10457 3.10457 4 2 4C0.895431 4 0 3.10457 0 2ZM0 8C0 6.89543 0.895431 6 2 6C3.10457 6 4 6.89543 4 8C4 9.10457 3.10457 10 2 10C0.895431 10 0 9.10457 0 8ZM6 2C6 0.895431 6.89543 0 8 0C9.10457 0 10 0.895431 10 2C10 3.10457 9.10457 4 8 4C6.89543 4 6 3.10457 6 2ZM6 8C6 6.89543 6.89543 6 8 6C9.10457 6 10 6.89543 10 8C10 9.10457 9.10457 10 8 10C6.89543 10 6 9.10457 6 8Z"
+                                fill="#2662F0"></path>
+                        </svg>
+                    </span>
+                    Каталог
+                </a>
                 <div class="slaid-slaider">
         
                     <div>
@@ -1650,6 +1688,172 @@
         
         
             </div>
+        
+        </div>    <div id="resultPopup" class="resultPopup mfp-hide">
+            <button class="popup-close">
+                <span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.00075 8.17853L12.2448 13.4226L13.4233 12.2441L8.17926 7.00002L13.4233 1.75598L12.2448 0.57747L7.00075 5.82151L1.75664 0.577393L0.578125 1.7559L5.82224 7.00002L0.578125 12.2441L1.75664 13.4226L7.00075 8.17853Z"
+                            fill="#192025" />
+                    </svg>
+                </span>
+            </button>
+            <div class="resultPopup__wrapp-adress">
+                <div class="resultPoup-title">
+                    Вкажіть адресу
+                </div>
+                <div class="resultPopup-subtitle">
+                    МІСТО
+                </div>
+                <div class="resultPopup-place">
+                    <div class="resultPopup-place-name">
+                        Харків
+                    </div>
+                    <button class="resultPopup-btn">
+                        Змінити
+                    </button>
+                </div>
+                <div class="resultPopup__block-adress">
+                    <div class="resultPopup-adress">
+                        <span class="resultPopup-adress-name">
+                            майдан Конституції, Харків
+                        </span>
+                        <button class="resultPopup-adress-dell">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.99943 6.94273L10.1947 11.138L11.1375 10.1952L6.94224 5.99992L11.1375 1.80469L10.1947 0.861878L5.99943 5.05711L1.80414 0.861816L0.861328 1.80463L5.05662 5.99992L0.861328 10.1952L1.80414 11.138L5.99943 6.94273Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </div>
+        
+                    <button class="resultPopup-remove">
+                        Скинути адресу
+                    </button>
+                </div>
+                <div class="resultPopup-blok-search">
+                    <input id="resultPopup-search" class="resultPopup-input" type="text" placeholder="Вкажіть адресу">
+                </div>
+                <div class="resultPopup-row-btn">
+                    <label class="resultPopup-label">
+                        <input type="radio" name="resultPopup-place" class="resultPopup-radio" checked>
+                        <span class="resultPopup-label-span">
+                            Адрес
+                        </span>
+                    </label>
+                    <label class="resultPopup-label">
+                        <input type="radio" name="resultPopup-place" class="resultPopup-radio">
+                        <span class="resultPopup-label-span">
+                            Район
+                        </span>
+                    </label>
+                    <label class="resultPopup-label">
+                        <input type="radio" name="resultPopup-place" class="resultPopup-radio">
+                        <span class="resultPopup-label-span">
+                            Метро
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <div class="resultPopup__wrapp-place">
+                <div class="resultPopup__place-title">
+                    Ваше місто
+                </div>
+                <label class="resultPopup__place-label">
+                    <input class="resultPopup__place-radio" type="radio" name="result__place" value="Київ">
+                    <span class="resultPopup__place-span">
+                        Київ
+                    </span>
+                </label>
+                <label class="resultPopup__place-label">
+                    <input class="resultPopup__place-radio" type="radio" name="result__place" checked value="Харків">
+                    <span class="resultPopup__place-span">
+                        Харків
+                    </span>
+                </label>
+                <label class="resultPopup__place-label">
+                    <input class="resultPopup__place-radio" type="radio" name="result__place" value="Львів">
+                    <span class="resultPopup__place-span">
+                        Львів
+                    </span>
+                </label>
+                <label class="resultPopup__place-label">
+                    <input class="resultPopup__place-radio" type="radio" name="result__place" value="Дніпро">
+                    <span class="resultPopup__place-span">
+                        Дніпро
+                    </span>
+                </label>
+                <label class="resultPopup__place-label">
+                    <input class="resultPopup__place-radio" type="radio" name="result__place" value="Одесса">
+                    <span class="resultPopup__place-span">
+                        Одесса
+                    </span>
+                </label>
+                <label class="resultPopup__place-label">
+                    <input class="resultPopup__place-radio" type="radio" name="result__place" value="івано-Франківськ">
+                    <span class="resultPopup__place-span">
+                        івано-Франківськ
+                    </span>
+                </label>
+                <label class="resultPopup__place-label">
+                    <input class="resultPopup__place-radio" type="radio" name="result__place" value="Миколаїв">
+                    <span class="resultPopup__place-span">
+                        Миколаїв
+                    </span>
+                </label>
+                <label class="resultPopup__place-label">
+                    <input class="resultPopup__place-radio" type="radio" name="result__place" value="Миколаїв">
+                    <span class="resultPopup__place-span">
+                        Миколаїв
+                    </span>
+                </label>
+                <label class="resultPopup__place-label">
+                    <input class="resultPopup__place-radio" type="radio" name="result__place" value="Дніпро">
+                    <span class="resultPopup__place-span">
+                        Дніпро
+                    </span>
+                </label>
+                <label class="resultPopup__place-label">
+                    <input class="resultPopup__place-radio" type="radio" name="result__place" value="Львів">
+                    <span class="resultPopup__place-span">
+                        Львів
+                    </span>
+                </label>
+                <label class="resultPopup__place-label">
+                    <input class="resultPopup__place-radio" type="radio" name="result__place" value="Одесса">
+                    <span class="resultPopup__place-span">
+                        Одесса
+                    </span>
+                </label>
+                <label class="resultPopup__place-label">
+                    <input class="resultPopup__place-radio" type="radio" name="result__place" value="івано-Франківськ">
+                    <span class="resultPopup__place-span">
+                        івано-Франківськ
+                    </span>
+                </label>
+                <label class="resultPopup__place-label">
+                    <input class="resultPopup__place-radio" type="radio" name="result__place" value="Дніпро">
+                    <span class="resultPopup__place-span">
+                        Дніпро
+                    </span>
+                </label>
+                <label class="resultPopup__place-label">
+                    <input class="resultPopup__place-radio" type="radio" name="result__place" value="Львів">
+                    <span class="resultPopup__place-span">
+                        Львів
+                    </span>
+                </label>
+                <label class="resultPopup__place-label">
+                    <input class="resultPopup__place-radio" type="radio" name="result__place" value="Одесса">
+                    <span class="resultPopup__place-span">
+                        Одесса
+                    </span>
+                </label>
+            </div>
+            <a href="#resultMap" class="popup-content resultPopup-btn-result-two btn ">
+                Показати результати
+            </a>
         
         </div></div>
     <script src="assets/js/app.min.js"></script>

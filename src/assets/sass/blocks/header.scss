@@ -247,7 +247,13 @@
         color: #79838e;
     }
 }
+.header-place-mob {
+    display: none;
+}
 
+.header-place-search-btn {
+    display: none;
+}
 .sity-name {
     font-weight: normal;
     font-size: 1rem;
@@ -278,4 +284,13 @@
 .header-two {
     padding-top: 3px;
     padding-bottom: 4px;
+}
+
+.header-burger {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    display: none;
+    padding: 0;
 }

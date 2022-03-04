@@ -370,21 +370,25 @@ $(function () {
     $(".resultMap-body").mCustomScrollbar({});
     $(".form-search-scroll").mCustomScrollbar({});
     $(".orderPopup-accordion-body").mCustomScrollbar({});
+    $(".menuBurger").mCustomScrollbar({});
     // открытие боковое панели
     function openPanel(openBtn, openBox, closeBtn) {
-        let btnOpen = document.querySelector(`.${openBtn}`);
+        let btnOpen = document.querySelectorAll(`.${openBtn}`);
         let boxOpen = document.querySelector(`.${openBox}`);
         let btnClose = document.querySelector(`.${closeBtn}`);
         let body = document.querySelector('body');
         let backgroundFon = document.querySelector('.background-fon');
         if (btnOpen && boxOpen) {
-            btnOpen.addEventListener('click', () => {
 
-                if (!boxOpen.classList.contains('active')) {
-                    boxOpen.classList.add('active');
-                    backgroundFon.classList.add('active');
-                    body.classList.add('stop');
-                }
+            btnOpen.forEach(item => {
+                item.addEventListener('click', () => {
+
+                    if (!boxOpen.classList.contains('active')) {
+                        boxOpen.classList.add('active');
+                        backgroundFon.classList.add('active');
+                        body.classList.add('stop');
+                    }
+                })
             })
             backgroundFon.addEventListener("click", () => {
                 boxOpen.classList.remove('active');
@@ -398,8 +402,9 @@ $(function () {
             })
         }
     }
+    openPanel('header-burger', 'menuBurger', 'menu-close')
     openPanel('header-btn-basket', 'basket', 'basket-close')
-
+    openPanel('menuBurger-btn-basket', 'basket', 'basket-close')
     // коризина колличество товара 
     function basketProduct() {
         let btnPrev = document.querySelectorAll('.basket-coll-prev');
@@ -740,6 +745,8 @@ $(function () {
     }
 
     controlTabs('conrtol__change', 'cabinet__tab', 'data-controlTab');
+
+
 })
 
 

@@ -2,9 +2,25 @@
     <div class="container header-container">
         <div class="header-wrapp">
             <div class="header-col">
-                <a href="#" class="logo">
-                    Liki<span>tut</span>
-                </a>
+                <div>
+                    <button class="header-burger">
+                        <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.25 2.5C0.559644 2.5 0 1.94036 0 1.25C0 0.559644 0.559644 0 1.25 0H14.75C15.4404 0 16 0.559644 16 1.25C16 1.94036 15.4404 2.5 14.75 2.5H1.25Z"
+                                fill="#414D55" />
+                            <path
+                                d="M0 7.5C0 8.19036 0.559644 8.75 1.25 8.75H22.75C23.4404 8.75 24 8.19036 24 7.5C24 6.80964 23.4404 6.25 22.75 6.25H1.25C0.559644 6.25 0 6.80964 0 7.5Z"
+                                fill="#414D55" />
+                            <path
+                                d="M0 13.75C0 14.4404 0.559644 15 1.25 15H14.75C15.4404 15 16 14.4404 16 13.75C16 13.0596 15.4404 12.5 14.75 12.5H1.25C0.559644 12.5 0 13.0596 0 13.75Z"
+                                fill="#414D55" />
+                        </svg>
+
+                    </button>
+                    <a href="#" class="logo">
+                        Liki<span>tut</span>
+                    </a>
+                </div>
                 <div class="header-place">
                     <div class="header-place-head">
                         <span class="header-place-img">
@@ -25,7 +41,7 @@
                             Виберіть місто:
                         </div>
                         <button class="header-place-close">
-                            <span>
+                            <span class="header-place-desctop">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -33,8 +49,20 @@
                                         fill="#192025" />
                                 </svg>
                             </span>
+                            <svg class="header-place-mob" width="16" height="12" viewBox="0 0 16 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 5L3.83 5L7.41 1.41L6 0L0 6L6 12L7.41 10.59L3.83 7L16 7V5Z" fill="white" />
+                            </svg>
                         </button>
                         <div class="header-place-search-box">
+                            <button class="header-place-search-btn">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.99978 8.17829L12.2438 13.4223L13.4223 12.2438L8.17829 6.99978L13.4223 1.75574L12.2438 0.577226L6.99978 5.82127L1.75566 0.577148L0.577148 1.75566L5.82126 6.99978L0.577148 12.2439L1.75566 13.4224L6.99978 8.17829Z"
+                                        fill="#9AA9BB" />
+                                </svg>
+                            </button>
                             <input id="header-place" type="text" class="header-place-search" value="">
                         </div>
                         <div class="header-place-box">
@@ -120,7 +148,7 @@
                     Каталог
                 </a>
             </div>
-            <div class="header-col">
+            <div class="header-col --two">
                 <nav class="header-nav">
                     <ul class="header-nav-list">
                         <li class="header-nav-list-inner">
