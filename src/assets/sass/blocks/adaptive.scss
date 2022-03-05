@@ -1,4 +1,12 @@
+@media (max-width: 1440px) {
+    .search .main-searc-box {
+        width: 82%;
+    }
+}
 @media (max-width: 1200px) {
+    .search .main-searc-box {
+        width: 77%;
+    }
     .header-place-head {
         margin-left: 10px;
     }
@@ -19,7 +27,28 @@
         background: url("../../assets/img/main-background.png") no-repeat 85% / cover;
     }
 }
+@media (max-width: 1080px) {
+    .order-coll-2 {
+        display: none;
+    }
+}
 @media (max-width: 998px) {
+    .order-btn {
+        min-width: 300px;
+    }
+    .blog__coll-2 {
+        display: none;
+    }
+    .search-wrapp-coll-2 {
+        width: 60px;
+    }
+    .search-wrapp-coll-1 {
+        width: 95%;
+    }
+    .search .main-searc-box {
+        width: 98%;
+    }
+
     .form-search-coll:nth-child(1) {
         display: none;
     }
@@ -106,6 +135,58 @@
     }
 }
 @media (max-width: 775px) {
+    .order__box-btn {
+        flex-direction: column-reverse;
+    }
+    .order-btn,
+    .order-btn-two .order__product-wrapper {
+        min-width: 95%;
+    }
+    .order__product-wrapper {
+        width: 95%;
+    }
+    .order-row-mob {
+        display: inline-block;
+    }
+    .order-row-desc {
+        display: none;
+    }
+    .order__product-row {
+        flex-direction: column;
+    }
+    .order__product-data {
+        margin-bottom: 23px;
+    }
+    .order-row {
+        padding: 5px 10px;
+    }
+    .blog-row {
+        width: 290px;
+        padding: 15px;
+        flex-direction: column;
+        margin: 0 auto 10px;
+    }
+    .blog__coll {
+        width: 100%;
+    }
+    .blog__row-head img {
+        width: 260px;
+    }
+    .article-inner {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .bread__list {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .bread__list-inner {
+        display: flex;
+        &::before {
+            position: relative;
+            top: -5px;
+        }
+    }
     .recom-wrapp {
         justify-content: space-between;
     }
@@ -228,6 +309,12 @@
             width: 134px;
             height: 134px;
         }
+    }
+    .order-btn-two {
+        min-width: 95%;
+    }
+    .order-btn {
+        text-align: center;
     }
     .service-box-3 {
         background: url("../../assets/img/secvise-3.png") no-repeat 100%, #f1ceaf;
@@ -434,6 +521,13 @@
     }
 }
 @media (max-width: 400px) {
+    .order__product-name {
+        width: 250px;
+    }
+    .blog-label-span {
+        width: 145px;
+    }
+
     .service-box-3 {
         background: url("../../assets/img/secvise-3.png") no-repeat bottom -15px right -20px, #f1ceaf;
     }
@@ -474,6 +568,15 @@
     }
 }
 @media (max-width: 360px) {
+    .order__row-header {
+        margin-top: 20px;
+        position: relative;
+    }
+    .order__header-link {
+        position: absolute;
+        right: 10px;
+        top: -20px;
+    }
     .recom-box,
     .recom-box-wrapp {
         width: 100%;
