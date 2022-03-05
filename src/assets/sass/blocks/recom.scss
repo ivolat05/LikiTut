@@ -129,8 +129,9 @@
     border: none;
     padding-right: 17px;
     background: none;
-    position: relative;
+    position: absolute;
     top: 20px;
+    right: 5px;
     &::before {
         content: url("../../assets/img/recom-arrow.svg");
         position: absolute;
@@ -145,4 +146,29 @@
     font-size: 1rem;
     line-height: 1.7;
     color: #414d55;
+}
+
+.recom-btn-mob {
+    width: 338px;
+    margin: 0 auto;
+    height: 45px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background: #ecf3ff;
+
+    border: 1px solid #4c6fff;
+    border-radius: 8px;
+
+    font-weight: normal;
+    font-size: 1.14rem;
+    line-height: 1.1875;
+    color: #4c6fff;
+    cursor: pointer;
+    transition: 0.4s all ease-in-out;
+    &:hover {
+        color: #fff;
+        background: #4c6fff;
+    }
 }
