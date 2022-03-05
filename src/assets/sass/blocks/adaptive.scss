@@ -20,6 +20,18 @@
     }
 }
 @media (max-width: 998px) {
+    .form-search-coll:nth-child(1) {
+        display: none;
+    }
+    .form-search-coll {
+        width: 100%;
+    }
+    .search-row-img {
+        display: none;
+    }
+    .form__search-title {
+        display: none;
+    }
     .recom-btn-mob {
         display: flex;
         margin-top: 12px;
@@ -94,6 +106,14 @@
     }
 }
 @media (max-width: 775px) {
+    .recom-wrapp {
+        justify-content: space-between;
+    }
+    .recom__product-box {
+        width: 180px;
+        height: 335px;
+        margin: 5px;
+    }
     .footer {
         padding-top: 30px;
     }
@@ -201,6 +221,14 @@
 }
 
 @media (max-width: 550px) {
+    .recom_product-box-img {
+        width: 134px;
+        height: 134px;
+        img {
+            width: 134px;
+            height: 134px;
+        }
+    }
     .service-box-3 {
         background: url("../../assets/img/secvise-3.png") no-repeat 100%, #f1ceaf;
     }
@@ -421,6 +449,12 @@
     }
 }
 @media (max-width: 380px) {
+    .recom__product-box {
+        margin: 5px;
+    }
+    .recom-wrapp {
+        justify-content: center;
+    }
     .service-box-title {
         width: 167px;
     }
