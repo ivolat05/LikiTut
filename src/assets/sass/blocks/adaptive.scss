@@ -33,6 +33,39 @@
     }
 }
 @media (max-width: 998px) {
+    .cabinet__tab-btn {
+        display: block;
+    }
+    .cabinet-btn--hidden {
+        display: none;
+    }
+    .cabinet__wrapp {
+        position: relative;
+    }
+    .search {
+        background: #fff;
+    }
+
+    .search .header-btn-basket {
+        position: absolute;
+        top: 0;
+        path {
+            fill: #2662f0;
+        }
+    }
+    .header-col {
+        width: 90%;
+        .select.lang {
+            display: none;
+        }
+    }
+    .cabinet__tab {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #f7f9fb;
+    }
     .order-btn {
         min-width: 300px;
     }
@@ -135,6 +168,9 @@
     }
 }
 @media (max-width: 775px) {
+    .orderPopup {
+        width: 100%;
+    }
     .order__box-btn {
         flex-direction: column-reverse;
     }
@@ -296,6 +332,10 @@
 }
 
 @media (max-width: 650px) {
+    .orderPopup {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .header-place-body {
         right: -50px;
     }
