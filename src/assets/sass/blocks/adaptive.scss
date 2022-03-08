@@ -29,10 +29,94 @@
         left: auto;
         right: 0;
     }
+    .cabinetOrder__body-coll:nth-child(5) {
+        width: 190px;
+    }
+    .cabinetOrder__coll-row {
+        width: 100%;
+    }
+    .cabinetOrder__head-coll:first-child {
+        width: 140px;
+        padding-left: 29px;
+    }
+    .cabinetOrder__head-coll:nth-child(2) {
+        width: 68px;
+    }
+    .cabinetOrder__head-coll:nth-child(3) {
+        width: 135px;
+    }
+    .cabinetOrder__head-coll:nth-child(4) {
+        width: 190px;
+    }
+    .cabinetOrder__body-coll:nth-child(4) {
+        width: 125px;
+    }
+    .cabinetOrder__body-coll:nth-child(2) {
+        width: 110px;
+    }
+    .cabinetOrder__body-coll:nth-child(3) {
+        width: 80px;
+    }
+    .cabinetOrder__body-coll:first-child {
+        width: 30px;
+    }
 }
 @media (max-width: 1200px) {
+    .price__wrapp-coll {
+        width: 280px;
+    }
+    .price-inner-inner {
+        width: 320px;
+    }
+    .cabinetOrder-mob-title {
+        display: block;
+    }
+    .cabinetOrder-row {
+        flex-direction: column;
+        padding: 15px 15px 15px 50px;
+        width: 100%;
+        background: #ffffff;
+        box-shadow: 0px 4px 8px rgba(154, 169, 187, 0.1);
+        border-radius: 4px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    .cabinetOrder-head {
+        display: none;
+    }
     .control__table-name {
         padding-right: 10px;
+    }
+
+    .cabinetOrder__body-coll:nth-child(1) {
+        position: absolute;
+        left: 15px;
+        top: 15px;
+    }
+    .cabinetOrder__body-coll:nth-child(2) {
+        margin-bottom: 5px;
+    }
+    .cabinetOrder__body-coll:nth-child(3) {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        text-align: right;
+    }
+    .cabinetOrder__body-coll:nth-child(4) {
+        margin-bottom: 5px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cabinetOrder__body-coll:nth-child(5) {
+        width: 100%;
+    }
+    .cabinetOrder__body-coll:nth-child(6) {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
     .control__row-coll {
         width: 295px;
@@ -145,6 +229,46 @@
     }
 }
 @media (max-width: 998px) {
+    .price-title {
+        display: none;
+    }
+    .price__wrapp-coll {
+        width: 316px;
+    }
+    .control__head {
+        background: #fff;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+    }
+    .control,
+    .cabinetOrder {
+        background: #f7f9fb;
+        .navigation {
+            margin: 0 auto;
+        }
+        .navigation-list {
+            position: static;
+            width: 220px;
+            display: block;
+            margin: 30px auto 0;
+        }
+    }
+    .cabinetOrder-title {
+        display: none;
+    }
+    .cabinetOrder-wrapp {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .cabinetOrder {
+        background: #f7f9fb;
+    }
+    .cabinetOrder-wrapp {
+        background: #ffffff;
+        box-shadow: 0px 4px 8px rgba(154, 169, 187, 0.1);
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
     .control-title {
         display: none;
     }
@@ -486,6 +610,43 @@
     }
 }
 @media (max-width: 775px) {
+    .price__wrapp-coll {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .price-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .price-inner-inner {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .price-inner-text {
+        margin-bottom: 15px;
+    }
+
+    .price-box {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .price-btn {
+        width: 100%;
+    }
+    .price {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .cabinetOrder-select {
+        width: 200px;
+    }
+    .cabinetOrder-wrapp {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .popupOrder {
+        width: 100%;
+    }
     .control__head-wrapp {
         flex-direction: column;
     }
@@ -740,6 +901,10 @@
 }
 
 @media (max-width: 650px) {
+    .popupOrder {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .cabinetInfo {
         padding-left: 15px;
         padding-right: 15px;
@@ -758,6 +923,25 @@
 }
 
 @media (max-width: 550px) {
+    .popupDel-box-btn {
+        flex-direction: column-reverse;
+        button {
+            width: 100%;
+        }
+    }
+    .popupDel {
+        width: 100%;
+    }
+    .popupOrder .popup-close {
+        right: 15px;
+        top: 15px;
+    }
+    .popupOrder-title {
+        margin-bottom: 15px;
+    }
+    .cabinetOrder__coll-name {
+        max-width: 200px;
+    }
     .control__head {
         margin-bottom: 5px;
     }
@@ -984,6 +1168,48 @@
 }
 
 @media (max-width: 450px) {
+    .control,
+    .cabinetOrder {
+        .navigation-btn {
+            width: 100%;
+        }
+    }
+    .cabinetOrder {
+        .navigation-btn {
+            width: 100%;
+            margin-top: 15px;
+        }
+    }
+    .select.cabinetOrder-select {
+        border: none;
+        padding: 0;
+        width: 150px;
+        height: 25px;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .cabinetOrder-wrapp {
+        flex-direction: column;
+    }
+    .popupOrder-row {
+        flex-direction: column;
+        width: 100%;
+    }
+    .popupOrder-row.--status {
+        width: 100%;
+        flex-direction: row;
+        align-items: baseline;
+        .popupOrder-row-coll {
+            width: 50%;
+            text-align: right;
+        }
+    }
+    .popupOrder-row-name {
+        margin-bottom: 5px;
+    }
+    .popupOrder-row-coll {
+        width: 100%;
+    }
     .header-place-search {
         width: 85%;
     }
@@ -999,6 +1225,22 @@
     }
 }
 @media (max-width: 400px) {
+    .cabinetOrder-row {
+        padding-top: 40px;
+        padding-left: 15px;
+    }
+    .cabinetOrder-mob-title {
+        margin-bottom: 5px;
+    }
+    .cabinetOrder__body-coll:first-child {
+        left: 5px;
+    }
+    .cabinetOrder__body-coll:nth-child(6) {
+        flex-direction: column;
+    }
+    .cabinetOrder-coll {
+        margin-left: auto;
+    }
     .control__row-btn {
         right: 7px;
     }

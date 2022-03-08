@@ -3223,7 +3223,26 @@ $(function () {
                 } else {
                     cabWrapp.classList.remove('mob-active');
                 }
+                let btnTab = document.querySelectorAll('.cabiner-btn');
+                let mobActive = document.querySelector('.mob-active');
+                if (btnTab && mobActive) {
+                    btnTab.forEach(item => {
+                        item.addEventListener('click', () => {
+                            mobActive.classList.add('mob-active-tab')
+                        })
+                    })
+                }
+                let cabinetTabBtn = document.querySelectorAll('.cabinet__tab-btn');
+                if (cabinetTabBtn) {
+                    cabinetTabBtn.forEach(item => {
+                        item.addEventListener('click', () => {
+                            if (mobActive.classList.contains('mob-active-tab')) {
+                                mobActive.classList.remove('mob-active-tab')
+                            }
 
+                        })
+                    })
+                }
             });
             if (document.body.clientWidth < 998) {
                 cabWrapp.classList.add('mob-active');
