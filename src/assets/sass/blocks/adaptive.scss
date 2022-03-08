@@ -1,4 +1,7 @@
 @media (max-width: 1440px) {
+    .contacts-coll-1 {
+        width: 72%;
+    }
     .search .main-searc-box {
         width: 82%;
     }
@@ -62,6 +65,13 @@
     }
 }
 @media (max-width: 1200px) {
+    .info-block {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .contacts-coll-1 {
+        width: 65%;
+    }
     .price__wrapp-coll {
         width: 280px;
     }
@@ -229,6 +239,94 @@
     }
 }
 @media (max-width: 998px) {
+    .info {
+        padding-bottom: 0;
+    }
+    .info__sidebar-head {
+        display: block;
+    }
+    .info__sidebar-head-title {
+        display: block;
+        margin-bottom: 12px;
+        margin-top: 11px;
+    }
+    .info__sidebar-btn {
+        margin-bottom: 8px;
+        border: none;
+        padding-left: 17px;
+        background: #ffffff;
+        border-radius: 8px;
+        height: 54px;
+        position: relative;
+        &::after {
+            content: url("../../assets/img/r.svg");
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .info-sidebar {
+        background: #f7f9fb;
+        padding-bottom: 0;
+    }
+    .info__sidebar-body {
+        padding: 0;
+    }
+    .info {
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    .info-block {
+        background: #f7f9fb;
+    }
+    .company,
+    .infoContact {
+        width: 100%;
+        background: #ffffff;
+        padding: 17px 17px 70px 17px;
+    }
+    .info-block-close {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .info-block {
+        padding: 0;
+    }
+    .info-block-close {
+        display: block;
+    }
+    .contacts__mob-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        background: #ffffff;
+        border: 1px solid #ff671f;
+        border-radius: 8px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #ff671f;
+        svg {
+            margin-right: 10px;
+        }
+    }
+    .contacts-box-coll {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .contacts-coll-1 {
+        width: 100%;
+    }
+    .contacts-catalog {
+        display: none;
+    }
     .price-title {
         display: none;
     }
@@ -286,31 +384,46 @@
         position: absolute;
     }
     .mob-active.mob-active-tab {
-        .cabinet-box-left {
+        .cabinet-box-left,
+        .info-sidebar {
             position: absolute;
+            display: none;
             transition: 0.4s all ease-in-out;
         }
-        .cabinet__sidebar-right {
+        .cabinet__sidebar-right,
+        .info-block {
             width: 100%;
         }
-        .cabinet__tab {
+
+        .cabinet__tab,
+        .info-tab {
             position: relative;
             transform: translateX(0);
             transition: 0.4s all ease-in-out;
-            min-height: 900px;
         }
     }
     .mob-active {
-        .cabinet-box-left {
+        .cabinet-box-left,
+        .info-sidebar {
             position: relative;
             width: 100%;
+            display: block;
         }
-        .cabinet__sidebar-right {
+
+        .info-sidebar {
+            margin-right: 15px;
+            width: 92%;
+            margin-left: 15px;
+        }
+
+        .cabinet__sidebar-right,
+        .info-block {
             width: 0;
         }
-        .cabinet__tab {
+        .cabinet__tab,
+        .info-tab {
             position: absolute;
-            transform: translateX(300%);
+            transform: translateX(600%);
             transition: 0.4s;
             transition: 0.4s all ease-in-out;
         }
@@ -610,6 +723,57 @@
     }
 }
 @media (max-width: 775px) {
+    .infoContact {
+        flex-direction: column;
+    }
+    .infoContact-coll-1,
+    .infoContact-coll-2 {
+        width: 100%;
+    }
+    .contact-slaid-box {
+        .slaid-box {
+            padding-left: 15px;
+        }
+    }
+    .completion-wrapp-inner {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .completion-box-wrapp {
+        flex-direction: column;
+    }
+
+    .completion-box-coll {
+        width: 100%;
+        margin-bottom: 38px;
+    }
+    .completion-box-coll:nth-child(2) {
+        margin-bottom: 0;
+    }
+
+    .completion-wrapp {
+        padding: 25px 10px;
+    }
+    .infoContact-btn {
+        max-width: 100%;
+    }
+    .completion-title {
+        margin-right: 0;
+    }
+    .completion-text {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .completion-box {
+        padding: 25px 10px;
+        margin-bottom: 22px;
+    }
+    .completion-title {
+        flex-direction: column;
+    }
+    .price {
+        padding-bottom: 20px;
+    }
     .price__wrapp-coll {
         width: 100%;
         margin-bottom: 15px;
@@ -901,6 +1065,9 @@
 }
 
 @media (max-width: 650px) {
+    .orderPopup-2 {
+        width: 100%;
+    }
     .popupOrder {
         padding-left: 15px;
         padding-right: 15px;
@@ -923,6 +1090,35 @@
 }
 
 @media (max-width: 550px) {
+    .company-box-text {
+        padding-right: 5px;
+    }
+    .company-box:before {
+        height: 65%;
+    }
+    .contact__box-title {
+        color: #649eff;
+    }
+    .contacts-box-coll {
+        display: block;
+    }
+    .contacts__coll-place {
+        margin-bottom: 20px;
+    }
+    .contacts__coll-tell {
+        margin-bottom: 20px;
+    }
+    .contacts {
+        .bread__list-inner:nth-child(2) {
+            display: none;
+        }
+    }
+    .orderPopup-title {
+        flex-direction: column;
+        svg {
+            margin-bottom: 10px;
+        }
+    }
     .popupDel-box-btn {
         flex-direction: column-reverse;
         button {
@@ -1160,6 +1356,10 @@
     }
 }
 @media (max-width: 500px) {
+    .orderPopup-2 {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
     .popupPwd {
         width: 100%;
         padding-left: 20px;
@@ -1270,6 +1470,13 @@
     }
 }
 @media (max-width: 380px) {
+    .orderPopup-2 {
+        .orderPopup__box-img {
+            img {
+                width: 80%;
+            }
+        }
+    }
     .recom__product-box {
         margin: 5px;
     }

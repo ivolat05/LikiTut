@@ -3214,8 +3214,9 @@ $(function () {
     controlTabs('conrtol__change', 'cabinet__tab', 'data-controlTab');
 
     // боковые панели мобильная версия функционирование
-    function mob() {
-        let cabWrapp = document.querySelector('.cabinet__wrapp');
+
+    function mob(nameWrapp, nameBtn, btnClose) {
+        let cabWrapp = document.querySelector(`.${nameWrapp}`);
         if (cabWrapp) {
             window.addEventListener("resize", function () {
                 if (document.body.clientWidth < 998) {
@@ -3223,7 +3224,7 @@ $(function () {
                 } else {
                     cabWrapp.classList.remove('mob-active');
                 }
-                let btnTab = document.querySelectorAll('.cabiner-btn');
+                let btnTab = document.querySelectorAll(`.${nameBtn}`);
                 let mobActive = document.querySelector('.mob-active');
                 if (btnTab && mobActive) {
                     btnTab.forEach(item => {
@@ -3232,7 +3233,7 @@ $(function () {
                         })
                     })
                 }
-                let cabinetTabBtn = document.querySelectorAll('.cabinet__tab-btn');
+                let cabinetTabBtn = document.querySelectorAll(`.${btnClose}`);
                 if (cabinetTabBtn) {
                     cabinetTabBtn.forEach(item => {
                         item.addEventListener('click', () => {
@@ -3249,7 +3250,7 @@ $(function () {
             } else {
                 cabWrapp.classList.remove('mob-active');
             }
-            let btnTab = document.querySelectorAll('.cabiner-btn');
+            let btnTab = document.querySelectorAll(`.${nameBtn}`);
             let mobActive = document.querySelector('.mob-active');
             if (btnTab && mobActive) {
                 btnTab.forEach(item => {
@@ -3258,7 +3259,7 @@ $(function () {
                     })
                 })
             }
-            let cabinetTabBtn = document.querySelectorAll('.cabinet__tab-btn');
+            let cabinetTabBtn = document.querySelectorAll(`.${btnClose}`);
             if (cabinetTabBtn) {
                 cabinetTabBtn.forEach(item => {
                     item.addEventListener('click', () => {
@@ -3272,5 +3273,6 @@ $(function () {
         }
 
     }
-    mob();
+    mob('cabinet__wrapp', 'cabiner-btn', 'cabinet__tab-btn');
+    mob('info__wrapp', 'info__sidebar-btn', 'info-block-close');
 })
