@@ -21,9 +21,26 @@
             <div class="container">
                 <div class="header-wrapp">
                     <div class="header-col">
-                        <a href="#" class="logo">
-                            Liki<span>tut</span>
-                        </a>
+                        <div>
+                            <button class="header-burger">
+                                <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.25 2.5C0.559644 2.5 0 1.94036 0 1.25C0 0.559644 0.559644 0 1.25 0H14.75C15.4404 0 16 0.559644 16 1.25C16 1.94036 15.4404 2.5 14.75 2.5H1.25Z"
+                                        fill="#414D55" />
+                                    <path
+                                        d="M0 7.5C0 8.19036 0.559644 8.75 1.25 8.75H22.75C23.4404 8.75 24 8.19036 24 7.5C24 6.80964 23.4404 6.25 22.75 6.25H1.25C0.559644 6.25 0 6.80964 0 7.5Z"
+                                        fill="#414D55" />
+                                    <path
+                                        d="M0 13.75C0 14.4404 0.559644 15 1.25 15H14.75C15.4404 15 16 14.4404 16 13.75C16 13.0596 15.4404 12.5 14.75 12.5H1.25C0.559644 12.5 0 13.0596 0 13.75Z"
+                                        fill="#414D55" />
+                                </svg>
+        
+                            </button>
+                            <a href="#" class="logo">
+                                Liki<span>tut</span>
+                            </a>
+                        </div>
+        
                         <div class="header-place">
                             <div class="header-place-head">
                                 <span class="header-place-img">
@@ -44,7 +61,7 @@
                                     Виберіть місто:
                                 </div>
                                 <button class="header-place-close">
-                                    <span>
+                                    <span class="header-place-desctop">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -52,8 +69,20 @@
                                                 fill="#192025" />
                                         </svg>
                                     </span>
+                                    <svg class="header-place-mob" width="16" height="12" viewBox="0 0 16 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 5L3.83 5L7.41 1.41L6 0L0 6L6 12L7.41 10.59L3.83 7L16 7V5Z" fill="white" />
+                                    </svg>
                                 </button>
                                 <div class="header-place-search-box">
+                                    <button class="header-place-search-btn">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.99978 8.17829L12.2438 13.4223L13.4223 12.2438L8.17829 6.99978L13.4223 1.75574L12.2438 0.577226L6.99978 5.82127L1.75566 0.577148L0.577148 1.75566L5.82126 6.99978L0.577148 12.2439L1.75566 13.4224L6.99978 8.17829Z"
+                                                fill="#9AA9BB" />
+                                        </svg>
+                                    </button>
                                     <input id="header-place" type="text" class="header-place-search" value="">
                                 </div>
                                 <div class="header-place-box">
@@ -127,6 +156,9 @@
                                 </div>
                             </div>
                         </div>
+        
+        
+        
                         <div class="select lang">
                             <div class="select__header">
                                 <span class="select__current">
@@ -975,6 +1007,141 @@
                 Показати результати
             </a>
         
+        </div>    <div class="menuBurger">
+            <button class="menu-close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M6.99978 8.17853L12.2438 13.4226L13.4223 12.2441L8.17829 7.00002L13.4223 1.75598L12.2438 0.57747L6.99978 5.82151L1.75566 0.577393L0.577148 1.7559L5.82126 7.00002L0.577148 12.2441L1.75566 13.4226L6.99978 8.17853Z"
+                        fill="#192025" />
+                </svg>
+            </button>
+            <a href="#" class="logo">
+                Liki<span>tut</span>
+            </a>
+        
+            <div class="menuBurger-wrapp">
+                <a href="#" class="menuBurger-wrapp-link">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.625 14.375C8.625 13.8457 9.05406 13.4167 9.58333 13.4167H13.4167C13.9459 13.4167 14.375 13.8457 14.375 14.375V18.2083H18.2083V11.897L11.5 5.18862L4.79167 11.897V18.2083H8.625V14.375ZM10.5417 15.3333V19.1667C10.5417 19.6959 10.1126 20.125 9.58333 20.125H3.83333C3.30406 20.125 2.875 19.6959 2.875 19.1667V11.5C2.875 11.2458 2.97597 11.0021 3.15569 10.8224L10.8224 3.15569C11.1966 2.78144 11.8034 2.78144 12.1776 3.15569L19.8443 10.8224C20.024 11.0021 20.125 11.2458 20.125 11.5V19.1667C20.125 19.6959 19.6959 20.125 19.1667 20.125H13.4167C12.8874 20.125 12.4583 19.6959 12.4583 19.1667V15.3333H10.5417Z"
+                            fill="#04B6B1" />
+                    </svg>
+                    Главная
+                </a>
+                <a href="#" class="menuBurger-wrapp-link">
+                    <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.75 2.50008C0.75 1.21142 1.79467 0.166748 3.08333 0.166748H3.41667C4.70533 0.166748 5.75 1.21142 5.75 2.50008V2.50008C5.75 3.78875 4.70533 4.83341 3.41667 4.83341H3.08333C1.79467 4.83341 0.75 3.78875 0.75 2.50008V2.50008ZM0.75 9.50008C0.75 8.21142 1.79467 7.16675 3.08333 7.16675H3.41667C4.70533 7.16675 5.75 8.21142 5.75 9.50008V9.50008C5.75 10.7887 4.70533 11.8334 3.41667 11.8334H3.08333C1.79467 11.8334 0.75 10.7887 0.75 9.50008V9.50008ZM8.25 2.50008C8.25 1.21142 9.29467 0.166748 10.5833 0.166748H10.9167C12.2053 0.166748 13.25 1.21142 13.25 2.50008V2.50008C13.25 3.78875 12.2053 4.83341 10.9167 4.83341H10.5833C9.29467 4.83341 8.25 3.78875 8.25 2.50008V2.50008ZM8.25 9.50008C8.25 8.21142 9.29467 7.16675 10.5833 7.16675H10.9167C12.2053 7.16675 13.25 8.21142 13.25 9.50008V9.50008C13.25 10.7887 12.2053 11.8334 10.9167 11.8334H10.5833C9.29467 11.8334 8.25 10.7887 8.25 9.50008V9.50008Z"
+                            fill="#04B6B1" />
+                    </svg>
+        
+                    Каталог аптек
+                </a>
+        
+                <div class="menuBurger-wrapp-title">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.99 0C4.47 0 0 4.48 0 10C0 15.52 4.47 20 9.99 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 9.99 0ZM11 11V5H9V11H11ZM11 15V13H9V15H11ZM2 10C2 14.42 5.58 18 10 18C14.42 18 18 14.42 18 10C18 5.58 14.42 2 10 2C5.58 2 2 5.58 2 10Z"
+                            fill="#04B6B1" />
+                    </svg>
+        
+                    Інформацiя
+                </div>
+                <div class="menuBurger-inner">
+                    <a href="#" class="menuBurger-inner-link">
+                        О компании
+                    </a>
+                    <a href="#" class="menuBurger-inner-link">
+                        Регламент
+                    </a>
+                    <a href="#" class="menuBurger-inner-link">
+                        Блог
+                    </a>
+                    <a href="#" class="menuBurger-inner-link">
+                        Контакти
+                    </a>
+                </div>
+                <div class="menuBurger-wrapp-title">
+                    <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10 4C10 6.20914 8.20914 8 6 8C3.79086 8 2 6.20914 2 4C2 1.79086 3.79086 0 6 0C8.20914 0 10 1.79086 10 4ZM8 4C8 5.10457 7.10457 6 6 6C4.89543 6 4 5.10457 4 4C4 2.89543 4.89543 2 6 2C7.10457 2 8 2.89543 8 4Z"
+                            fill="#04B6B1" />
+                        <path d="M15 4H17V7H20V9H17V12H15V9H12V7H15V4Z" fill="#04B6B1" />
+                        <path
+                            d="M10 15H12C12 11.6863 9.31371 9 6 9C2.68629 9 0 11.6863 0 15H2C2 12.7909 3.79086 11 6 11C8.20914 11 10 12.7909 10 15Z"
+                            fill="#04B6B1" />
+                    </svg>
+        
+                    ПАРТНЕРАМ
+                </div>
+                <div class="menuBurger-inner">
+                    <a href="#" class="menuBurger-inner-link">
+                        Розмістити аптеку
+        
+                    </a>
+                    <a href="#" class="menuBurger-inner-link">
+                        Особистий кабінет аптеки
+        
+                    </a>
+                    <a href="#" class="menuBurger-inner-link">
+                        Політика щодо реклами і спонсорства
+                    </a>
+        
+                </div>
+        
+                <div class="menuBurger-btn-basket">
+                    <div class="menuBurger__basket-wrapp">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 16C4.895 16 4.01 16.895 4.01 18C4.01 19.105 4.895 20 6 20C7.105 20 8 19.105 8 18C8 16.895 7.105 16 6 16ZM0 0V2H2L5.595 9.585L4.245 12.035C4.09 12.325 4 12.65 4 13C4 14.105 4.895 15 6 15H18V13H6.425C6.285 13 6.175 12.89 6.175 12.75C6.175 12.705 6.185 12.665 6.205 12.63L7.1 11H14.55C15.3 11 15.955 10.585 16.3 9.97L19.875 3.48C19.955 3.34 20 3.175 20 3C20 2.445 19.55 2 19 2H4.215L3.265 0H0ZM16 16C14.895 16 14.01 16.895 14.01 18C14.01 19.105 14.895 20 16 20C17.105 20 18 19.105 18 18C18 16.895 17.105 16 16 16Z"
+                                fill="#4C6FFF"></path>
+                        </svg>
+                        <span class="header-basket-summ">
+                            3
+                        </span>
+                    </div>
+                    <div class="menuBurger__basket-text">
+                        Мои брони
+                    </div>
+                </div>
+                <a href="#" class="menuBurger-btn">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.0003 10.7233C13.5316 10.7233 15.5837 8.72285 15.5837 6.25519C15.5837 3.78754 13.5316 1.78711 11.0003 1.78711C8.46902 1.78711 6.41699 3.78754 6.41699 6.25519C6.41699 8.72285 8.46902 10.7233 11.0003 10.7233Z"
+                            fill="#4C6FFF" />
+                        <path
+                            d="M11.0005 12.9575C6.40797 12.9575 2.66797 15.9601 2.66797 19.6596C2.66797 19.9099 2.86964 20.1065 3.1263 20.1065H18.8746C19.1313 20.1065 19.333 19.9099 19.333 19.6596C19.333 15.9601 15.593 12.9575 11.0005 12.9575Z"
+                            fill="#4C6FFF" />
+                    </svg>
+                    Личный кабинет
+                </a>
+                <div class="menuBurger-subtitle">
+                    язык:
+                </div>
+                <div class="menuBurger-row">
+                    <label class="menuBurger-label">
+                        <input type="radio" name="lang" class="menuBurger-radio" checked>
+                        <span class="menuBurger-span">
+                            ua
+                        </span>
+                    </label>
+                    <label class="menuBurger-label">
+                        <input type="radio" name="lang" class="menuBurger-radio" checked>
+                        <span class="menuBurger-span">
+                            ru
+                        </span>
+                    </label>
+                </div>
+                <div class="menuBurger-subtitle">
+                    МІСТО:
+                </div>
+                <div class="result__header-title">
+                    Харків
+                    <a href="#resultPopup" class="result__head-link popup-content">
+                        Змінити
+                    </a>
+                </div>
+            </div>
         </div></div>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
     </script>

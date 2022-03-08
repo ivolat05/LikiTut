@@ -9,7 +9,16 @@
 .cabinet__tab {
     display: none;
 }
+.cabinent-mob {
+    display: none;
+}
 
+.cabinet__mobil-label {
+    display: none;
+}
+.cabinetInfo-mob-btn {
+    display: none;
+}
 .cabinet__tab.active {
     display: block;
     height: 100%;
