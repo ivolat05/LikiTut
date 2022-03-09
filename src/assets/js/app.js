@@ -403,10 +403,13 @@ $(function () {
             })
         }
     }
-    openPanel('header-burger', 'menuBurger', 'menu-close')
-    openPanel('header-btn-basket', 'basket', 'basket-close')
-    openPanel('menuBurger-btn-basket', 'basket', 'basket-close')
-    openPanel('result-filter-btn', 'result-filter', 'result-filter-close')
+    openPanel('header-burger', 'menuBurger', 'menu-close');
+    openPanel('header-btn-basket', 'basket', 'basket-close');
+    openPanel('menuBurger-btn-basket', 'basket', 'basket-close');
+    openPanel('result-filter-btn', 'result-filter', 'result-filter-close');
+    openPanel('medic-filter-open', 'medic-filter', 'medic-fitter-close');
+    openPanel('medic-filter-open', 'medic-filter', 'medic-filter-btn');
+
     // коризина колличество товара 
     function basketProduct() {
         let btnPrev = document.querySelectorAll('.basket-coll-prev');
@@ -894,6 +897,18 @@ $(function () {
 
     }
     dellFooterMap();
+
+    function openText() {
+        let openBtn = document.querySelectorAll('.medic-cart-open');
+        if (openBtn) {
+            openBtn.forEach(item => {
+                item.addEventListener('click', () => {
+                    item.parentElement.classList.toggle('active');
+                })
+            })
+        }
+    }
+    openText();
 })
 
 

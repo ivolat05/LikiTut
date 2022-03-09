@@ -26,58 +26,87 @@
                 Витамины и минералы
             </div>
             <div class="medic-filter">
-                <label class="medic-label">
-                    <input type="checkbox" class="medi-label-check" checked>
-                    <span class="medic-btn">
-                        Все
-                    </span>
-                </label>
+                <div class="medic-fitter-head">
+                    <div class="medic-fitter-head-title">
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11 2H20V4H11V2ZM0 4H7V6H9V0H7V2H0V4ZM7 14H20V16H7V14ZM17 8H20V10H17V8ZM15 12V6.012H13V8H0V10H13V12H15ZM5 18V12H3V14H0V16H3V18H5Z"
+                                fill="#505A66" />
+                        </svg>
 
-                <label class="medic-label">
-                    <input type="checkbox" class="medi-label-check">
-                    <span class="medic-btn">
-                        Для беременных
-                    </span>
-                </label>
+                        Фильтр
+                    </div>
+                    <button class="medic-fitter-close">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.00075 8.17853L12.2448 13.4226L13.4233 12.2441L8.17926 7.00002L13.4233 1.75598L12.2448 0.57747L7.00075 5.82151L1.75664 0.577393L0.578125 1.7559L5.82224 7.00002L0.578125 12.2441L1.75664 13.4226L7.00075 8.17853Z"
+                                fill="#192025"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="medic-fitter-wrapp">
+                    <label class="medic-label">
+                        <input type="checkbox" class="medi-label-check" checked>
+                        <span class="medic-btn">
+                            Все
+                        </span>
+                    </label>
 
-                <label class="medic-label">
-                    <input type="checkbox" class="medi-label-check">
-                    <span class="medic-btn">
-                        Для детей
-                    </span>
-                </label>
+                    <label class="medic-label">
+                        <input type="checkbox" class="medi-label-check">
+                        <span class="medic-btn">
+                            Для беременных
+                        </span>
+                    </label>
 
-                <label class="medic-label">
-                    <input type="checkbox" class="medi-label-check">
-                    <span class="medic-btn">
-                        Для взрослых
-                    </span>
-                </label>
+                    <label class="medic-label">
+                        <input type="checkbox" class="medi-label-check">
+                        <span class="medic-btn">
+                            Для детей
+                        </span>
+                    </label>
 
-                <label class="medic-label">
-                    <input type="checkbox" class="medi-label-check">
-                    <span class="medic-btn">
-                        Для нервной системы
-                    </span>
-                </label>
+                    <label class="medic-label">
+                        <input type="checkbox" class="medi-label-check">
+                        <span class="medic-btn">
+                            Для взрослых
+                        </span>
+                    </label>
 
-                <label class="medic-label">
-                    <input type="checkbox" class="medi-label-check">
-                    <span class="medic-btn">
-                        Для кожи, волос, ногтей
-                    </span>
-                </label>
+                    <label class="medic-label">
+                        <input type="checkbox" class="medi-label-check">
+                        <span class="medic-btn">
+                            Для нервной системы
+                        </span>
+                    </label>
 
-                <label class="medic-label">
-                    <input type="checkbox" class="medi-label-check">
-                    <span class="medic-btn">
-                        Инъекционные
-                    </span>
-                </label>
+                    <label class="medic-label">
+                        <input type="checkbox" class="medi-label-check">
+                        <span class="medic-btn">
+                            Для кожи, волос, ногтей
+                        </span>
+                    </label>
 
+                    <label class="medic-label">
+                        <input type="checkbox" class="medi-label-check">
+                        <span class="medic-btn">
+                            Инъекционные
+                        </span>
+                    </label>
+                </div>
+                <div class="medic-filter-footer">
+                    <button class="btn medic-filter-btn">Применить фильтры</button>
+                </div>
             </div>
         </div>
-
+        <button class="medic-filter-open">
+            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M11 2H20V4H11V2ZM0 4H7V6H9V0H7V2H0V4ZM7 14H20V16H7V14ZM17 8H20V10H17V8ZM15 12V6.012H13V8H0V10H13V12H15ZM5 18V12H3V14H0V16H3V18H5Z"
+                    fill="#4C6FFF" />
+            </svg>
+            фильтр
+        </button>
         <div class="medic-box">
             <div class="medic-col">
 
@@ -93,6 +122,14 @@
                         заболеваний (гипертоническая болезнь с признаками перегрузки левого желудочка, стабильная
                         стенокардия напряжения I и II функциональных классов).
                     </div>
+                    <button class="medic-cart-open">
+                        Подробнее
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.75 1.43701L5.17667 5.01001C5.15348 5.03323 5.12594 5.05165 5.09563 5.06422C5.06531 5.07679 5.03282 5.08326 5 5.08326C4.96718 5.08326 4.93469 5.07679 4.90437 5.06422C4.87406 5.05165 4.84652 5.03323 4.82333 5.01001L1.25 1.43701"
+                                stroke="#9AA9BB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
                     <div class="medic-cart-data">
                         от
                         <span class="medic-cart-span">86.81</span>
@@ -117,6 +154,14 @@
                         заболеваний (гипертоническая болезнь с признаками перегрузки левого желудочка, стабильная
                         стенокардия напряжения I и II функциональных классов).
                     </div>
+                    <button class="medic-cart-open">
+                        Подробнее
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.75 1.43701L5.17667 5.01001C5.15348 5.03323 5.12594 5.05165 5.09563 5.06422C5.06531 5.07679 5.03282 5.08326 5 5.08326C4.96718 5.08326 4.93469 5.07679 4.90437 5.06422C4.87406 5.05165 4.84652 5.03323 4.82333 5.01001L1.25 1.43701"
+                                stroke="#9AA9BB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
                     <div class="medic-cart-data">
                         от
                         <span class="medic-cart-span">86.81</span>
@@ -141,6 +186,14 @@
                         заболеваний (гипертоническая болезнь с признаками перегрузки левого желудочка, стабильная
                         стенокардия напряжения I и II функциональных классов).
                     </div>
+                    <button class="medic-cart-open">
+                        Подробнее
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.75 1.43701L5.17667 5.01001C5.15348 5.03323 5.12594 5.05165 5.09563 5.06422C5.06531 5.07679 5.03282 5.08326 5 5.08326C4.96718 5.08326 4.93469 5.07679 4.90437 5.06422C4.87406 5.05165 4.84652 5.03323 4.82333 5.01001L1.25 1.43701"
+                                stroke="#9AA9BB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
                     <div class="medic-cart-data">
                         от
                         <span class="medic-cart-span">86.81</span>
@@ -165,6 +218,14 @@
                         заболеваний (гипертоническая болезнь с признаками перегрузки левого желудочка, стабильная
                         стенокардия напряжения I и II функциональных классов).
                     </div>
+                    <button class="medic-cart-open">
+                        Подробнее
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.75 1.43701L5.17667 5.01001C5.15348 5.03323 5.12594 5.05165 5.09563 5.06422C5.06531 5.07679 5.03282 5.08326 5 5.08326C4.96718 5.08326 4.93469 5.07679 4.90437 5.06422C4.87406 5.05165 4.84652 5.03323 4.82333 5.01001L1.25 1.43701"
+                                stroke="#9AA9BB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
                     <div class="medic-cart-data">
                         от
                         <span class="medic-cart-span">86.81</span>
@@ -189,6 +250,14 @@
                         заболеваний (гипертоническая болезнь с признаками перегрузки левого желудочка, стабильная
                         стенокардия напряжения I и II функциональных классов).
                     </div>
+                    <button class="medic-cart-open">
+                        Подробнее
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.75 1.43701L5.17667 5.01001C5.15348 5.03323 5.12594 5.05165 5.09563 5.06422C5.06531 5.07679 5.03282 5.08326 5 5.08326C4.96718 5.08326 4.93469 5.07679 4.90437 5.06422C4.87406 5.05165 4.84652 5.03323 4.82333 5.01001L1.25 1.43701"
+                                stroke="#9AA9BB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
                     <div class="medic-cart-data">
                         от
                         <span class="medic-cart-span">86.81</span>
@@ -213,6 +282,14 @@
                         заболеваний (гипертоническая болезнь с признаками перегрузки левого желудочка, стабильная
                         стенокардия напряжения I и II функциональных классов).
                     </div>
+                    <button class="medic-cart-open">
+                        Подробнее
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.75 1.43701L5.17667 5.01001C5.15348 5.03323 5.12594 5.05165 5.09563 5.06422C5.06531 5.07679 5.03282 5.08326 5 5.08326C4.96718 5.08326 4.93469 5.07679 4.90437 5.06422C4.87406 5.05165 4.84652 5.03323 4.82333 5.01001L1.25 1.43701"
+                                stroke="#9AA9BB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
                     <div class="medic-cart-data">
                         от
                         <span class="medic-cart-span">86.81</span>

@@ -22,9 +22,25 @@
     padding-left: 10px;
 }
 
+.medic-filter-open {
+    display: none;
+}
+
+.medic-fitter-head {
+    display: none;
+}
+.medic-filter-footer {
+    display: none;
+}
+
+.medic-cart-open {
+    display: none;
+}
+
 .medic-btn {
     display: inline-block;
     min-width: 84px;
+    margin-bottom: 5px;
     font-weight: normal;
     font-size: 1rem;
     line-height: 1.1;

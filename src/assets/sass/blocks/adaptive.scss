@@ -1089,6 +1089,137 @@
     }
 }
 @media (max-width: 775px) {
+    .medic {
+        .navigation {
+            margin: 18px auto 0;
+        }
+        .navigation-list {
+            position: static;
+            width: 220px;
+            display: block;
+            margin: 30px auto 48px;
+        }
+    }
+    .medic-cart {
+        display: flex;
+        flex-direction: column;
+        padding: 19px;
+    }
+    .medic-cart-link,
+    .medic-cart-data {
+        margin-left: auto;
+    }
+    .medic-cart-data {
+        position: static;
+    }
+    .medic-filter {
+        position: absolute;
+        z-index: 3;
+        left: 0;
+        top: 0;
+        width: 335px;
+
+        background: #ffffff;
+        flex-direction: column;
+
+        padding-top: 80px;
+        padding-bottom: 90px;
+        padding: 15px;
+        transform: translateX(-500%);
+        transition: 0.8s all ease-in-out;
+    }
+    .medic__wrapp {
+        padding: 0;
+        background: #f7f9fb;
+        .medic-title {
+            margin-bottom: 0;
+        }
+    }
+    .medic-filter.active {
+        transform: translateX(0);
+        z-index: 4;
+    }
+    .medic-filter-open {
+        display: flex;
+        height: 40px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 12px;
+        background: #ffffff;
+        border-radius: 8px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        text-transform: capitalize;
+        color: #414d55;
+        svg {
+            margin-right: 11px;
+        }
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .medic-fitter-wrapp {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    .medic-fitter-head {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #fff;
+        z-index: 3;
+    }
+    .medic-fitter-close {
+        border: none;
+        outline: none;
+        background: none;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    .medic-fitter-head-title {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 19px;
+        color: #192025;
+        padding: 19px 15px;
+        svg {
+            margin-right: 10px;
+        }
+    }
+
+    .medic-filter-footer {
+        display: block;
+        position: absolute;
+        background: #fff;
+        bottom: 30px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+    }
+    .medic-filter-btn {
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        color: #ffffff;
+        height: 44px;
+        width: 100%;
+    }
+    .medic-label {
+        display: block;
+        margin-bottom: 15px;
+    }
     .result__head-title {
         display: flex;
         flex-direction: column;
@@ -1493,6 +1624,43 @@
 }
 
 @media (max-width: 550px) {
+    .navigation-btn {
+        width: 100%;
+    }
+    .medic-cart-open {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0;
+        background: none;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 16px;
+        color: #4c6fff;
+        svg {
+            margin-left: 11px;
+        }
+    }
+    .medic-cart {
+        margin-bottom: 12px;
+    }
+    .medic-cart-title {
+        margin-bottom: 12px;
+    }
+    .medic-cart.active {
+        .medic-cart-text {
+            height: 100%;
+            margin-bottom: 12px;
+        }
+    }
+    .medic-cart-text {
+        margin-bottom: 0;
+        height: 150px;
+        overflow: hidden;
+    }
     .result-title.--mob,
     .result-subtitle.--mob {
         display: block;
@@ -1942,6 +2110,9 @@
     }
 }
 @media (max-width: 360px) {
+    .medic-filter {
+        width: 100%;
+    }
     .result-filter.active {
         width: 100%;
     }
