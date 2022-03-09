@@ -405,6 +405,7 @@ $(function () {
     openPanel('header-burger', 'menuBurger', 'menu-close')
     openPanel('header-btn-basket', 'basket', 'basket-close')
     openPanel('menuBurger-btn-basket', 'basket', 'basket-close')
+    openPanel('result-filter-btn', 'result-filter', 'result-filter-close')
     // коризина колличество товара 
     function basketProduct() {
         let btnPrev = document.querySelectorAll('.basket-coll-prev');
@@ -808,6 +809,48 @@ $(function () {
     }
     mob('cabinet__wrapp', 'cabiner-btn', 'cabinet__tab-btn');
     mob('info__wrapp', 'info__sidebar-btn', 'info-block-close');
+
+    // добовление выброных элементов фильт
+    function fulterAdd() {
+        let bntAdd = document.querySelector('.result-filter-footer-btn');
+        let filtList = document.querySelectorAll('.result__checkbox');
+        let blockFilter = document.querySelector('.result__filter-add-block');
+        if (bntAdd && filtList) {
+            bntAdd.addEventListener('click', () => {
+                let resultCheck = document.querySelectorAll('.result__filter-check');
+                if (resultCheck) {
+                    resultCheck.forEach(item => {
+                        item.remove();
+                    })
+                }
+                filtList.forEach(item => {
+                    if (item.checked) {
+                        console.log(item.value)
+                        let removeBtn = document.querySelector(`.result__filter-remove`);
+                        b = document.createElement("DIV");
+                        b.classList.add(`result__filter-check`);
+                        b.innerHTML = `<span class="result__filter-name">${item.value}` +
+                            '</span>' +
+                            '<button class="result__filter-adress-dell" > ' +
+                            ' <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+                            ' <path' +
+                            ' d="M5.99943 6.94273L10.1947 11.138L11.1375 10.1952L6.94224 5.99992L11.1375 1.80469L10.1947 0.861878L5.99943 5.05711L1.80414 0.861816L0.861328 1.80463L5.05662 5.99992L0.861328 10.1952L1.80414 11.138L5.99943 6.94273Z"' +
+                            ' fill="white" />' +
+                            ' </svg>' +
+                            '</button>';
+                        blockFilter.style.display = 'flex'
+                        blockFilter.insertBefore(b, removeBtn);
+                        // удаление добавленого элемента при нажатии на кнопку
+                        removeBlock("result__filter-adress-dell", 'result__filter-check', 'result__filter-add-block', 'result__filter-remove');
+                    }
+                })
+                if (document.querySelectorAll('.result__filter-check').length == 0) {
+                    blockFilter.style.display = 'none'
+                }
+            })
+        }
+    }
+    fulterAdd();
 })
 
 

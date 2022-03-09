@@ -5,7 +5,13 @@
         margin-bottom: 7px;
     }
 }
-
+.resul-mob-box {
+    display: none;
+}
+.result-title.--mob,
+.result-subtitle.--mob {
+    display: none;
+}
 .result-title {
     font-weight: 600;
     font-size: 1.43rem;
@@ -13,7 +19,15 @@
     color: #192025;
     padding-left: 3px;
 }
-
+.result__box-head-btn-mob {
+    display: none;
+}
+.result-filter-footer {
+    display: none;
+}
+.result__filter-add-block {
+    display: none;
+}
 .result-subtitle {
     font-weight: normal;
     font-size: 1.07rem;

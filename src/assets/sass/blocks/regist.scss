@@ -1,6 +1,12 @@
 .regist {
     padding-top: 30px;
     padding-bottom: 64px;
+    .breadcrumb {
+        display: none;
+    }
+}
+.result-filter-head {
+    display: none;
 }
 .regist__wrapp {
     background: #ffffff;
