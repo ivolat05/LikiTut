@@ -2753,6 +2753,7 @@ $(function () {
     closePopup('popupPwd-btn');
     closePopup('popupDel-btn');
     closePopup('popupDel-btn-dell');
+    closePopup('resultMap-inner-close-mob');
 
     // показывать скрывать пароль
 
@@ -3318,4 +3319,46 @@ $(function () {
         }
     }
     fulterAdd();
+    // удаление футера у карты
+    function dellFooterMap() {
+        let resultMapRow = document.querySelectorAll('.resultMap-row');
+        let resultMapFooter = document.querySelector('.resultMap__footer');
+        let resultMapFooterAdd = document.querySelector('.resultMap-footer-add');
+        if (resultMapFooter && resultMapFooterAdd) {
+            if (document.body.clientWidth < 998) {
+                resultMapRow.forEach(item => {
+                    item.addEventListener('click', () => {
+                        resultMapFooter.style.display = 'none';
+                        resultMapFooterAdd.style.display = 'flex';
+                    })
+                })
+                resultMapFooterAdd.addEventListener('click', () => {
+                    resultMapFooter.style.display = 'block';
+                    resultMapFooterAdd.style.display = 'none';
+                })
+            }
+            window.addEventListener("resize", function () {
+                resultMapFooter.style.display = 'block';
+                if (document.body.clientWidth < 998) {
+                    resultMapRow.forEach(item => {
+                        item.addEventListener('click', () => {
+                            resultMapFooter.style.display = 'none';
+                            resultMapFooterAdd.style.display = 'flex';
+                        })
+                    })
+                    resultMapFooterAdd.addEventListener('click', () => {
+                        resultMapFooter.style.display = 'block';
+                        resultMapFooterAdd.style.display = 'none';
+                    })
+                }
+                else {
+                    resultMapFooterAdd.style.display = 'none';
+                    resultMapFooter.style.display = 'none';
+                }
+            })
+
+        }
+
+    }
+    dellFooterMap();
 })
